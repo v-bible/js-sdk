@@ -44,6 +44,12 @@ export type CalendarEntry = {
   periodOfDay: string;
 };
 
+export type Options = {
+  isEpiphanyOn6thJan: boolean;
+  isAscensionOfTheLordOn40th: boolean;
+  destPath: string;
+};
+
 const YEAR_CYCLE_MAP: Record<string, string> = {
   '0': 'C',
   '1': 'A',
@@ -796,11 +802,13 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
   return calendar;
 };
 
-const generateCalendar = (
-  year: number,
-  isEpiphanyOn6thJan: boolean = false,
-  isAscensionOfTheLordOn40th: boolean = false,
-) => {
+const generateCalendar = (year: number, options?: Options) => {
+  const {
+    isEpiphanyOn6thJan = false,
+    isAscensionOfTheLordOn40th = false,
+    destPath = `./calendar-${year}.json`,
+  } = options || {};
+
   let calendar: Array<
     CalendarEntry & {
       weekday?: string;
@@ -845,14 +853,18 @@ const generateCalendar = (
 
   groupedCalendar = groupBy(calendar, (d) => d.date!);
 
-  writeFileSync(
-    `./calendar-${year}.json`,
-    JSON.stringify(groupedCalendar, null, 2),
-  );
+  writeFileSync(destPath, JSON.stringify(groupedCalendar, null, 2));
 
   return calendar;
 };
 
 generateCalendar(2024);
 
-export { generateCalendar };
+export {
+  generateAdvent,
+  generateChristmas,
+  generateOT,
+  generateLent,
+  generateEaster,
+  generateCalendar,
+};
