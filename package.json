@@ -6,6 +6,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@mrspade/moontool": "0.0.3",
     "date-fns": "4.1.0",
     "es-toolkit": "1.27.0"
   },
