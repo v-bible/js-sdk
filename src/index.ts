@@ -3,6 +3,7 @@ import {
   addDays,
   compareAsc,
   eachDayOfInterval,
+  eachWeekOfInterval,
   format,
   isBefore,
   isEqual,
@@ -19,7 +20,6 @@ import {
   subWeeks,
 } from 'date-fns';
 import { groupBy } from 'es-toolkit';
-import { getEaster } from 'node_modules/@mrspade/moontool/src/index';
 import adventSundayData from '@/static/calendar/sunday/1_advent.json';
 import christmasSundayData from '@/static/calendar/sunday/2_christmas.json';
 import lentSundayData from '@/static/calendar/sunday/3_lent.json';
@@ -30,6 +30,28 @@ import christmasWeekdayData from '@/static/calendar/weekdays/2_christmas.json';
 import lentWeekdayData from '@/static/calendar/weekdays/3_lent.json';
 import easterWeekdayData from '@/static/calendar/weekdays/4_easter.json';
 import OTWeekdayData from '@/static/calendar/weekdays/5_ot.json';
+
+// Ref: https://stackoverflow.com/a/1284335/12512981
+const easterDate = (y: number) => {
+  const c = Math.floor(y / 100);
+  const n = y - 19 * Math.floor(y / 19);
+  const k = Math.floor((c - 17) / 25);
+  let i = c - Math.floor(c / 4) - Math.floor((c - k) / 3) + 19 * n + 15;
+  i -= 30 * Math.floor(i / 30);
+  i -=
+    Math.floor(i / 28) *
+    (1 -
+      Math.floor(i / 28) *
+        Math.floor(29 / (i + 1)) *
+        Math.floor((21 - n) / 11));
+  let j = y + Math.floor(y / 4) + i + 2 - c + Math.floor(c / 4);
+  j -= 7 * Math.floor(j / 7);
+  const l = i - j;
+  const m = 3 + Math.floor((l + 40) / 44);
+  const d = l + 28 - 31 * Math.floor(m / 4);
+
+  return new Date(y, m - 1, d);
+};
 
 export type CalendarEntry = {
   firstReading: string | string[];
@@ -79,6 +101,8 @@ const generateAdvent = (year: number) => {
     ? new Date(year - 1, 12 - 1, 24)
     : previousSunday(christmasDay);
 
+  // NOTE: If Advent 4 is on Sunday then there is only 3 weeks of weekdays
+  // Ref: https://catholic-resources.org/Lectionary/Overview-Advent.htm
   const advent1 = subWeeks(advent4, 3);
 
   let calendar: CalendarEntry[][] = [];
@@ -359,9 +383,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
       ? nextMonday(epiphany)
       : nextSunday(epiphany);
 
-  const easterDay = getEaster(year);
-  // NOTE: The Easter and Ash Wednesday in years 2038, 2045, 2049 are wrong,
-  // from https://www.liturgyoffice.org.uk/Calendar/Info/2050.pdf
+  const easterDay = easterDate(year);
   const ashWednesday = subDays(subWeeks(easterDay, 6), 4);
 
   const pentecost = addDays(easterDay, 49);
@@ -372,7 +394,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
   // Dec 24th, the morning is Advent 4, and then the afternoon is Christmas
   // Eve
   const advent4 = isSunday(new Date(year, 12 - 1, 24))
-    ? new Date(year - 1, 12 - 1, 24)
+    ? new Date(year, 12 - 1, 24)
     : previousSunday(christmasDay);
 
   const advent1 = subWeeks(advent4, 3);
@@ -384,11 +406,15 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
 
   // NOTE: First OT
   eachDayOfInterval({
-    start: addDays(baptismOfTheLord, 1),
+    start: baptismOfTheLord,
     end: subDays(ashWednesday, 1),
   }).forEach((day) => {
     if (isSunday(day)) {
       weekOrder += 1;
+
+      if (isEqual(day, baptismOfTheLord)) {
+        return;
+      }
 
       calendar = [
         ...calendar,
@@ -423,9 +449,21 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
     ];
   });
 
-  // NOTE: Second OT
-  // NOTE: Because 2nd Ordinary Time starts from Monday so we have to plus 1 here
-  weekOrder += 1;
+  // NOTE: Second OT have to calculate so the last week before the Advent 1 is
+  // the 34th Sunday
+  // Ref: Checked from year 2023 -> 2100 here:
+  // https://catholic-resources.org/Lectionary/Calendar.htm
+  weekOrder =
+    34 -
+    eachWeekOfInterval({
+      start: pentecost,
+      end: advent1,
+    }).length +
+    1;
+
+  if (isSunday(pentecost)) {
+    weekOrder += 1;
+  }
 
   eachDayOfInterval({
     start: addDays(pentecost, 1),
@@ -473,9 +511,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
 const generateLent = (year: number) => {
   const yearCycle = YEAR_CYCLE_MAP[year % 3];
 
-  const easterDay = getEaster(year);
-  // NOTE: The Easter and Ash Wednesday in years 2038, 2045, 2049 are wrong,
-  // from https://www.liturgyoffice.org.uk/Calendar/Info/2050.pdf
+  const easterDay = easterDate(year);
   const ashWednesday = subDays(subWeeks(easterDay, 6), 4);
 
   const chrismMass = previousThursday(easterDay);
@@ -616,7 +652,7 @@ const generateLent = (year: number) => {
 const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
   const yearCycle = YEAR_CYCLE_MAP[year % 3];
 
-  const easterDay = getEaster(year);
+  const easterDay = easterDate(year);
 
   const holyThursday = subDays(easterDay, 3);
   const goodFriday = subDays(easterDay, 2);
@@ -703,7 +739,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
     ];
   });
 
-  // NOTE: Start with the Monday after Easter Sunday so counted as 1
+  // NOTE: Start with the Sunday after Easter, but first is already Easter
   let weekOrder = 1;
 
   eachDayOfInterval({
@@ -719,7 +755,10 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
           ...calendar,
           triduumSundayData
             .filter(
-              (d) => d.weekOrder === 'pentecost' && d.yearCycle === yearCycle,
+              // NOTE: Pentecost has Virgil and day mass
+              (d) =>
+                d.weekOrder === 'pentecost' &&
+                (d.yearCycle === yearCycle || d.yearCycle === ''),
             )
             .map((d) => {
               return {
