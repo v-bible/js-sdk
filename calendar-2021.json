@@ -1,21 +1,21 @@
 {
-  "27/11/2022": [
+  "29/11/2020": [
     {
-      "firstReading": "Isa 2:1-5",
-      "psalm": "Ps 122:1-2, 3-4a, 4b-5, 6-7, 8-9",
-      "secondReading": "Rom 13:11-14",
-      "gospel": "Matt 24:37-44",
-      "yearCycle": "A",
+      "firstReading": "Isa 63:16b-17, 19b; 64:2-7",
+      "psalm": "Ps 80:2-3, 15-16, 18-19",
+      "secondReading": "1 Cor 1:3-9",
+      "gospel": "Mark 13:33-37",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "advent",
       "weekdayType": "sunday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "27/11/2022",
+      "date": "29/11/2020",
       "weekday": "sunday"
     }
   ],
-  "28/11/2022": [
+  "30/11/2020": [
     {
       "firstReading": [
         "Isa 2:1-5",
@@ -30,11 +30,11 @@
       "weekdayType": "monday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "28/11/2022",
+      "date": "30/11/2020",
       "weekday": "monday"
     }
   ],
-  "29/11/2022": [
+  "01/12/2020": [
     {
       "firstReading": "Isa 11:1-10",
       "psalm": "Ps 72:1-2, 7-8, 12-13, 17",
@@ -46,11 +46,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "29/11/2022",
+      "date": "01/12/2020",
       "weekday": "tuesday"
     }
   ],
-  "30/11/2022": [
+  "02/12/2020": [
     {
       "firstReading": "Isa 25:6-10a",
       "psalm": "Ps 23:1-3a, 3b-4, 5, 6",
@@ -62,11 +62,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "30/11/2022",
+      "date": "02/12/2020",
       "weekday": "wednesday"
     }
   ],
-  "01/12/2022": [
+  "03/12/2020": [
     {
       "firstReading": "Isa 26:1-6",
       "psalm": "Ps 118:1+8-9, 19-21, 25-27a",
@@ -78,11 +78,11 @@
       "weekdayType": "thursday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "01/12/2022",
+      "date": "03/12/2020",
       "weekday": "thursday"
     }
   ],
-  "02/12/2022": [
+  "04/12/2020": [
     {
       "firstReading": "Isa 29:17-24",
       "psalm": "Ps 27:1, 4, 13-14",
@@ -94,11 +94,11 @@
       "weekdayType": "friday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "02/12/2022",
+      "date": "04/12/2020",
       "weekday": "friday"
     }
   ],
-  "03/12/2022": [
+  "05/12/2020": [
     {
       "firstReading": "Isa 30:19-21, 23-26",
       "psalm": "Ps 147:1-2, 3-4, 5-6",
@@ -110,27 +110,27 @@
       "weekdayType": "saturday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "03/12/2022",
+      "date": "05/12/2020",
       "weekday": "saturday"
     }
   ],
-  "04/12/2022": [
+  "06/12/2020": [
     {
-      "firstReading": "Isa 11:1-10",
-      "psalm": "Ps 72:1-2, 7-8, 12-13, 17",
-      "secondReading": "Rom 15:4-9",
-      "gospel": "Matt 3:1-12",
-      "yearCycle": "A",
+      "firstReading": "Isa 40:1-5, 9-11",
+      "psalm": "Ps 85:9ab+10, 11-12, 13-14",
+      "secondReading": "2 Pet 3:8-14",
+      "gospel": "Mark 1:1-8",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "advent",
       "weekdayType": "sunday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "04/12/2022",
+      "date": "06/12/2020",
       "weekday": "sunday"
     }
   ],
-  "05/12/2022": [
+  "07/12/2020": [
     {
       "firstReading": "Isa 35:1-10",
       "psalm": "Ps 85:9ab+10, 11-12, 13-14",
@@ -142,11 +142,11 @@
       "weekdayType": "monday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "05/12/2022",
+      "date": "07/12/2020",
       "weekday": "monday"
     }
   ],
-  "06/12/2022": [
+  "08/12/2020": [
     {
       "firstReading": "Isa 40:1-11",
       "psalm": "Ps 96:1-2, 3+10ac, 11-12, 13",
@@ -158,11 +158,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "06/12/2022",
+      "date": "08/12/2020",
       "weekday": "tuesday"
     }
   ],
-  "07/12/2022": [
+  "09/12/2020": [
     {
       "firstReading": "Isa 40:25-31",
       "psalm": "Ps 103:1-2, 3-4, 8+10",
@@ -174,11 +174,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "07/12/2022",
+      "date": "09/12/2020",
       "weekday": "wednesday"
     }
   ],
-  "08/12/2022": [
+  "10/12/2020": [
     {
       "firstReading": "Isa 41:13-20",
       "psalm": "Ps 145:1+9, 10-11, 12-13ab",
@@ -190,11 +190,11 @@
       "weekdayType": "thursday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "08/12/2022",
+      "date": "10/12/2020",
       "weekday": "thursday"
     }
   ],
-  "09/12/2022": [
+  "11/12/2020": [
     {
       "firstReading": "Isa 48:17-19",
       "psalm": "Ps 1:1-2, 3, 4+6",
@@ -206,11 +206,11 @@
       "weekdayType": "friday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "09/12/2022",
+      "date": "11/12/2020",
       "weekday": "friday"
     }
   ],
-  "10/12/2022": [
+  "12/12/2020": [
     {
       "firstReading": "Sir 48:1-4, 9-11",
       "psalm": "Ps 80:2ac+3b, 15-16, 18-19",
@@ -222,27 +222,27 @@
       "weekdayType": "saturday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "10/12/2022",
+      "date": "12/12/2020",
       "weekday": "saturday"
     }
   ],
-  "11/12/2022": [
+  "13/12/2020": [
     {
-      "firstReading": "Isa 35:1-6a, 10",
-      "psalm": "Ps 146:6c-7, 8-9a, 9b-10",
-      "secondReading": "Jas 5:7-10",
-      "gospel": "Matt 11:2-11",
-      "yearCycle": "A",
+      "firstReading": "Isa 61:1-2a, 10-11",
+      "psalm": "Luke 1:46-48, 49-50, 53-54",
+      "secondReading": "1 Thess 5:16-24",
+      "gospel": "John 1:6-8, 19-28",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "advent",
       "weekdayType": "sunday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "11/12/2022",
+      "date": "13/12/2020",
       "weekday": "sunday"
     }
   ],
-  "12/12/2022": [
+  "14/12/2020": [
     {
       "firstReading": "Num 24:2-7, 15-17a",
       "psalm": "Ps 25:4-5ab, 6+7bc, 8-9",
@@ -254,11 +254,11 @@
       "weekdayType": "monday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "12/12/2022",
+      "date": "14/12/2020",
       "weekday": "monday"
     }
   ],
-  "13/12/2022": [
+  "15/12/2020": [
     {
       "firstReading": "Zeph 3:1-2, 9-13",
       "psalm": "Ps 34:2-3, 6-7, 17-18, 19+23",
@@ -270,11 +270,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "13/12/2022",
+      "date": "15/12/2020",
       "weekday": "tuesday"
     }
   ],
-  "14/12/2022": [
+  "16/12/2020": [
     {
       "firstReading": "Isa 45:6c-8, 18, 21c-25",
       "psalm": "Ps 85:9ab+10, 11-12, 13-14",
@@ -286,43 +286,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "14/12/2022",
+      "date": "16/12/2020",
       "weekday": "wednesday"
     }
   ],
-  "15/12/2022": [
-    {
-      "firstReading": "Isa 54:1-10",
-      "psalm": "Ps 30:2+4, 5-6, 11-12a+13b",
-      "secondReading": "",
-      "gospel": "Luke 7:24-30",
-      "yearCycle": "",
-      "yearNumber": "",
-      "season": "advent",
-      "weekdayType": "thursday",
-      "weekOrder": "3",
-      "periodOfDay": "",
-      "date": "15/12/2022",
-      "weekday": "thursday"
-    }
-  ],
-  "16/12/2022": [
-    {
-      "firstReading": "Isa 56:1-3a, 6-8",
-      "psalm": "Ps 67:2-3, 5, 7-8",
-      "secondReading": "",
-      "gospel": "John 5:33-36",
-      "yearCycle": "",
-      "yearNumber": "",
-      "season": "advent",
-      "weekdayType": "friday",
-      "weekOrder": "3",
-      "periodOfDay": "",
-      "date": "16/12/2022",
-      "weekday": "friday"
-    }
-  ],
-  "17/12/2022": [
+  "17/12/2020": [
     {
       "firstReading": "Gen 49:2, 8-10",
       "psalm": "Ps 72:1-2, 3-4ab, 7-8, 17",
@@ -334,27 +302,27 @@
       "weekdayType": "17/12",
       "weekOrder": "preChristmas",
       "periodOfDay": "",
-      "date": "17/12/2022",
-      "weekday": "saturday"
+      "date": "17/12/2020",
+      "weekday": "thursday"
     }
   ],
-  "18/12/2022": [
+  "18/12/2020": [
     {
-      "firstReading": "Isa 7:10-14",
-      "psalm": "Ps 24:1-2, 3-4, 5-6",
-      "secondReading": "Rom 1:1-7",
+      "firstReading": "Jer 23:5-8",
+      "psalm": "Ps 72:1-2, 12-13, 18-19",
+      "secondReading": "",
       "gospel": "Matt 1:18-24",
-      "yearCycle": "A",
+      "yearCycle": "",
       "yearNumber": "",
       "season": "advent",
-      "weekdayType": "sunday",
-      "weekOrder": "4",
+      "weekdayType": "18/12",
+      "weekOrder": "preChristmas",
       "periodOfDay": "",
-      "date": "18/12/2022",
-      "weekday": "sunday"
+      "date": "18/12/2020",
+      "weekday": "friday"
     }
   ],
-  "19/12/2022": [
+  "19/12/2020": [
     {
       "firstReading": "Judg 13:2-7, 24-25a",
       "psalm": "Ps 71:3-4a, 5-6ab, 16-17",
@@ -366,27 +334,27 @@
       "weekdayType": "19/12",
       "weekOrder": "preChristmas",
       "periodOfDay": "",
-      "date": "19/12/2022",
-      "weekday": "monday"
+      "date": "19/12/2020",
+      "weekday": "saturday"
     }
   ],
-  "20/12/2022": [
+  "20/12/2020": [
     {
-      "firstReading": "Isa 7:10-14",
-      "psalm": "Ps 24:1-2, 3-4ab, 5-6",
-      "secondReading": "",
+      "firstReading": "2 Sam 7:1-5, 8b-12, 14a, 16",
+      "psalm": "Ps 89:2-3, 4-5, 27+29",
+      "secondReading": "Rom 16:25-27",
       "gospel": "Luke 1:26-38",
-      "yearCycle": "",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "advent",
-      "weekdayType": "20/12",
-      "weekOrder": "preChristmas",
+      "weekdayType": "sunday",
+      "weekOrder": "4",
       "periodOfDay": "",
-      "date": "20/12/2022",
-      "weekday": "tuesday"
+      "date": "20/12/2020",
+      "weekday": "sunday"
     }
   ],
-  "21/12/2022": [
+  "21/12/2020": [
     {
       "firstReading": [
         "Cant 2:8-14",
@@ -401,11 +369,11 @@
       "weekdayType": "21/12",
       "weekOrder": "preChristmas",
       "periodOfDay": "",
-      "date": "21/12/2022",
-      "weekday": "wednesday"
+      "date": "21/12/2020",
+      "weekday": "monday"
     }
   ],
-  "22/12/2022": [
+  "22/12/2020": [
     {
       "firstReading": "1 Sam 1:24-28",
       "psalm": "1 Sam 2:1, 4-5, 6-7, 8abcd",
@@ -417,11 +385,11 @@
       "weekdayType": "22/12",
       "weekOrder": "preChristmas",
       "periodOfDay": "",
-      "date": "22/12/2022",
-      "weekday": "thursday"
+      "date": "22/12/2020",
+      "weekday": "tuesday"
     }
   ],
-  "23/12/2022": [
+  "23/12/2020": [
     {
       "firstReading": "Mal 3:1-4, 23-24",
       "psalm": "Ps 25:4-5ab, 8-9, 10+14",
@@ -433,11 +401,11 @@
       "weekdayType": "23/12",
       "weekOrder": "preChristmas",
       "periodOfDay": "",
-      "date": "23/12/2022",
-      "weekday": "friday"
+      "date": "23/12/2020",
+      "weekday": "wednesday"
     }
   ],
-  "24/12/2022": [
+  "24/12/2020": [
     {
       "firstReading": "2 Sam 7:1-5, 8b-12, 14a, 16",
       "psalm": "Ps 89:2-3, 4-5, 27+29",
@@ -449,11 +417,11 @@
       "weekdayType": "24/12",
       "weekOrder": "preChristmas",
       "periodOfDay": "",
-      "date": "24/12/2022",
-      "weekday": "saturday"
+      "date": "24/12/2020",
+      "weekday": "thursday"
     }
   ],
-  "25/12/2022": [
+  "25/12/2020": [
     {
       "firstReading": "Isa 62:1-5",
       "psalm": "Ps 89:4-5, 16-17, 27+29",
@@ -468,8 +436,8 @@
       "weekdayType": "sunday",
       "weekOrder": "nativityOfTheLord",
       "periodOfDay": "virgilMass",
-      "date": "25/12/2022",
-      "weekday": "sunday"
+      "date": "25/12/2020",
+      "weekday": "friday"
     },
     {
       "firstReading": "Isa 9:1-6",
@@ -482,8 +450,8 @@
       "weekdayType": "sunday",
       "weekOrder": "nativityOfTheLord",
       "periodOfDay": "night",
-      "date": "25/12/2022",
-      "weekday": "sunday"
+      "date": "25/12/2020",
+      "weekday": "friday"
     },
     {
       "firstReading": "Isa 62:11-12",
@@ -496,8 +464,8 @@
       "weekdayType": "sunday",
       "weekOrder": "nativityOfTheLord",
       "periodOfDay": "dawn",
-      "date": "25/12/2022",
-      "weekday": "sunday"
+      "date": "25/12/2020",
+      "weekday": "friday"
     },
     {
       "firstReading": "Isa 52:7-10",
@@ -513,11 +481,11 @@
       "weekdayType": "sunday",
       "weekOrder": "nativityOfTheLord",
       "periodOfDay": "day",
-      "date": "25/12/2022",
-      "weekday": "sunday"
+      "date": "25/12/2020",
+      "weekday": "friday"
     }
   ],
-  "26/12/2022": [
+  "26/12/2020": [
     {
       "firstReading": "Acts 6:8-10; 7:54-59",
       "psalm": "Ps 31:3cd-4, 6ab+8a, 16bc+17",
@@ -529,11 +497,11 @@
       "weekdayType": "26/12",
       "weekOrder": "christmas",
       "periodOfDay": "",
-      "date": "26/12/2022",
-      "weekday": "monday"
+      "date": "26/12/2020",
+      "weekday": "saturday"
     }
   ],
-  "27/12/2022": [
+  "27/12/2020": [
     {
       "firstReading": "1 John 1:1-4",
       "psalm": "Ps 97:1-2, 5-6, 11-12",
@@ -545,11 +513,28 @@
       "weekdayType": "27/12",
       "weekOrder": "christmas",
       "periodOfDay": "",
-      "date": "27/12/2022",
-      "weekday": "tuesday"
+      "date": "27/12/2020",
+      "weekday": "sunday"
+    },
+    {
+      "firstReading": "Gen 15:1-6; 21:1-3",
+      "psalm": "Ps 105:1-2, 3-4, 5-6, 8-9",
+      "secondReading": "Heb 11:8, 11-12, 17-19",
+      "gospel": [
+        "Luke 2:22-40",
+        "Luke 2:22, 39-40"
+      ],
+      "yearCycle": "B",
+      "yearNumber": "",
+      "season": "christmas",
+      "weekdayType": "sunday",
+      "weekOrder": "theHolyFamily",
+      "periodOfDay": "",
+      "date": "27/12/2020",
+      "weekday": "sunday"
     }
   ],
-  "28/12/2022": [
+  "28/12/2020": [
     {
       "firstReading": "1 John 1:5--2:2",
       "psalm": "Ps 124:2-3, 4-5, 7cd-8",
@@ -561,11 +546,11 @@
       "weekdayType": "28/12",
       "weekOrder": "christmas",
       "periodOfDay": "",
-      "date": "28/12/2022",
-      "weekday": "wednesday"
+      "date": "28/12/2020",
+      "weekday": "monday"
     }
   ],
-  "29/12/2022": [
+  "29/12/2020": [
     {
       "firstReading": "1 John 2:3-11",
       "psalm": "Ps 96:1-2a, 2b-3, 5b-6",
@@ -577,11 +562,11 @@
       "weekdayType": "29/12",
       "weekOrder": "christmas",
       "periodOfDay": "",
-      "date": "29/12/2022",
-      "weekday": "thursday"
+      "date": "29/12/2020",
+      "weekday": "tuesday"
     }
   ],
-  "30/12/2022": [
+  "30/12/2020": [
     {
       "firstReading": "1 John 2:12-17",
       "psalm": "Ps 96:7-8a, 8b-9, 10",
@@ -593,28 +578,11 @@
       "weekdayType": "30/12",
       "weekOrder": "christmas",
       "periodOfDay": "",
-      "date": "30/12/2022",
-      "weekday": "friday"
-    },
-    {
-      "firstReading": "Sir 3:2-6, 12-14",
-      "psalm": "Ps 128:1-2, 3, 4-5",
-      "secondReading": [
-        "Col 3:12-21",
-        "Col 3:12-17"
-      ],
-      "gospel": "Matt 2:13-15, 19-23",
-      "yearCycle": "A",
-      "yearNumber": "",
-      "season": "christmas",
-      "weekdayType": "sunday",
-      "weekOrder": "theHolyFamily",
-      "periodOfDay": "",
-      "date": "30/12/2022",
-      "weekday": "friday"
+      "date": "30/12/2020",
+      "weekday": "wednesday"
     }
   ],
-  "31/12/2022": [
+  "31/12/2020": [
     {
       "firstReading": "1 John 2:18-21",
       "psalm": "Ps 96:1-2, 11-12, 13",
@@ -626,11 +594,11 @@
       "weekdayType": "31/12",
       "weekOrder": "christmas",
       "periodOfDay": "",
-      "date": "31/12/2022",
-      "weekday": "saturday"
+      "date": "31/12/2020",
+      "weekday": "thursday"
     }
   ],
-  "01/01/2023": [
+  "01/01/2021": [
     {
       "firstReading": "Num 6:22-27",
       "psalm": "Ps 67:2-3, 5, 6+8",
@@ -642,11 +610,11 @@
       "weekdayType": "sunday",
       "weekOrder": "maryMotherOfGod",
       "periodOfDay": "",
-      "date": "01/01/2023",
-      "weekday": "sunday"
+      "date": "01/01/2021",
+      "weekday": "friday"
     }
   ],
-  "02/01/2023": [
+  "02/01/2021": [
     {
       "firstReading": "1 John 2:22-28",
       "psalm": "Ps 98:1, 2-3ab, 3cd-4",
@@ -658,95 +626,11 @@
       "weekdayType": "02/01",
       "weekOrder": "preEpiphany",
       "periodOfDay": "",
-      "date": "02/01/2023",
-      "weekday": "monday"
-    }
-  ],
-  "03/01/2023": [
-    {
-      "firstReading": "1 John 2:29--3:6",
-      "psalm": "Ps 98:1, 3cd-4, 5-6",
-      "secondReading": "",
-      "gospel": "John 1:29-34",
-      "yearCycle": "",
-      "yearNumber": "",
-      "season": "christmas",
-      "weekdayType": "03/01",
-      "weekOrder": "preEpiphany",
-      "periodOfDay": "",
-      "date": "03/01/2023",
-      "weekday": "tuesday"
-    }
-  ],
-  "04/01/2023": [
-    {
-      "firstReading": "1 John 3:7-10",
-      "psalm": "Ps 98:1, 7-8, 9",
-      "secondReading": "",
-      "gospel": "John 1:35-42",
-      "yearCycle": "",
-      "yearNumber": "",
-      "season": "christmas",
-      "weekdayType": "04/01",
-      "weekOrder": "preEpiphany",
-      "periodOfDay": "",
-      "date": "04/01/2023",
-      "weekday": "wednesday"
-    }
-  ],
-  "05/01/2023": [
-    {
-      "firstReading": "1 John 3:11-21",
-      "psalm": "Ps 100:1b-2, 3, 4, 5",
-      "secondReading": "",
-      "gospel": "John 1:43-51",
-      "yearCycle": "",
-      "yearNumber": "",
-      "season": "christmas",
-      "weekdayType": "05/01",
-      "weekOrder": "preEpiphany",
-      "periodOfDay": "",
-      "date": "05/01/2023",
-      "weekday": "thursday"
-    }
-  ],
-  "06/01/2023": [
-    {
-      "firstReading": "1 John 5:5-13",
-      "psalm": "Ps 147:12-13, 14-15, 19-20",
-      "secondReading": "",
-      "gospel": [
-        "Mark 1:7-11",
-        "Luke 3:23-38",
-        "Luke 3:23, 31-34, 36, 38"
-      ],
-      "yearCycle": "",
-      "yearNumber": "",
-      "season": "christmas",
-      "weekdayType": "06/01",
-      "weekOrder": "preEpiphany",
-      "periodOfDay": "",
-      "date": "06/01/2023",
-      "weekday": "friday"
-    }
-  ],
-  "07/01/2023": [
-    {
-      "firstReading": "1 John 5:14-21",
-      "psalm": "Ps 149:1-2, 3-4, 5+6a+9b",
-      "secondReading": "",
-      "gospel": "John 2:1-11",
-      "yearCycle": "",
-      "yearNumber": "",
-      "season": "christmas",
-      "weekdayType": "07/01",
-      "weekOrder": "preEpiphany",
-      "periodOfDay": "",
-      "date": "07/01/2023",
+      "date": "02/01/2021",
       "weekday": "saturday"
     }
   ],
-  "08/01/2023": [
+  "03/01/2021": [
     {
       "firstReading": "Isa 60:1-6",
       "psalm": "Ps 72:1-2, 7-8, 10-11, 12-13",
@@ -758,27 +642,139 @@
       "weekdayType": "sunday",
       "weekOrder": "theEpiphanyOfTheLord",
       "periodOfDay": "",
-      "date": "08/01/2023",
+      "date": "03/01/2021",
       "weekday": "sunday"
     }
   ],
-  "09/01/2023": [
+  "04/01/2021": [
     {
-      "firstReading": "Isa 42:1-4, 6-7",
-      "psalm": "Ps 29:1-2, 3ac+4, 3b+9b-10",
-      "secondReading": "Acts 10:34-38",
-      "gospel": "Matt 3:13-17",
-      "yearCycle": "A",
+      "firstReading": "1 John 3:22--4:6",
+      "psalm": "Ps 2:7bc-8, 10-12a",
+      "secondReading": "",
+      "gospel": "Matt 4:12-17, 23-25",
+      "yearCycle": "",
+      "yearNumber": "",
+      "season": "christmas",
+      "weekdayType": "monday",
+      "weekOrder": "postEpiphany",
+      "periodOfDay": "",
+      "date": "04/01/2021",
+      "weekday": "monday"
+    }
+  ],
+  "05/01/2021": [
+    {
+      "firstReading": "1 John 4:7-10",
+      "psalm": "Ps 72:1-2, 3-4, 7-8",
+      "secondReading": "",
+      "gospel": "Mark 6:34-44",
+      "yearCycle": "",
+      "yearNumber": "",
+      "season": "christmas",
+      "weekdayType": "tuesday",
+      "weekOrder": "postEpiphany",
+      "periodOfDay": "",
+      "date": "05/01/2021",
+      "weekday": "tuesday"
+    }
+  ],
+  "06/01/2021": [
+    {
+      "firstReading": "1 John 4:11-18",
+      "psalm": "Ps 72:1-2, 10, 12-13",
+      "secondReading": "",
+      "gospel": "Mark 6:45-52",
+      "yearCycle": "",
+      "yearNumber": "",
+      "season": "christmas",
+      "weekdayType": "wednesday",
+      "weekOrder": "postEpiphany",
+      "periodOfDay": "",
+      "date": "06/01/2021",
+      "weekday": "wednesday"
+    }
+  ],
+  "07/01/2021": [
+    {
+      "firstReading": "1 John 4:19--5:4",
+      "psalm": "Ps 72:1-2, 14+15bc, 17",
+      "secondReading": "",
+      "gospel": "Luke 4:14-22a",
+      "yearCycle": "",
+      "yearNumber": "",
+      "season": "christmas",
+      "weekdayType": "thursday",
+      "weekOrder": "postEpiphany",
+      "periodOfDay": "",
+      "date": "07/01/2021",
+      "weekday": "thursday"
+    }
+  ],
+  "08/01/2021": [
+    {
+      "firstReading": "1 John 5:5-13",
+      "psalm": "Ps 147:12-13, 14-15, 19-20",
+      "secondReading": "",
+      "gospel": "Luke 5:12-16",
+      "yearCycle": "",
+      "yearNumber": "",
+      "season": "christmas",
+      "weekdayType": "friday",
+      "weekOrder": "postEpiphany",
+      "periodOfDay": "",
+      "date": "08/01/2021",
+      "weekday": "friday"
+    }
+  ],
+  "09/01/2021": [
+    {
+      "firstReading": "1 John 5:14-21",
+      "psalm": "Ps 149:1-2, 3-4, 5+6a+9b",
+      "secondReading": "",
+      "gospel": "John 3:22-30",
+      "yearCycle": "",
+      "yearNumber": "",
+      "season": "christmas",
+      "weekdayType": "saturday",
+      "weekOrder": "postEpiphany",
+      "periodOfDay": "",
+      "date": "09/01/2021",
+      "weekday": "saturday"
+    }
+  ],
+  "10/01/2021": [
+    {
+      "firstReading": "Isa 55:1-11",
+      "psalm": "Isa 12:2-3, 4bcd, 5-6",
+      "secondReading": "1 John 5:1-9",
+      "gospel": "Mark 1:7-11",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "christmas",
       "weekdayType": "sunday",
       "weekOrder": "baptismOfTheLord",
       "periodOfDay": "",
-      "date": "09/01/2023",
+      "date": "10/01/2021",
+      "weekday": "sunday"
+    }
+  ],
+  "11/01/2021": [
+    {
+      "firstReading": "Heb 1:1-6",
+      "psalm": "Ps 97:1+2b, 6+7c, 9",
+      "secondReading": "",
+      "gospel": "Mark 1:14-20",
+      "yearCycle": "",
+      "yearNumber": "1",
+      "season": "ot",
+      "weekdayType": "monday",
+      "weekOrder": "1",
+      "periodOfDay": "",
+      "date": "11/01/2021",
       "weekday": "monday"
     }
   ],
-  "10/01/2023": [
+  "12/01/2021": [
     {
       "firstReading": "Heb 2:5-12",
       "psalm": "Ps 8:2ab+5, 6-7, 8-9",
@@ -790,11 +786,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "10/01/2023",
+      "date": "12/01/2021",
       "weekday": "tuesday"
     }
   ],
-  "11/01/2023": [
+  "13/01/2021": [
     {
       "firstReading": "Heb 2:14-18",
       "psalm": "Ps 105:1-2, 3-4, 6-7, 8-9",
@@ -806,11 +802,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "11/01/2023",
+      "date": "13/01/2021",
       "weekday": "wednesday"
     }
   ],
-  "12/01/2023": [
+  "14/01/2021": [
     {
       "firstReading": "Heb 3:7-14",
       "psalm": "Ps 95:6-7c, 8-9, 10-11",
@@ -822,11 +818,11 @@
       "weekdayType": "thursday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "12/01/2023",
+      "date": "14/01/2021",
       "weekday": "thursday"
     }
   ],
-  "13/01/2023": [
+  "15/01/2021": [
     {
       "firstReading": "Heb 4:1-5, 11",
       "psalm": "Ps 78:3+4bc, 6c-7, 8",
@@ -838,11 +834,11 @@
       "weekdayType": "friday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "13/01/2023",
+      "date": "15/01/2021",
       "weekday": "friday"
     }
   ],
-  "14/01/2023": [
+  "16/01/2021": [
     {
       "firstReading": "Heb 4:12-16",
       "psalm": "Ps 19:8, 9, 10, 15",
@@ -854,27 +850,27 @@
       "weekdayType": "saturday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "14/01/2023",
+      "date": "16/01/2021",
       "weekday": "saturday"
     }
   ],
-  "15/01/2023": [
+  "17/01/2021": [
     {
-      "firstReading": "Isa 49:3, 5-6",
+      "firstReading": "1 Sam 3:3b-10, 19",
       "psalm": "Ps 40:2+4, 7-8a, 8b-9, 10",
-      "secondReading": "1 Cor 1:1-3",
-      "gospel": "John 1:29-34",
-      "yearCycle": "A",
+      "secondReading": "1 Cor 6:13c-15a, 17-20",
+      "gospel": "John 1:35-42",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "15/01/2023",
+      "date": "17/01/2021",
       "weekday": "sunday"
     }
   ],
-  "16/01/2023": [
+  "18/01/2021": [
     {
       "firstReading": "Heb 5:1-10",
       "psalm": "Ps 110:1, 2, 3, 4",
@@ -886,11 +882,11 @@
       "weekdayType": "monday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "16/01/2023",
+      "date": "18/01/2021",
       "weekday": "monday"
     }
   ],
-  "17/01/2023": [
+  "19/01/2021": [
     {
       "firstReading": "Heb 6:10-20",
       "psalm": "Ps 111:1-2, 4-5, 9+10c",
@@ -902,11 +898,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "17/01/2023",
+      "date": "19/01/2021",
       "weekday": "tuesday"
     }
   ],
-  "18/01/2023": [
+  "20/01/2021": [
     {
       "firstReading": "Heb 7:1-3, 15-17",
       "psalm": "Ps 110:1, 2, 3, 4",
@@ -918,11 +914,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "18/01/2023",
+      "date": "20/01/2021",
       "weekday": "wednesday"
     }
   ],
-  "19/01/2023": [
+  "21/01/2021": [
     {
       "firstReading": "Heb 7:25--8:6",
       "psalm": "Ps 40:7-8a, 8b-9, 10, 17",
@@ -934,11 +930,11 @@
       "weekdayType": "thursday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "19/01/2023",
+      "date": "21/01/2021",
       "weekday": "thursday"
     }
   ],
-  "20/01/2023": [
+  "22/01/2021": [
     {
       "firstReading": "Heb 8:6-13",
       "psalm": "Ps 85:8+10, 11-12, 13-14",
@@ -950,11 +946,11 @@
       "weekdayType": "friday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "20/01/2023",
+      "date": "22/01/2021",
       "weekday": "friday"
     }
   ],
-  "21/01/2023": [
+  "23/01/2021": [
     {
       "firstReading": "Heb 9:2-3, 11-14",
       "psalm": "Ps 47:2-3, 6-7, 8-9",
@@ -966,30 +962,27 @@
       "weekdayType": "saturday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "21/01/2023",
+      "date": "23/01/2021",
       "weekday": "saturday"
     }
   ],
-  "22/01/2023": [
+  "24/01/2021": [
     {
-      "firstReading": "Isa 8:23b--9:3",
-      "psalm": "Ps 27:1, 4, 13-14",
-      "secondReading": "1 Cor 1:10-13, 17",
-      "gospel": [
-        "Matt 4:12-23",
-        "Matt 4:12-17"
-      ],
-      "yearCycle": "A",
+      "firstReading": "Jon 3:1-5, 10",
+      "psalm": "Ps 25:4-5, 6-7, 8-9",
+      "secondReading": "1 Cor 7:29-31",
+      "gospel": "Mark 1:14-20",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "22/01/2023",
+      "date": "24/01/2021",
       "weekday": "sunday"
     }
   ],
-  "23/01/2023": [
+  "25/01/2021": [
     {
       "firstReading": "Heb 9:15, 24-28",
       "psalm": "Ps 98:1, 2-3ab, 3cd-4, 5-6",
@@ -1001,11 +994,11 @@
       "weekdayType": "monday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "23/01/2023",
+      "date": "25/01/2021",
       "weekday": "monday"
     }
   ],
-  "24/01/2023": [
+  "26/01/2021": [
     {
       "firstReading": "Heb 10:1-10",
       "psalm": "Ps 40:2+4ab, 7-8a, 10, 11",
@@ -1017,11 +1010,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "24/01/2023",
+      "date": "26/01/2021",
       "weekday": "tuesday"
     }
   ],
-  "25/01/2023": [
+  "27/01/2021": [
     {
       "firstReading": "Heb 10:11-18",
       "psalm": "Ps 110:1, 2, 3, 4",
@@ -1033,11 +1026,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "25/01/2023",
+      "date": "27/01/2021",
       "weekday": "wednesday"
     }
   ],
-  "26/01/2023": [
+  "28/01/2021": [
     {
       "firstReading": "Heb 10:19-25",
       "psalm": "Ps 24:1-2, 3-4ab, 5-6",
@@ -1049,11 +1042,11 @@
       "weekdayType": "thursday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "26/01/2023",
+      "date": "28/01/2021",
       "weekday": "thursday"
     }
   ],
-  "27/01/2023": [
+  "29/01/2021": [
     {
       "firstReading": "Heb 10:32-39",
       "psalm": "Ps 37:3-4, 5-6, 23-24, 39-40",
@@ -1065,11 +1058,11 @@
       "weekdayType": "friday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "27/01/2023",
+      "date": "29/01/2021",
       "weekday": "friday"
     }
   ],
-  "28/01/2023": [
+  "30/01/2021": [
     {
       "firstReading": "Heb 11:1-2, 8-19",
       "psalm": "Luke 1:69-70, 71-72, 73-75",
@@ -1081,27 +1074,27 @@
       "weekdayType": "saturday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "28/01/2023",
+      "date": "30/01/2021",
       "weekday": "saturday"
     }
   ],
-  "29/01/2023": [
+  "31/01/2021": [
     {
-      "firstReading": "Zeph 2:3; 3:12-13",
-      "psalm": "Ps 146:6c-7, 8-9a, 9b-10",
-      "secondReading": "1 Cor 1:26-31",
-      "gospel": "Matt 5:1-12a",
-      "yearCycle": "A",
+      "firstReading": "Deut 18:15-20",
+      "psalm": "Ps 95:1-2, 6-7b, 7c-9",
+      "secondReading": "1 Cor 7:32-35",
+      "gospel": "Mark 1:21-28",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "29/01/2023",
+      "date": "31/01/2021",
       "weekday": "sunday"
     }
   ],
-  "30/01/2023": [
+  "01/02/2021": [
     {
       "firstReading": "Heb 11:32-40",
       "psalm": "Ps 31:20, 21, 22, 23, 24",
@@ -1113,11 +1106,11 @@
       "weekdayType": "monday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "30/01/2023",
+      "date": "01/02/2021",
       "weekday": "monday"
     }
   ],
-  "31/01/2023": [
+  "02/02/2021": [
     {
       "firstReading": "Heb 12:1-4",
       "psalm": "Ps 22:26b-27, 28+30, 31-32",
@@ -1129,11 +1122,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "31/01/2023",
+      "date": "02/02/2021",
       "weekday": "tuesday"
     }
   ],
-  "01/02/2023": [
+  "03/02/2021": [
     {
       "firstReading": "Heb 12:4-7, 11-15",
       "psalm": "Ps 103:1-2, 13-14, 17-18a",
@@ -1145,11 +1138,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "01/02/2023",
+      "date": "03/02/2021",
       "weekday": "wednesday"
     }
   ],
-  "02/02/2023": [
+  "04/02/2021": [
     {
       "firstReading": "Heb 12:18-19, 21-24",
       "psalm": "Ps 48:2-3ab, 3cd-4, 9, 10-11",
@@ -1161,11 +1154,11 @@
       "weekdayType": "thursday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "02/02/2023",
+      "date": "04/02/2021",
       "weekday": "thursday"
     }
   ],
-  "03/02/2023": [
+  "05/02/2021": [
     {
       "firstReading": "Heb 13:1-8",
       "psalm": "Ps 27:1, 3, 5, 8b-9abc",
@@ -1177,11 +1170,11 @@
       "weekdayType": "friday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "03/02/2023",
+      "date": "05/02/2021",
       "weekday": "friday"
     }
   ],
-  "04/02/2023": [
+  "06/02/2021": [
     {
       "firstReading": "Heb 13:15-17, 20-21",
       "psalm": "Ps 23:1-3a, 3b-4, 5, 6",
@@ -1193,27 +1186,27 @@
       "weekdayType": "saturday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "04/02/2023",
+      "date": "06/02/2021",
       "weekday": "saturday"
     }
   ],
-  "05/02/2023": [
+  "07/02/2021": [
     {
-      "firstReading": "Isa 58:7-10",
-      "psalm": "Ps 112:4-5, 6-7, 8-9",
-      "secondReading": "1 Cor 2:1-5",
-      "gospel": "Matt 5:13-16",
-      "yearCycle": "A",
+      "firstReading": "Job 7:1-4, 6-7",
+      "psalm": "Ps 147:1-2, 3-4, 5-6",
+      "secondReading": "1 Cor 9:16-19, 22-23",
+      "gospel": "Mark 1:29-39",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "05/02/2023",
+      "date": "07/02/2021",
       "weekday": "sunday"
     }
   ],
-  "06/02/2023": [
+  "08/02/2021": [
     {
       "firstReading": "Gen 1:1-19",
       "psalm": "Ps 104:1-2a, 5-6, 10+12, 24+35c",
@@ -1225,11 +1218,11 @@
       "weekdayType": "monday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "06/02/2023",
+      "date": "08/02/2021",
       "weekday": "monday"
     }
   ],
-  "07/02/2023": [
+  "09/02/2021": [
     {
       "firstReading": "Gen 1:20--2:4a",
       "psalm": "Ps 8:4-5, 6-7, 8-9",
@@ -1241,11 +1234,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "07/02/2023",
+      "date": "09/02/2021",
       "weekday": "tuesday"
     }
   ],
-  "08/02/2023": [
+  "10/02/2021": [
     {
       "firstReading": "Gen 2:4b-9, 15-17",
       "psalm": "Ps 104:1-2a, 27-28, 29bc-30",
@@ -1257,11 +1250,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "08/02/2023",
+      "date": "10/02/2021",
       "weekday": "wednesday"
     }
   ],
-  "09/02/2023": [
+  "11/02/2021": [
     {
       "firstReading": "Gen 2:18-25",
       "psalm": "Ps 128:1-2, 3, 4-5",
@@ -1273,11 +1266,11 @@
       "weekdayType": "thursday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "09/02/2023",
+      "date": "11/02/2021",
       "weekday": "thursday"
     }
   ],
-  "10/02/2023": [
+  "12/02/2021": [
     {
       "firstReading": "Gen 3:1-8",
       "psalm": "Ps 32:1-2, 5, 6, 7",
@@ -1289,11 +1282,11 @@
       "weekdayType": "friday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "10/02/2023",
+      "date": "12/02/2021",
       "weekday": "friday"
     }
   ],
-  "11/02/2023": [
+  "13/02/2021": [
     {
       "firstReading": "Gen 3:9-24",
       "psalm": "Ps 90:2, 3-4abc, 5-6, 12-13",
@@ -1305,30 +1298,27 @@
       "weekdayType": "saturday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "11/02/2023",
+      "date": "13/02/2021",
       "weekday": "saturday"
     }
   ],
-  "12/02/2023": [
+  "14/02/2021": [
     {
-      "firstReading": "Sir 15:16-21",
-      "psalm": "Ps 119:1-2, 4-5, 17-18, 33-34",
-      "secondReading": "1 Cor 2:6-10",
-      "gospel": [
-        "Matt 5:17-37",
-        "Matt 5:20-22a, 27-28, 33-34a, 37"
-      ],
-      "yearCycle": "A",
+      "firstReading": "Lev 13:1-2, 44-46",
+      "psalm": "Ps 32:1-2, 5, 11",
+      "secondReading": "1 Cor 10:31--11:1",
+      "gospel": "Mark 1:40-45",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "12/02/2023",
+      "date": "14/02/2021",
       "weekday": "sunday"
     }
   ],
-  "13/02/2023": [
+  "15/02/2021": [
     {
       "firstReading": "Gen 4:1-15, 25",
       "psalm": "Ps 50:1+8, 16bc-17, 20-21",
@@ -1340,11 +1330,11 @@
       "weekdayType": "monday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "13/02/2023",
+      "date": "15/02/2021",
       "weekday": "monday"
     }
   ],
-  "14/02/2023": [
+  "16/02/2021": [
     {
       "firstReading": "Gen 6:5-8; 7:1-5, 10",
       "psalm": "Ps 29:1a+2, 3ac-4, 3b+9c-10",
@@ -1356,123 +1346,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "14/02/2023",
+      "date": "16/02/2021",
       "weekday": "tuesday"
     }
   ],
-  "15/02/2023": [
-    {
-      "firstReading": "Gen 8:6-13, 20-22",
-      "psalm": "Ps 116:12-13, 14-15, 18-19",
-      "secondReading": "",
-      "gospel": "Mark 8:22-26",
-      "yearCycle": "",
-      "yearNumber": "1",
-      "season": "ot",
-      "weekdayType": "wednesday",
-      "weekOrder": "6",
-      "periodOfDay": "",
-      "date": "15/02/2023",
-      "weekday": "wednesday"
-    }
-  ],
-  "16/02/2023": [
-    {
-      "firstReading": "Gen 9:1-13",
-      "psalm": "Ps 102:16-18, 19-21, 29+22-23",
-      "secondReading": "",
-      "gospel": "Mark 8:27-33",
-      "yearCycle": "",
-      "yearNumber": "1",
-      "season": "ot",
-      "weekdayType": "thursday",
-      "weekOrder": "6",
-      "periodOfDay": "",
-      "date": "16/02/2023",
-      "weekday": "thursday"
-    }
-  ],
-  "17/02/2023": [
-    {
-      "firstReading": "Gen 11:1-9",
-      "psalm": "Ps 33:10-11, 12-13, 14-15",
-      "secondReading": "",
-      "gospel": "Mark 8:34--9:1",
-      "yearCycle": "",
-      "yearNumber": "1",
-      "season": "ot",
-      "weekdayType": "friday",
-      "weekOrder": "6",
-      "periodOfDay": "",
-      "date": "17/02/2023",
-      "weekday": "friday"
-    }
-  ],
-  "18/02/2023": [
-    {
-      "firstReading": "Heb 11:1-7",
-      "psalm": "Ps 145:2-3, 4-5, 10-11",
-      "secondReading": "",
-      "gospel": "Mark 9:2-13",
-      "yearCycle": "",
-      "yearNumber": "1",
-      "season": "ot",
-      "weekdayType": "saturday",
-      "weekOrder": "6",
-      "periodOfDay": "",
-      "date": "18/02/2023",
-      "weekday": "saturday"
-    }
-  ],
-  "19/02/2023": [
-    {
-      "firstReading": "Lev 19:1-2, 17-18",
-      "psalm": "Ps 103:1-2, 3-4, 8+10, 12-13",
-      "secondReading": "1 Cor 3:16-23",
-      "gospel": "Matt 5:38-48",
-      "yearCycle": "A",
-      "yearNumber": "",
-      "season": "ot",
-      "weekdayType": "sunday",
-      "weekOrder": "7",
-      "periodOfDay": "",
-      "date": "19/02/2023",
-      "weekday": "sunday"
-    }
-  ],
-  "20/02/2023": [
-    {
-      "firstReading": "Sir 1:1-10",
-      "psalm": "Ps 93:1ab, 1cd-2, 5",
-      "secondReading": "",
-      "gospel": "Mark 9:14-29",
-      "yearCycle": "",
-      "yearNumber": "1",
-      "season": "ot",
-      "weekdayType": "monday",
-      "weekOrder": "7",
-      "periodOfDay": "",
-      "date": "20/02/2023",
-      "weekday": "monday"
-    }
-  ],
-  "21/02/2023": [
-    {
-      "firstReading": "Sir 2:1-11",
-      "psalm": "Ps 37:3-4, 18-19, 27-28, 39-40",
-      "secondReading": "",
-      "gospel": "Mark 9:30-37",
-      "yearCycle": "",
-      "yearNumber": "1",
-      "season": "ot",
-      "weekdayType": "tuesday",
-      "weekOrder": "7",
-      "periodOfDay": "",
-      "date": "21/02/2023",
-      "weekday": "tuesday"
-    }
-  ],
-  "22/02/2023": [
+  "17/02/2021": [
     {
       "firstReading": "Joel 2:12-18",
       "psalm": "Ps 51:3-4, 5-6ab, 12-13, 14+17",
@@ -1484,11 +1362,11 @@
       "weekdayType": "ashWednesday",
       "weekOrder": "ashWednesday",
       "periodOfDay": "",
-      "date": "22/02/2023",
+      "date": "17/02/2021",
       "weekday": "wednesday"
     }
   ],
-  "23/02/2023": [
+  "18/02/2021": [
     {
       "firstReading": "Deut 30:15-20",
       "psalm": "Ps 1:1-2, 3, 4+6",
@@ -1500,11 +1378,11 @@
       "weekdayType": "thursday",
       "weekOrder": "postAshWednesday",
       "periodOfDay": "",
-      "date": "23/02/2023",
+      "date": "18/02/2021",
       "weekday": "thursday"
     }
   ],
-  "24/02/2023": [
+  "19/02/2021": [
     {
       "firstReading": "Isa 58:1-9a",
       "psalm": "Ps 51:3-4, 5-6ab, 18-19",
@@ -1516,11 +1394,11 @@
       "weekdayType": "friday",
       "weekOrder": "postAshWednesday",
       "periodOfDay": "",
-      "date": "24/02/2023",
+      "date": "19/02/2021",
       "weekday": "friday"
     }
   ],
-  "25/02/2023": [
+  "20/02/2021": [
     {
       "firstReading": "Isa 58:9b-14",
       "psalm": "Ps 86:1-2, 3-4, 5-6",
@@ -1532,30 +1410,27 @@
       "weekdayType": "saturday",
       "weekOrder": "postAshWednesday",
       "periodOfDay": "",
-      "date": "25/02/2023",
+      "date": "20/02/2021",
       "weekday": "saturday"
     }
   ],
-  "26/02/2023": [
+  "21/02/2021": [
     {
-      "firstReading": "Gen 2:7-9; 3:1-7",
-      "psalm": "Ps 51:3-4, 5-6, 12-13, 14+17",
-      "secondReading": [
-        "Rom 5:12-19",
-        "Rom 5:12, 17-19"
-      ],
-      "gospel": "Matt 4:1-11",
-      "yearCycle": "A",
+      "firstReading": "Gen 9:8-15",
+      "psalm": "Ps 25:4-5, 6-7, 8-9",
+      "secondReading": "1 Pet 3:18-22",
+      "gospel": "Mark 1:12-15",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "lent",
       "weekdayType": "sunday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "26/02/2023",
+      "date": "21/02/2021",
       "weekday": "sunday"
     }
   ],
-  "27/02/2023": [
+  "22/02/2021": [
     {
       "firstReading": "Lev 19:1-2, 11-18",
       "psalm": "Ps 19:8, 9, 10, 15",
@@ -1567,11 +1442,11 @@
       "weekdayType": "monday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "27/02/2023",
+      "date": "22/02/2021",
       "weekday": "monday"
     }
   ],
-  "28/02/2023": [
+  "23/02/2021": [
     {
       "firstReading": "Isa 55:10-11",
       "psalm": "Ps 34:4-5, 6-7, 16-17, 18-19",
@@ -1583,11 +1458,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "28/02/2023",
+      "date": "23/02/2021",
       "weekday": "tuesday"
     }
   ],
-  "01/03/2023": [
+  "24/02/2021": [
     {
       "firstReading": "Jonah 3:1-10",
       "psalm": "Ps 51:3-4, 12-13, 18-19",
@@ -1599,11 +1474,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "01/03/2023",
+      "date": "24/02/2021",
       "weekday": "wednesday"
     }
   ],
-  "02/03/2023": [
+  "25/02/2021": [
     {
       "firstReading": "Esth C:12, 14-16, 23-25",
       "psalm": "Ps 138:1-2ab, 2cde-3, 7c-8",
@@ -1615,11 +1490,11 @@
       "weekdayType": "thursday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "02/03/2023",
+      "date": "25/02/2021",
       "weekday": "thursday"
     }
   ],
-  "03/03/2023": [
+  "26/02/2021": [
     {
       "firstReading": "Ezek 18:21-28",
       "psalm": "Ps 130:1-2, 3-4, 5-7a, 7bc-8",
@@ -1631,11 +1506,11 @@
       "weekdayType": "friday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "03/03/2023",
+      "date": "26/02/2021",
       "weekday": "friday"
     }
   ],
-  "04/03/2023": [
+  "27/02/2021": [
     {
       "firstReading": "Deut 26:16-19",
       "psalm": "Ps 119:1-2, 4-5, 7-8",
@@ -1647,27 +1522,27 @@
       "weekdayType": "saturday",
       "weekOrder": "1",
       "periodOfDay": "",
-      "date": "04/03/2023",
+      "date": "27/02/2021",
       "weekday": "saturday"
     }
   ],
-  "05/03/2023": [
+  "28/02/2021": [
     {
-      "firstReading": "Gen 12:1-4a",
-      "psalm": "Ps 33:4-5, 18-19, 20+22",
-      "secondReading": "2 Tim 1:8b-10",
-      "gospel": "Matt 17:1-9",
-      "yearCycle": "A",
+      "firstReading": "Gen 22:1-2, 9a, 10-13, 15-18",
+      "psalm": "Ps 116:10+15, 16-17, 18-19",
+      "secondReading": "Rom 8:31b-34",
+      "gospel": "Mark 9:2-10",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "lent",
       "weekdayType": "sunday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "05/03/2023",
+      "date": "28/02/2021",
       "weekday": "sunday"
     }
   ],
-  "06/03/2023": [
+  "01/03/2021": [
     {
       "firstReading": "Dan 9:4b-10",
       "psalm": "Ps 78:8, 9, 11+13",
@@ -1679,11 +1554,11 @@
       "weekdayType": "monday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "06/03/2023",
+      "date": "01/03/2021",
       "weekday": "monday"
     }
   ],
-  "07/03/2023": [
+  "02/03/2021": [
     {
       "firstReading": "Isa 1:10, 16-20",
       "psalm": "Ps 50:8-9, 16bc-17, 21+23",
@@ -1695,11 +1570,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "07/03/2023",
+      "date": "02/03/2021",
       "weekday": "tuesday"
     }
   ],
-  "08/03/2023": [
+  "03/03/2021": [
     {
       "firstReading": "Jer 18:18-20",
       "psalm": "Ps 31:5-6, 14, 15-16",
@@ -1711,11 +1586,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "08/03/2023",
+      "date": "03/03/2021",
       "weekday": "wednesday"
     }
   ],
-  "09/03/2023": [
+  "04/03/2021": [
     {
       "firstReading": "Jer 17:5-10",
       "psalm": "Ps 1:1-2, 3, 4+6",
@@ -1727,11 +1602,11 @@
       "weekdayType": "thursday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "09/03/2023",
+      "date": "04/03/2021",
       "weekday": "thursday"
     }
   ],
-  "10/03/2023": [
+  "05/03/2021": [
     {
       "firstReading": "Gen 37:3-4, 12-13a, 17b-28a",
       "psalm": "Ps 105:16-17, 18-19, 20-21",
@@ -1743,11 +1618,11 @@
       "weekdayType": "friday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "10/03/2023",
+      "date": "05/03/2021",
       "weekday": "friday"
     }
   ],
-  "11/03/2023": [
+  "06/03/2021": [
     {
       "firstReading": "Mic 7:14-15, 18-20",
       "psalm": "Ps 103:1-2, 3-4, 9-10, 11-12",
@@ -1759,30 +1634,30 @@
       "weekdayType": "saturday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "11/03/2023",
+      "date": "06/03/2021",
       "weekday": "saturday"
     }
   ],
-  "12/03/2023": [
+  "07/03/2021": [
     {
-      "firstReading": "Exod 17:3-7",
-      "psalm": "Ps 95:1-2, 6-7b, 7c-9",
-      "secondReading": "Rom 5:1-2, 5-8",
-      "gospel": [
-        "John 4:5-42",
-        "John 4:5-15, 19b-26, 39a, 40-42"
+      "firstReading": [
+        "Exod 20:1-17",
+        "Exod 20:1-3, 7-8, 12-17"
       ],
-      "yearCycle": "A",
+      "psalm": "Ps 19:8, 9, 10, 11",
+      "secondReading": "1 Cor 1:22-25",
+      "gospel": "John 2:13-25",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "lent",
       "weekdayType": "sunday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "12/03/2023",
+      "date": "07/03/2021",
       "weekday": "sunday"
     }
   ],
-  "13/03/2023": [
+  "08/03/2021": [
     {
       "firstReading": "2 Kgs 5:1-15a",
       "psalm": "Ps 42:2, 3; 43:3, 4",
@@ -1794,11 +1669,11 @@
       "weekdayType": "monday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "13/03/2023",
+      "date": "08/03/2021",
       "weekday": "monday"
     }
   ],
-  "14/03/2023": [
+  "09/03/2021": [
     {
       "firstReading": "Dan 3:25, 34-43",
       "psalm": "Ps 25:4-5ab, 6+7bc, 8-9",
@@ -1810,11 +1685,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "14/03/2023",
+      "date": "09/03/2021",
       "weekday": "tuesday"
     }
   ],
-  "15/03/2023": [
+  "10/03/2021": [
     {
       "firstReading": "Deut 4:1, 5-9",
       "psalm": "Ps 147:12-13, 15-16, 19-20",
@@ -1826,11 +1701,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "15/03/2023",
+      "date": "10/03/2021",
       "weekday": "wednesday"
     }
   ],
-  "16/03/2023": [
+  "11/03/2021": [
     {
       "firstReading": "Jer 7:23-28",
       "psalm": "Ps 95:1-2, 6-7, 8-9",
@@ -1842,11 +1717,11 @@
       "weekdayType": "thursday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "16/03/2023",
+      "date": "11/03/2021",
       "weekday": "thursday"
     }
   ],
-  "17/03/2023": [
+  "12/03/2021": [
     {
       "firstReading": "Hos 14:2-10",
       "psalm": "Ps 81:6c-8a, 8bc-9, 10-11ab, 14+17",
@@ -1858,11 +1733,11 @@
       "weekdayType": "friday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "17/03/2023",
+      "date": "12/03/2021",
       "weekday": "friday"
     }
   ],
-  "18/03/2023": [
+  "13/03/2021": [
     {
       "firstReading": "Hos 6:1-6",
       "psalm": "Ps 51:3-4, 18-19, 20-21ab",
@@ -1874,30 +1749,27 @@
       "weekdayType": "saturday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "18/03/2023",
+      "date": "13/03/2021",
       "weekday": "saturday"
     }
   ],
-  "19/03/2023": [
+  "14/03/2021": [
     {
-      "firstReading": "1 Sam 16:1b, 6-7, 10-13a",
-      "psalm": "Ps 23:1-3a, 3b-4, 5, 6",
-      "secondReading": "Eph 5:8-14",
-      "gospel": [
-        "John 9:1-41",
-        "John 9:1, 6-9, 13-17, 34-38"
-      ],
-      "yearCycle": "A",
+      "firstReading": "2 Chr 36:14-16, 19-23",
+      "psalm": "Ps 137:1-2, 3, 4-5, 6",
+      "secondReading": "Eph 2:4-10",
+      "gospel": "John 3:14-21",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "lent",
       "weekdayType": "sunday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "19/03/2023",
+      "date": "14/03/2021",
       "weekday": "sunday"
     }
   ],
-  "20/03/2023": [
+  "15/03/2021": [
     {
       "firstReading": "Isa 65:17-21",
       "psalm": "Ps 30:2+4, 5-6, 11-12a+13b",
@@ -1909,11 +1781,11 @@
       "weekdayType": "monday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "20/03/2023",
+      "date": "15/03/2021",
       "weekday": "monday"
     }
   ],
-  "21/03/2023": [
+  "16/03/2021": [
     {
       "firstReading": "Ezek 47:1-9, 12",
       "psalm": "Ps 46:2-3, 5-6, 8-9",
@@ -1925,11 +1797,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "21/03/2023",
+      "date": "16/03/2021",
       "weekday": "tuesday"
     }
   ],
-  "22/03/2023": [
+  "17/03/2021": [
     {
       "firstReading": "Isa 49:8-15",
       "psalm": "Ps 145:8-9, 13cd-14, 17-18",
@@ -1941,11 +1813,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "22/03/2023",
+      "date": "17/03/2021",
       "weekday": "wednesday"
     }
   ],
-  "23/03/2023": [
+  "18/03/2021": [
     {
       "firstReading": "Exod 32:7-14",
       "psalm": "Ps 106:19-20, 21-22, 23",
@@ -1957,11 +1829,11 @@
       "weekdayType": "thursday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "23/03/2023",
+      "date": "18/03/2021",
       "weekday": "thursday"
     }
   ],
-  "24/03/2023": [
+  "19/03/2021": [
     {
       "firstReading": "Wis 2:1a, 12-22",
       "psalm": "Ps 34:17-18, 19-20, 21+23",
@@ -1973,11 +1845,11 @@
       "weekdayType": "friday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "24/03/2023",
+      "date": "19/03/2021",
       "weekday": "friday"
     }
   ],
-  "25/03/2023": [
+  "20/03/2021": [
     {
       "firstReading": "Jer 11:18-20",
       "psalm": "Ps 7:2-3, 9bc-10, 11-12",
@@ -1989,30 +1861,27 @@
       "weekdayType": "saturday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "25/03/2023",
+      "date": "20/03/2021",
       "weekday": "saturday"
     }
   ],
-  "26/03/2023": [
+  "21/03/2021": [
     {
-      "firstReading": "Ezek 37:12-14",
-      "psalm": "Ps 130:1-2, 3-4, 5-6, 7-8",
-      "secondReading": "Rom 8:8-11",
-      "gospel": [
-        "John 11:1-45",
-        "John 11:3-7, 17, 20-27, 33b-45"
-      ],
-      "yearCycle": "A",
+      "firstReading": "Jer 31:31-34",
+      "psalm": "Ps 51:3-4, 12-13, 14-15",
+      "secondReading": "Heb 5:7-9",
+      "gospel": "John 12:20-33",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "lent",
       "weekdayType": "sunday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "26/03/2023",
+      "date": "21/03/2021",
       "weekday": "sunday"
     }
   ],
-  "27/03/2023": [
+  "22/03/2021": [
     {
       "firstReading": [
         "Dan 13:1-9, 15-17, 19-30, 33-62",
@@ -2030,11 +1899,11 @@
       "weekdayType": "monday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "27/03/2023",
+      "date": "22/03/2021",
       "weekday": "monday"
     }
   ],
-  "28/03/2023": [
+  "23/03/2021": [
     {
       "firstReading": "Num 21:4-9",
       "psalm": "Ps 102:2-3, 16-18, 19-21",
@@ -2046,11 +1915,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "28/03/2023",
+      "date": "23/03/2021",
       "weekday": "tuesday"
     }
   ],
-  "29/03/2023": [
+  "24/03/2021": [
     {
       "firstReading": "Dan 3:14-20, 91-92, 95",
       "psalm": "Dan 3:52, 53, 54, 55, 56",
@@ -2062,11 +1931,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "29/03/2023",
+      "date": "24/03/2021",
       "weekday": "wednesday"
     }
   ],
-  "30/03/2023": [
+  "25/03/2021": [
     {
       "firstReading": "Gen 17:3-9",
       "psalm": "Ps 105:4-5, 6-7, 8-9",
@@ -2078,11 +1947,11 @@
       "weekdayType": "thursday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "30/03/2023",
+      "date": "25/03/2021",
       "weekday": "thursday"
     }
   ],
-  "31/03/2023": [
+  "26/03/2021": [
     {
       "firstReading": "Jer 20:10-13",
       "psalm": "Ps 18:2-3a, 3bc-4, 5-6, 7",
@@ -2094,11 +1963,11 @@
       "weekdayType": "friday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "31/03/2023",
+      "date": "26/03/2021",
       "weekday": "friday"
     }
   ],
-  "01/04/2023": [
+  "27/03/2021": [
     {
       "firstReading": "Ezek 37:21-28",
       "psalm": "Jer 31:10, 11-12abcd, 13",
@@ -2110,23 +1979,26 @@
       "weekdayType": "saturday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "01/04/2023",
+      "date": "27/03/2021",
       "weekday": "saturday"
     }
   ],
-  "02/04/2023": [
+  "28/03/2021": [
     {
       "firstReading": "",
       "psalm": "",
       "secondReading": "",
-      "gospel": "Matt 21:1-11",
-      "yearCycle": "A",
+      "gospel": [
+        "Mark 11:1-10",
+        "John 12:12-16"
+      ],
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "lent",
       "weekdayType": "sunday",
       "weekOrder": "palmSunday",
       "periodOfDay": "palmProcession",
-      "date": "02/04/2023",
+      "date": "28/03/2021",
       "weekday": "sunday"
     },
     {
@@ -2134,20 +2006,20 @@
       "psalm": "Ps 22:8-9, 17-18, 19-20, 23-24",
       "secondReading": "Phil 2:6-11",
       "gospel": [
-        "Matt 26:14--27:66",
-        "Matt 27:11-54"
+        "Mark 14:1--15:47",
+        "Mark 15:1-39"
       ],
-      "yearCycle": "A",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "lent",
       "weekdayType": "sunday",
       "weekOrder": "palmSunday",
       "periodOfDay": "mass",
-      "date": "02/04/2023",
+      "date": "28/03/2021",
       "weekday": "sunday"
     }
   ],
-  "03/04/2023": [
+  "29/03/2021": [
     {
       "firstReading": "Isa 42:1-7",
       "psalm": "Ps 27:1, 2, 3, 13-14",
@@ -2159,11 +2031,11 @@
       "weekdayType": "monday",
       "weekOrder": "holyWeek",
       "periodOfDay": "",
-      "date": "03/04/2023",
+      "date": "29/03/2021",
       "weekday": "monday"
     }
   ],
-  "04/04/2023": [
+  "30/03/2021": [
     {
       "firstReading": "Isa 49:1-6",
       "psalm": "Ps 71:1-2, 3-4a, 5-6ab, 15+17",
@@ -2175,11 +2047,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "holyWeek",
       "periodOfDay": "",
-      "date": "04/04/2023",
+      "date": "30/03/2021",
       "weekday": "tuesday"
     }
   ],
-  "05/04/2023": [
+  "31/03/2021": [
     {
       "firstReading": "Isa 50:4-9a",
       "psalm": "Ps 69:8-10, 21-22, 31+33-34",
@@ -2191,11 +2063,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "holyWeek",
       "periodOfDay": "",
-      "date": "05/04/2023",
+      "date": "31/03/2021",
       "weekday": "wednesday"
     }
   ],
-  "06/04/2023": [
+  "01/04/2021": [
     {
       "firstReading": "Isa 61:1-3a, 6a, 8b-9",
       "psalm": "Ps 89:21-22, 25+27",
@@ -2207,7 +2079,7 @@
       "weekdayType": "chrismMass",
       "weekOrder": "holyWeek",
       "periodOfDay": "",
-      "date": "06/04/2023",
+      "date": "01/04/2021",
       "weekday": "thursday"
     },
     {
@@ -2221,11 +2093,11 @@
       "weekdayType": "sunday",
       "weekOrder": "holyThursday",
       "periodOfDay": "",
-      "date": "06/04/2023",
+      "date": "01/04/2021",
       "weekday": "thursday"
     }
   ],
-  "07/04/2023": [
+  "02/04/2021": [
     {
       "firstReading": "Isa 52:13--53:12",
       "psalm": "Ps 31:2+6, 12-13, 15-16, 17+25",
@@ -2237,11 +2109,11 @@
       "weekdayType": "sunday",
       "weekOrder": "goodFriday",
       "periodOfDay": "",
-      "date": "07/04/2023",
+      "date": "02/04/2021",
       "weekday": "friday"
     }
   ],
-  "08/04/2023": [
+  "03/04/2021": [
     {
       "firstReading": [
         "Gen 1:1--2:2",
@@ -2271,18 +2143,18 @@
       ],
       "eighthReding": "Rom 6:3-11",
       "eighthPsalm": "Ps 118:1-2, 16-17, 22-23",
-      "gospel": "Matt 28:1-10",
-      "yearCycle": "A",
+      "gospel": "Mark 16:1-7",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "triduum",
       "weekdayType": "sunday",
       "weekOrder": "easter",
       "periodOfDay": "theEasterVirgil",
-      "date": "08/04/2023",
+      "date": "03/04/2021",
       "weekday": "saturday"
     }
   ],
-  "09/04/2023": [
+  "04/04/2021": [
     {
       "firstReading": "Acts 10:34a, 37-43",
       "psalm": "Ps 118:1-2, 16-17, 22-23",
@@ -2300,11 +2172,11 @@
       "weekdayType": "sunday",
       "weekOrder": "easter",
       "periodOfDay": "day",
-      "date": "09/04/2023",
+      "date": "04/04/2021",
       "weekday": "sunday"
     }
   ],
-  "10/04/2023": [
+  "05/04/2021": [
     {
       "firstReading": "Acts 2:14, 22-33",
       "psalm": "Ps 16:1-2a+5, 7-8, 9-10, 11",
@@ -2316,11 +2188,11 @@
       "weekdayType": "monday",
       "weekOrder": "octaveOfEaster",
       "periodOfDay": "",
-      "date": "10/04/2023",
+      "date": "05/04/2021",
       "weekday": "monday"
     }
   ],
-  "11/04/2023": [
+  "06/04/2021": [
     {
       "firstReading": "Acts 2:36-41",
       "psalm": "Ps 33:4-5, 18-19, 20+22",
@@ -2332,11 +2204,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "octaveOfEaster",
       "periodOfDay": "",
-      "date": "11/04/2023",
+      "date": "06/04/2021",
       "weekday": "tuesday"
     }
   ],
-  "12/04/2023": [
+  "07/04/2021": [
     {
       "firstReading": "Acts 3:1-10",
       "psalm": "Ps 105:1-2, 3-4, 6-7, 8-9",
@@ -2348,11 +2220,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "octaveOfEaster",
       "periodOfDay": "",
-      "date": "12/04/2023",
+      "date": "07/04/2021",
       "weekday": "wednesday"
     }
   ],
-  "13/04/2023": [
+  "08/04/2021": [
     {
       "firstReading": "Acts 3:11-26",
       "psalm": "Ps 8:2ab+5, 6-7, 8-9",
@@ -2364,11 +2236,11 @@
       "weekdayType": "thursday",
       "weekOrder": "octaveOfEaster",
       "periodOfDay": "",
-      "date": "13/04/2023",
+      "date": "08/04/2021",
       "weekday": "thursday"
     }
   ],
-  "14/04/2023": [
+  "09/04/2021": [
     {
       "firstReading": "Acts 4:1-12",
       "psalm": "Ps 118:1-2+4, 22-24, 25-27a",
@@ -2380,11 +2252,11 @@
       "weekdayType": "friday",
       "weekOrder": "octaveOfEaster",
       "periodOfDay": "",
-      "date": "14/04/2023",
+      "date": "09/04/2021",
       "weekday": "friday"
     }
   ],
-  "15/04/2023": [
+  "10/04/2021": [
     {
       "firstReading": "Acts 4:13-21",
       "psalm": "Ps 118:1+14-15ab, 16-18, 19-21",
@@ -2396,27 +2268,27 @@
       "weekdayType": "saturday",
       "weekOrder": "octaveOfEaster",
       "periodOfDay": "",
-      "date": "15/04/2023",
+      "date": "10/04/2021",
       "weekday": "saturday"
     }
   ],
-  "16/04/2023": [
+  "11/04/2021": [
     {
-      "firstReading": "Acts 2:42-47",
+      "firstReading": "Acts 4:32-35",
       "psalm": "Ps 118:2-4, 13-15, 22-24",
-      "secondReading": "1 Pet 1:3-9",
+      "secondReading": "1 John 5:1-6",
       "gospel": "John 20:19-31",
-      "yearCycle": "A",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "triduum",
       "weekdayType": "sunday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "16/04/2023",
+      "date": "11/04/2021",
       "weekday": "sunday"
     }
   ],
-  "17/04/2023": [
+  "12/04/2021": [
     {
       "firstReading": "Acts 4:23-31",
       "psalm": "Ps 2:1-3, 4-7a, 7b-9",
@@ -2428,11 +2300,11 @@
       "weekdayType": "monday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "17/04/2023",
+      "date": "12/04/2021",
       "weekday": "monday"
     }
   ],
-  "18/04/2023": [
+  "13/04/2021": [
     {
       "firstReading": "Acts 4:32-37",
       "psalm": "Ps 93:1ab, 1cd-2, 5",
@@ -2444,11 +2316,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "18/04/2023",
+      "date": "13/04/2021",
       "weekday": "tuesday"
     }
   ],
-  "19/04/2023": [
+  "14/04/2021": [
     {
       "firstReading": "Acts 5:17-26",
       "psalm": "Ps 34:2-3, 4-5, 6-7, 8-9",
@@ -2460,11 +2332,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "19/04/2023",
+      "date": "14/04/2021",
       "weekday": "wednesday"
     }
   ],
-  "20/04/2023": [
+  "15/04/2021": [
     {
       "firstReading": "Acts 5:27-33",
       "psalm": "Ps 34:2+9, 17-18, 19-20",
@@ -2476,11 +2348,11 @@
       "weekdayType": "thursday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "20/04/2023",
+      "date": "15/04/2021",
       "weekday": "thursday"
     }
   ],
-  "21/04/2023": [
+  "16/04/2021": [
     {
       "firstReading": "Acts 5:34-42",
       "psalm": "Ps 27:1, 4, 13-14",
@@ -2492,11 +2364,11 @@
       "weekdayType": "friday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "21/04/2023",
+      "date": "16/04/2021",
       "weekday": "friday"
     }
   ],
-  "22/04/2023": [
+  "17/04/2021": [
     {
       "firstReading": "Acts 6:1-7",
       "psalm": "Ps 33:1-2, 4-5, 18-19",
@@ -2508,27 +2380,27 @@
       "weekdayType": "saturday",
       "weekOrder": "2",
       "periodOfDay": "",
-      "date": "22/04/2023",
+      "date": "17/04/2021",
       "weekday": "saturday"
     }
   ],
-  "23/04/2023": [
+  "18/04/2021": [
     {
-      "firstReading": "Acts 2:14, 22-33",
-      "psalm": "Ps 16:1-2a+5, 7-8, 9-10, 11",
-      "secondReading": "1 Pet 1:17-21",
-      "gospel": "Luke 24:13-35",
-      "yearCycle": "A",
+      "firstReading": "Acts 3:13-15, 17-19",
+      "psalm": "Ps 4:2, 4, 7-8, 9",
+      "secondReading": "1 John 2:1-5a",
+      "gospel": "Luke 24:35-48",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "triduum",
       "weekdayType": "sunday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "23/04/2023",
+      "date": "18/04/2021",
       "weekday": "sunday"
     }
   ],
-  "24/04/2023": [
+  "19/04/2021": [
     {
       "firstReading": "Acts 6:8-15",
       "psalm": "Ps 119:23-24, 26-27, 29-30",
@@ -2540,11 +2412,11 @@
       "weekdayType": "monday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "24/04/2023",
+      "date": "19/04/2021",
       "weekday": "monday"
     }
   ],
-  "25/04/2023": [
+  "20/04/2021": [
     {
       "firstReading": "Acts 7:51--8:1a",
       "psalm": "Ps 31:3cd-4, 6+7b+8a, 17+21ab",
@@ -2556,11 +2428,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "25/04/2023",
+      "date": "20/04/2021",
       "weekday": "tuesday"
     }
   ],
-  "26/04/2023": [
+  "21/04/2021": [
     {
       "firstReading": "Acts 8:1b-8",
       "psalm": "Ps 66:1-3a, 4-5, 6-7a",
@@ -2572,11 +2444,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "26/04/2023",
+      "date": "21/04/2021",
       "weekday": "wednesday"
     }
   ],
-  "27/04/2023": [
+  "22/04/2021": [
     {
       "firstReading": "Acts 8:26-40",
       "psalm": "Ps 66:8-9, 16-17, 20",
@@ -2588,11 +2460,11 @@
       "weekdayType": "thursday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "27/04/2023",
+      "date": "22/04/2021",
       "weekday": "thursday"
     }
   ],
-  "28/04/2023": [
+  "23/04/2021": [
     {
       "firstReading": "Acts 9:1-20",
       "psalm": "Ps 117:1, 2",
@@ -2604,11 +2476,11 @@
       "weekdayType": "friday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "28/04/2023",
+      "date": "23/04/2021",
       "weekday": "friday"
     }
   ],
-  "29/04/2023": [
+  "24/04/2021": [
     {
       "firstReading": "Acts 9:31-42",
       "psalm": "Ps 116:12-13, 14-15, 16-17",
@@ -2620,27 +2492,27 @@
       "weekdayType": "saturday",
       "weekOrder": "3",
       "periodOfDay": "",
-      "date": "29/04/2023",
+      "date": "24/04/2021",
       "weekday": "saturday"
     }
   ],
-  "30/04/2023": [
+  "25/04/2021": [
     {
-      "firstReading": "Acts 2:14a, 36-41",
-      "psalm": "Ps 23:1-3a, 3b-4, 5, 6",
-      "secondReading": "1 Pet 2:20b-25",
-      "gospel": "John 10:1-10",
-      "yearCycle": "A",
+      "firstReading": "Acts 4:8-12",
+      "psalm": "Ps 118:1+8-9, 21-23, 26+21+29",
+      "secondReading": "1 John 3:1-2",
+      "gospel": "John 10:11-18",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "triduum",
       "weekdayType": "sunday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "30/04/2023",
+      "date": "25/04/2021",
       "weekday": "sunday"
     }
   ],
-  "01/05/2023": [
+  "26/04/2021": [
     {
       "firstReading": "Acts 11:1-18",
       "psalm": "Ps 42:2-3; 42:3, 4",
@@ -2655,11 +2527,11 @@
       "weekdayType": "monday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "01/05/2023",
+      "date": "26/04/2021",
       "weekday": "monday"
     }
   ],
-  "02/05/2023": [
+  "27/04/2021": [
     {
       "firstReading": "Acts 11:19-26",
       "psalm": "Ps 87:1b-3, 4-5, 6-7",
@@ -2671,11 +2543,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "02/05/2023",
+      "date": "27/04/2021",
       "weekday": "tuesday"
     }
   ],
-  "03/05/2023": [
+  "28/04/2021": [
     {
       "firstReading": "Acts 12:24--13:5a",
       "psalm": "Ps 67:2-3, 5, 6+8",
@@ -2687,11 +2559,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "03/05/2023",
+      "date": "28/04/2021",
       "weekday": "wednesday"
     }
   ],
-  "04/05/2023": [
+  "29/04/2021": [
     {
       "firstReading": "Acts 13:13-25",
       "psalm": "Ps 89:2-3, 21-22, 25+27",
@@ -2703,11 +2575,11 @@
       "weekdayType": "thursday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "04/05/2023",
+      "date": "29/04/2021",
       "weekday": "thursday"
     }
   ],
-  "05/05/2023": [
+  "30/04/2021": [
     {
       "firstReading": "Acts 13:26-33",
       "psalm": "Ps 2:6-7, 8-9, 10-11ab",
@@ -2719,11 +2591,11 @@
       "weekdayType": "friday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "05/05/2023",
+      "date": "30/04/2021",
       "weekday": "friday"
     }
   ],
-  "06/05/2023": [
+  "01/05/2021": [
     {
       "firstReading": "Acts 13:44-52",
       "psalm": "Ps 98:1, 2-3ab, 3cd-4",
@@ -2735,27 +2607,27 @@
       "weekdayType": "saturday",
       "weekOrder": "4",
       "periodOfDay": "",
-      "date": "06/05/2023",
+      "date": "01/05/2021",
       "weekday": "saturday"
     }
   ],
-  "07/05/2023": [
+  "02/05/2021": [
     {
-      "firstReading": "Acts 6:1-7",
-      "psalm": "Ps 33:1-2, 4-5, 18-19",
-      "secondReading": "1 Pet 2:4-9",
-      "gospel": "John 14:1-12",
-      "yearCycle": "A",
+      "firstReading": "Acts 9:26-31",
+      "psalm": "Ps 22:26-27, 28+30, 31-32",
+      "secondReading": "1 John 3:18-24",
+      "gospel": "John 15:1-8",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "triduum",
       "weekdayType": "sunday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "07/05/2023",
+      "date": "02/05/2021",
       "weekday": "sunday"
     }
   ],
-  "08/05/2023": [
+  "03/05/2021": [
     {
       "firstReading": "Acts 14:5-18",
       "psalm": "Ps 115:1-2, 3-4, 15-16",
@@ -2767,11 +2639,11 @@
       "weekdayType": "monday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "08/05/2023",
+      "date": "03/05/2021",
       "weekday": "monday"
     }
   ],
-  "09/05/2023": [
+  "04/05/2021": [
     {
       "firstReading": "Acts 14:19-28",
       "psalm": "Ps 145:10-11, 12-13ab, 21",
@@ -2783,11 +2655,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "09/05/2023",
+      "date": "04/05/2021",
       "weekday": "tuesday"
     }
   ],
-  "10/05/2023": [
+  "05/05/2021": [
     {
       "firstReading": "Acts 15:1-6",
       "psalm": "Ps 122:1-2, 3-4ab, 4cd-5",
@@ -2799,11 +2671,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "10/05/2023",
+      "date": "05/05/2021",
       "weekday": "wednesday"
     }
   ],
-  "11/05/2023": [
+  "06/05/2021": [
     {
       "firstReading": "Acts 15:7-21",
       "psalm": "Ps 96:1-2a, 2b-3, 10",
@@ -2815,11 +2687,11 @@
       "weekdayType": "thursday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "11/05/2023",
+      "date": "06/05/2021",
       "weekday": "thursday"
     }
   ],
-  "12/05/2023": [
+  "07/05/2021": [
     {
       "firstReading": "Acts 15:22-31",
       "psalm": "Ps 57:8-9, 10+12",
@@ -2831,11 +2703,11 @@
       "weekdayType": "friday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "12/05/2023",
+      "date": "07/05/2021",
       "weekday": "friday"
     }
   ],
-  "13/05/2023": [
+  "08/05/2021": [
     {
       "firstReading": "Acts 16:1-10",
       "psalm": "Ps 100:1b-2, 3, 5",
@@ -2847,27 +2719,27 @@
       "weekdayType": "saturday",
       "weekOrder": "5",
       "periodOfDay": "",
-      "date": "13/05/2023",
+      "date": "08/05/2021",
       "weekday": "saturday"
     }
   ],
-  "14/05/2023": [
+  "09/05/2021": [
     {
-      "firstReading": "Acts 8:5-8, 14-17",
-      "psalm": "Ps 66:1-3, 4-5, 6-7, 16+20",
-      "secondReading": "1 Pet 3:15-18",
-      "gospel": "John 14:15-21",
-      "yearCycle": "A",
+      "firstReading": "Acts 10:25-26, 34-35, 44-48",
+      "psalm": "Ps 98:1, 2-3a, 3b-4",
+      "secondReading": "1 John 4:7-10",
+      "gospel": "John 15:9-17",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "triduum",
       "weekdayType": "sunday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "14/05/2023",
+      "date": "09/05/2021",
       "weekday": "sunday"
     }
   ],
-  "15/05/2023": [
+  "10/05/2021": [
     {
       "firstReading": "Acts 16:11-15",
       "psalm": "Ps 149:1b-2, 3-4, 5-6a+9b",
@@ -2879,11 +2751,11 @@
       "weekdayType": "monday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "15/05/2023",
+      "date": "10/05/2021",
       "weekday": "monday"
     }
   ],
-  "16/05/2023": [
+  "11/05/2021": [
     {
       "firstReading": "Acts 16:22-34",
       "psalm": "Ps 138:1-2ab, 2cde-3, 7c-8",
@@ -2895,11 +2767,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "16/05/2023",
+      "date": "11/05/2021",
       "weekday": "tuesday"
     }
   ],
-  "17/05/2023": [
+  "12/05/2021": [
     {
       "firstReading": "Acts 17:15, 22--18:1",
       "psalm": "Ps 148:1-2, 11-12, 13, 14",
@@ -2911,11 +2783,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "17/05/2023",
+      "date": "12/05/2021",
       "weekday": "wednesday"
     }
   ],
-  "18/05/2023": [
+  "13/05/2021": [
     {
       "firstReading": "Acts 18:1-8",
       "psalm": "Ps 98:1, 2-3ab, 3cd-4",
@@ -2927,11 +2799,11 @@
       "weekdayType": "thursday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "18/05/2023",
+      "date": "13/05/2021",
       "weekday": "thursday"
     }
   ],
-  "19/05/2023": [
+  "14/05/2021": [
     {
       "firstReading": "Acts 18:9-18",
       "psalm": "Ps 47:2-3, 4-5, 6-7",
@@ -2943,11 +2815,11 @@
       "weekdayType": "friday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "19/05/2023",
+      "date": "14/05/2021",
       "weekday": "friday"
     }
   ],
-  "20/05/2023": [
+  "15/05/2021": [
     {
       "firstReading": "Acts 18:23-28",
       "psalm": "Ps 47:2-3, 8-9, 10",
@@ -2959,27 +2831,30 @@
       "weekdayType": "saturday",
       "weekOrder": "6",
       "periodOfDay": "",
-      "date": "20/05/2023",
+      "date": "15/05/2021",
       "weekday": "saturday"
     }
   ],
-  "21/05/2023": [
+  "16/05/2021": [
     {
       "firstReading": "Acts 1:1-11",
       "psalm": "Ps 47:2-3, 6-7, 8-9",
-      "secondReading": "Eph 1:17-23",
-      "gospel": "Matt 28:16-20",
-      "yearCycle": "A",
+      "secondReading": [
+        "Eph 4:1-13",
+        "Eph 4:1-7, 11-13"
+      ],
+      "gospel": "Mark 16:15-20",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "triduum",
       "weekdayType": "sunday",
       "weekOrder": "ascensionOfTheLord",
       "periodOfDay": "",
-      "date": "21/05/2023",
+      "date": "16/05/2021",
       "weekday": "sunday"
     }
   ],
-  "22/05/2023": [
+  "17/05/2021": [
     {
       "firstReading": "Acts 19:1-8",
       "psalm": "Ps 68:2-3ab, 4-5acd, 6-7ab",
@@ -2991,11 +2866,11 @@
       "weekdayType": "monday",
       "weekOrder": "7",
       "periodOfDay": "",
-      "date": "22/05/2023",
+      "date": "17/05/2021",
       "weekday": "monday"
     }
   ],
-  "23/05/2023": [
+  "18/05/2021": [
     {
       "firstReading": "Acts 20:17-27",
       "psalm": "Ps 68:10-11, 20-21",
@@ -3007,11 +2882,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "7",
       "periodOfDay": "",
-      "date": "23/05/2023",
+      "date": "18/05/2021",
       "weekday": "tuesday"
     }
   ],
-  "24/05/2023": [
+  "19/05/2021": [
     {
       "firstReading": "Acts 20:28-38",
       "psalm": "Ps 68:29-30, 33-35a, 35bc-36ab",
@@ -3023,11 +2898,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "7",
       "periodOfDay": "",
-      "date": "24/05/2023",
+      "date": "19/05/2021",
       "weekday": "wednesday"
     }
   ],
-  "25/05/2023": [
+  "20/05/2021": [
     {
       "firstReading": "Acts 22:30; 23:6-11",
       "psalm": "Ps 16:1-2a+5, 7-8, 9-10, 11",
@@ -3039,11 +2914,11 @@
       "weekdayType": "thursday",
       "weekOrder": "7",
       "periodOfDay": "",
-      "date": "25/05/2023",
+      "date": "20/05/2021",
       "weekday": "thursday"
     }
   ],
-  "26/05/2023": [
+  "21/05/2021": [
     {
       "firstReading": "Acts 25:13b-21",
       "psalm": "Ps 103:1-2, 11-12, 19-20ab",
@@ -3055,11 +2930,11 @@
       "weekdayType": "friday",
       "weekOrder": "7",
       "periodOfDay": "",
-      "date": "26/05/2023",
+      "date": "21/05/2021",
       "weekday": "friday"
     }
   ],
-  "27/05/2023": [
+  "22/05/2021": [
     {
       "firstReading": "Acts 28:16-20, 30-31",
       "psalm": "Ps 11:4, 5+7",
@@ -3071,11 +2946,11 @@
       "weekdayType": "saturday",
       "weekOrder": "7",
       "periodOfDay": "",
-      "date": "27/05/2023",
+      "date": "22/05/2021",
       "weekday": "saturday"
     }
   ],
-  "28/05/2023": [
+  "23/05/2021": [
     {
       "firstReading": [
         "Gen 11:1-9",
@@ -3092,7 +2967,7 @@
       "weekdayType": "sunday",
       "weekOrder": "pentecost",
       "periodOfDay": "virgilMass",
-      "date": "28/05/2023",
+      "date": "23/05/2021",
       "weekday": "sunday"
     },
     {
@@ -3115,25 +2990,25 @@
       "weekdayType": "sunday",
       "weekOrder": "pentecost",
       "periodOfDay": "virgilMassExtended",
-      "date": "28/05/2023",
+      "date": "23/05/2021",
       "weekday": "sunday"
     },
     {
       "firstReading": "Acts 2:1-11",
       "psalm": "Ps 104:1+24, 29-30, 31+34",
-      "secondReading": "1 Cor 12:3b-7, 12-13",
-      "gospel": "John 20:19-23",
-      "yearCycle": "A",
+      "secondReading": "Gal 5:16-25",
+      "gospel": "John 15:26-27; 16:12-15",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "triduum",
       "weekdayType": "sunday",
       "weekOrder": "pentecost",
       "periodOfDay": "day",
-      "date": "28/05/2023",
+      "date": "23/05/2021",
       "weekday": "sunday"
     }
   ],
-  "29/05/2023": [
+  "24/05/2021": [
     {
       "firstReading": "Sir 17:20-24",
       "psalm": "Ps 32:1-2, 5, 6, 7",
@@ -3145,11 +3020,11 @@
       "weekdayType": "monday",
       "weekOrder": "8",
       "periodOfDay": "",
-      "date": "29/05/2023",
+      "date": "24/05/2021",
       "weekday": "monday"
     }
   ],
-  "30/05/2023": [
+  "25/05/2021": [
     {
       "firstReading": "Sir 35:1-12",
       "psalm": "Ps 50:5-6, 7-8, 14+23",
@@ -3161,11 +3036,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "8",
       "periodOfDay": "",
-      "date": "30/05/2023",
+      "date": "25/05/2021",
       "weekday": "tuesday"
     }
   ],
-  "31/05/2023": [
+  "26/05/2021": [
     {
       "firstReading": "Sir 36:1, 4-5a, 10-17",
       "psalm": "Ps 79:8, 9, 11+13",
@@ -3177,11 +3052,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "8",
       "periodOfDay": "",
-      "date": "31/05/2023",
+      "date": "26/05/2021",
       "weekday": "wednesday"
     }
   ],
-  "01/06/2023": [
+  "27/05/2021": [
     {
       "firstReading": "Sir 42:15-25",
       "psalm": "Ps 33:2-3, 4-5, 6-7, 8-9",
@@ -3193,11 +3068,11 @@
       "weekdayType": "thursday",
       "weekOrder": "8",
       "periodOfDay": "",
-      "date": "01/06/2023",
+      "date": "27/05/2021",
       "weekday": "thursday"
     }
   ],
-  "02/06/2023": [
+  "28/05/2021": [
     {
       "firstReading": "Sir 44:1, 9-13",
       "psalm": "Ps 149:1b-2, 3-4, 5-6a+9b",
@@ -3209,11 +3084,11 @@
       "weekdayType": "friday",
       "weekOrder": "8",
       "periodOfDay": "",
-      "date": "02/06/2023",
+      "date": "28/05/2021",
       "weekday": "friday"
     }
   ],
-  "03/06/2023": [
+  "29/05/2021": [
     {
       "firstReading": "Sir 51:12cd-20",
       "psalm": "Ps 19:8, 9, 10, 11",
@@ -3225,27 +3100,30 @@
       "weekdayType": "saturday",
       "weekOrder": "8",
       "periodOfDay": "",
-      "date": "03/06/2023",
+      "date": "29/05/2021",
       "weekday": "saturday"
     }
   ],
-  "04/06/2023": [
+  "30/05/2021": [
     {
-      "firstReading": "Deut 11:18, 26-28, 32",
-      "psalm": "Ps 31:2-3a, 3b-4, 17+25",
-      "secondReading": "Rom 3:21-25, 28",
-      "gospel": "Matt 7:21-27",
-      "yearCycle": "A",
+      "firstReading": "Deut 5:12-15",
+      "psalm": "Ps 81:3-4, 5-6, 7-8, 10-11",
+      "secondReading": "2 Cor 4:6-11",
+      "gospel": [
+        "Mark 2:23--3:6",
+        "Mark 2:23-28"
+      ],
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "9",
       "periodOfDay": "",
-      "date": "04/06/2023",
+      "date": "30/05/2021",
       "weekday": "sunday"
     }
   ],
-  "05/06/2023": [
+  "31/05/2021": [
     {
       "firstReading": "Tob 1:3; 2:1a-8",
       "psalm": "Ps 112:1b-2, 3b-4, 5-6",
@@ -3257,11 +3135,11 @@
       "weekdayType": "monday",
       "weekOrder": "9",
       "periodOfDay": "",
-      "date": "05/06/2023",
+      "date": "31/05/2021",
       "weekday": "monday"
     }
   ],
-  "06/06/2023": [
+  "01/06/2021": [
     {
       "firstReading": "Tob 2:9-14",
       "psalm": "Ps 112:1-2, 7-8, 9",
@@ -3273,11 +3151,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "9",
       "periodOfDay": "",
-      "date": "06/06/2023",
+      "date": "01/06/2021",
       "weekday": "tuesday"
     }
   ],
-  "07/06/2023": [
+  "02/06/2021": [
     {
       "firstReading": "Tob 3:1-11a, 16-17a",
       "psalm": "Ps 25:2-3, 4-5ab, 6+7bc, 8-9",
@@ -3289,11 +3167,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "9",
       "periodOfDay": "",
-      "date": "07/06/2023",
+      "date": "02/06/2021",
       "weekday": "wednesday"
     }
   ],
-  "08/06/2023": [
+  "03/06/2021": [
     {
       "firstReading": "Tob 6:10-11; 7:1bcde, 9-17; 8:4-9a",
       "psalm": "Ps 128:1-2, 3, 4-5",
@@ -3305,11 +3183,11 @@
       "weekdayType": "thursday",
       "weekOrder": "9",
       "periodOfDay": "",
-      "date": "08/06/2023",
+      "date": "03/06/2021",
       "weekday": "thursday"
     }
   ],
-  "09/06/2023": [
+  "04/06/2021": [
     {
       "firstReading": "Tob 11:5-17",
       "psalm": "Ps 146:1b-2, 6c-7, 8-9a, 9bc-10",
@@ -3321,11 +3199,11 @@
       "weekdayType": "friday",
       "weekOrder": "9",
       "periodOfDay": "",
-      "date": "09/06/2023",
+      "date": "04/06/2021",
       "weekday": "friday"
     }
   ],
-  "10/06/2023": [
+  "05/06/2021": [
     {
       "firstReading": "Tob 12:1, 5-15, 20",
       "psalm": "Tob 13:2, 6, 7, 10 [Vulg.]",
@@ -3337,27 +3215,27 @@
       "weekdayType": "saturday",
       "weekOrder": "9",
       "periodOfDay": "",
-      "date": "10/06/2023",
+      "date": "05/06/2021",
       "weekday": "saturday"
     }
   ],
-  "11/06/2023": [
+  "06/06/2021": [
     {
-      "firstReading": "Hos 6:3-6",
-      "psalm": "Ps 50:1+8, 12-13, 14-15",
-      "secondReading": "Rom 4:18-25",
-      "gospel": "Matt 9:9-13",
-      "yearCycle": "A",
+      "firstReading": "Gen 3:9-15",
+      "psalm": "Ps 130:1-2, 3-4, 5-6, 7-8",
+      "secondReading": "2 Cor 4:13--5:1",
+      "gospel": "Mark 3:20-35",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "10",
       "periodOfDay": "",
-      "date": "11/06/2023",
+      "date": "06/06/2021",
       "weekday": "sunday"
     }
   ],
-  "12/06/2023": [
+  "07/06/2021": [
     {
       "firstReading": "2 Cor 1:1-7",
       "psalm": "Ps 34:2-3, 4-5, 6-7, 8-9",
@@ -3369,11 +3247,11 @@
       "weekdayType": "monday",
       "weekOrder": "10",
       "periodOfDay": "",
-      "date": "12/06/2023",
+      "date": "07/06/2021",
       "weekday": "monday"
     }
   ],
-  "13/06/2023": [
+  "08/06/2021": [
     {
       "firstReading": "2 Cor 1:18-22",
       "psalm": "Ps 119:129, 130, 131, 132, 133, 135",
@@ -3385,11 +3263,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "10",
       "periodOfDay": "",
-      "date": "13/06/2023",
+      "date": "08/06/2021",
       "weekday": "tuesday"
     }
   ],
-  "14/06/2023": [
+  "09/06/2021": [
     {
       "firstReading": "2 Cor 3:4-11",
       "psalm": "Ps 99:5, 6, 7, 8, 9",
@@ -3401,11 +3279,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "10",
       "periodOfDay": "",
-      "date": "14/06/2023",
+      "date": "09/06/2021",
       "weekday": "wednesday"
     }
   ],
-  "15/06/2023": [
+  "10/06/2021": [
     {
       "firstReading": "2 Cor 3:15--4:1, 3-6",
       "psalm": "Ps 85:9ab+10, 11-12, 13-14",
@@ -3417,11 +3295,11 @@
       "weekdayType": "thursday",
       "weekOrder": "10",
       "periodOfDay": "",
-      "date": "15/06/2023",
+      "date": "10/06/2021",
       "weekday": "thursday"
     }
   ],
-  "16/06/2023": [
+  "11/06/2021": [
     {
       "firstReading": "2 Cor 4:7-15",
       "psalm": "Ps 116:10-11, 15-16, 17-18",
@@ -3433,11 +3311,11 @@
       "weekdayType": "friday",
       "weekOrder": "10",
       "periodOfDay": "",
-      "date": "16/06/2023",
+      "date": "11/06/2021",
       "weekday": "friday"
     }
   ],
-  "17/06/2023": [
+  "12/06/2021": [
     {
       "firstReading": "2 Cor 5:14-21",
       "psalm": "Ps 103:1-2, 3-4, 9-10, 11-12",
@@ -3449,27 +3327,27 @@
       "weekdayType": "saturday",
       "weekOrder": "10",
       "periodOfDay": "",
-      "date": "17/06/2023",
+      "date": "12/06/2021",
       "weekday": "saturday"
     }
   ],
-  "18/06/2023": [
+  "13/06/2021": [
     {
-      "firstReading": "Exod 19:2-6a",
-      "psalm": "Ps 100:1-2, 3, 5",
-      "secondReading": "Rom 5:6-11",
-      "gospel": "Matt 9:36--10:8",
-      "yearCycle": "A",
+      "firstReading": "Ezek 17:22-24",
+      "psalm": "Ps 92:2-3, 13-14, 15-16",
+      "secondReading": "2 Cor 5:6-10",
+      "gospel": "Mark 4:26-34",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "11",
       "periodOfDay": "",
-      "date": "18/06/2023",
+      "date": "13/06/2021",
       "weekday": "sunday"
     }
   ],
-  "19/06/2023": [
+  "14/06/2021": [
     {
       "firstReading": "2 Cor 6:1-10",
       "psalm": "Ps 98:1, 2b-3ab, 3cd-4",
@@ -3481,11 +3359,11 @@
       "weekdayType": "monday",
       "weekOrder": "11",
       "periodOfDay": "",
-      "date": "19/06/2023",
+      "date": "14/06/2021",
       "weekday": "monday"
     }
   ],
-  "20/06/2023": [
+  "15/06/2021": [
     {
       "firstReading": "2 Cor 8:1-9",
       "psalm": "Ps 146:2, 5-6ab, 6c-7, 8-9a",
@@ -3497,11 +3375,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "11",
       "periodOfDay": "",
-      "date": "20/06/2023",
+      "date": "15/06/2021",
       "weekday": "tuesday"
     }
   ],
-  "21/06/2023": [
+  "16/06/2021": [
     {
       "firstReading": "2 Cor 9:6-11",
       "psalm": "Ps 112:1bc-2, 3-4, 9",
@@ -3513,11 +3391,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "11",
       "periodOfDay": "",
-      "date": "21/06/2023",
+      "date": "16/06/2021",
       "weekday": "wednesday"
     }
   ],
-  "22/06/2023": [
+  "17/06/2021": [
     {
       "firstReading": "2 Cor 11:1-11",
       "psalm": "Ps 111:1b-2, 3-4, 7-8",
@@ -3529,11 +3407,11 @@
       "weekdayType": "thursday",
       "weekOrder": "11",
       "periodOfDay": "",
-      "date": "22/06/2023",
+      "date": "17/06/2021",
       "weekday": "thursday"
     }
   ],
-  "23/06/2023": [
+  "18/06/2021": [
     {
       "firstReading": "2 Cor 11:18, 21-30",
       "psalm": "Ps 34:2-3, 4-5, 6-7",
@@ -3545,11 +3423,11 @@
       "weekdayType": "friday",
       "weekOrder": "11",
       "periodOfDay": "",
-      "date": "23/06/2023",
+      "date": "18/06/2021",
       "weekday": "friday"
     }
   ],
-  "24/06/2023": [
+  "19/06/2021": [
     {
       "firstReading": "2 Cor 12:1-10",
       "psalm": "Ps 34:8-9, 10-11, 12-13",
@@ -3561,27 +3439,27 @@
       "weekdayType": "saturday",
       "weekOrder": "11",
       "periodOfDay": "",
-      "date": "24/06/2023",
+      "date": "19/06/2021",
       "weekday": "saturday"
     }
   ],
-  "25/06/2023": [
+  "20/06/2021": [
     {
-      "firstReading": "Jer 20:10-13",
-      "psalm": "Ps 69:8-10, 14+17, 33-35",
-      "secondReading": "Rom 5:12-15",
-      "gospel": "Matt 10:26-33",
-      "yearCycle": "A",
+      "firstReading": "Job 38:1, 8-11",
+      "psalm": "Ps 107:23-24, 25-26, 28-29, 30-31",
+      "secondReading": "2 Cor 5:14-17",
+      "gospel": "Mark 4:35-41",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "12",
       "periodOfDay": "",
-      "date": "25/06/2023",
+      "date": "20/06/2021",
       "weekday": "sunday"
     }
   ],
-  "26/06/2023": [
+  "21/06/2021": [
     {
       "firstReading": "Gen 12:1-9",
       "psalm": "Ps 33:12-13, 18-19, 20+22",
@@ -3593,11 +3471,11 @@
       "weekdayType": "monday",
       "weekOrder": "12",
       "periodOfDay": "",
-      "date": "26/06/2023",
+      "date": "21/06/2021",
       "weekday": "monday"
     }
   ],
-  "27/06/2023": [
+  "22/06/2021": [
     {
       "firstReading": "Gen 13:2, 5-18",
       "psalm": "Ps 15:2-3a, 3bc-4ab, 5",
@@ -3609,11 +3487,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "12",
       "periodOfDay": "",
-      "date": "27/06/2023",
+      "date": "22/06/2021",
       "weekday": "tuesday"
     }
   ],
-  "28/06/2023": [
+  "23/06/2021": [
     {
       "firstReading": "Gen 15:1-12, 17-18",
       "psalm": "Ps 105:1-2, 3-4, 6-7, 8-9",
@@ -3625,11 +3503,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "12",
       "periodOfDay": "",
-      "date": "28/06/2023",
+      "date": "23/06/2021",
       "weekday": "wednesday"
     }
   ],
-  "29/06/2023": [
+  "24/06/2021": [
     {
       "firstReading": [
         "Gen 16:1-12, 15-16",
@@ -3644,11 +3522,11 @@
       "weekdayType": "thursday",
       "weekOrder": "12",
       "periodOfDay": "",
-      "date": "29/06/2023",
+      "date": "24/06/2021",
       "weekday": "thursday"
     }
   ],
-  "30/06/2023": [
+  "25/06/2021": [
     {
       "firstReading": "Gen 17:1, 9-10, 15-22",
       "psalm": "Ps 128:1-2, 3, 4-5",
@@ -3660,11 +3538,11 @@
       "weekdayType": "friday",
       "weekOrder": "12",
       "periodOfDay": "",
-      "date": "30/06/2023",
+      "date": "25/06/2021",
       "weekday": "friday"
     }
   ],
-  "01/07/2023": [
+  "26/06/2021": [
     {
       "firstReading": "Gen 18:1-15",
       "psalm": "Luke 1:46-47, 48-49, 50+53, 54-55",
@@ -3676,27 +3554,30 @@
       "weekdayType": "saturday",
       "weekOrder": "12",
       "periodOfDay": "",
-      "date": "01/07/2023",
+      "date": "26/06/2021",
       "weekday": "saturday"
     }
   ],
-  "02/07/2023": [
+  "27/06/2021": [
     {
-      "firstReading": "2 Kgs 4:8-11, 14-16a",
-      "psalm": "Ps 89:2-3, 16-17, 18-19",
-      "secondReading": "Rom 6:3-4, 8-11",
-      "gospel": "Matt 10:37-42",
-      "yearCycle": "A",
+      "firstReading": "Wis 1:13-15; 2:23-24",
+      "psalm": "Ps 30:2+4, 5-6, 11-12a+13b",
+      "secondReading": "2 Cor 8:7, 9, 13-15",
+      "gospel": [
+        "Mark 5:21-43",
+        "Mark 5:21-24, 35-43"
+      ],
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "13",
       "periodOfDay": "",
-      "date": "02/07/2023",
+      "date": "27/06/2021",
       "weekday": "sunday"
     }
   ],
-  "03/07/2023": [
+  "28/06/2021": [
     {
       "firstReading": "Gen 18:16-33",
       "psalm": "Ps 103:1b-2, 3-4, 8-9, 10-11",
@@ -3708,11 +3589,11 @@
       "weekdayType": "monday",
       "weekOrder": "13",
       "periodOfDay": "",
-      "date": "03/07/2023",
+      "date": "28/06/2021",
       "weekday": "monday"
     }
   ],
-  "04/07/2023": [
+  "29/06/2021": [
     {
       "firstReading": "Gen 19:15-29",
       "psalm": "Ps 26:2-3, 9-10, 11-12",
@@ -3724,11 +3605,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "13",
       "periodOfDay": "",
-      "date": "04/07/2023",
+      "date": "29/06/2021",
       "weekday": "tuesday"
     }
   ],
-  "05/07/2023": [
+  "30/06/2021": [
     {
       "firstReading": "Gen 21:5, 8-20a",
       "psalm": "Ps 34:7-8, 10-11, 12-13",
@@ -3740,11 +3621,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "13",
       "periodOfDay": "",
-      "date": "05/07/2023",
+      "date": "30/06/2021",
       "weekday": "wednesday"
     }
   ],
-  "06/07/2023": [
+  "01/07/2021": [
     {
       "firstReading": "Gen 22:1b-19",
       "psalm": "Ps 115:1-2, 3-4, 5-6, 8-9",
@@ -3756,11 +3637,11 @@
       "weekdayType": "thursday",
       "weekOrder": "13",
       "periodOfDay": "",
-      "date": "06/07/2023",
+      "date": "01/07/2021",
       "weekday": "thursday"
     }
   ],
-  "07/07/2023": [
+  "02/07/2021": [
     {
       "firstReading": "Gen 23:1-4, 19; 24:1-8, 62-67",
       "psalm": "Ps 106:1b-2, 3-4a, 4b-5",
@@ -3772,11 +3653,11 @@
       "weekdayType": "friday",
       "weekOrder": "13",
       "periodOfDay": "",
-      "date": "07/07/2023",
+      "date": "02/07/2021",
       "weekday": "friday"
     }
   ],
-  "08/07/2023": [
+  "03/07/2021": [
     {
       "firstReading": "Gen 27:1-5, 15-29",
       "psalm": "Ps 135:1b-2, 3-4, 5-6",
@@ -3788,27 +3669,27 @@
       "weekdayType": "saturday",
       "weekOrder": "13",
       "periodOfDay": "",
-      "date": "08/07/2023",
+      "date": "03/07/2021",
       "weekday": "saturday"
     }
   ],
-  "09/07/2023": [
+  "04/07/2021": [
     {
-      "firstReading": "Zech 9:9-10",
-      "psalm": "Ps 145:1-2, 8-9, 10-11, 13-14",
-      "secondReading": "Rom 8:9, 11-13",
-      "gospel": "Matt 11:25-30",
-      "yearCycle": "A",
+      "firstReading": "Ezek 2:2-5",
+      "psalm": "Ps 123:1-2a, 2bc, 3-4",
+      "secondReading": "2 Cor 12:7-10",
+      "gospel": "Mark 6:1-6",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "14",
       "periodOfDay": "",
-      "date": "09/07/2023",
+      "date": "04/07/2021",
       "weekday": "sunday"
     }
   ],
-  "10/07/2023": [
+  "05/07/2021": [
     {
       "firstReading": "Gen 28:10-22a",
       "psalm": "Ps 91:1-2, 3-4, 14-15ab",
@@ -3820,11 +3701,11 @@
       "weekdayType": "monday",
       "weekOrder": "14",
       "periodOfDay": "",
-      "date": "10/07/2023",
+      "date": "05/07/2021",
       "weekday": "monday"
     }
   ],
-  "11/07/2023": [
+  "06/07/2021": [
     {
       "firstReading": "Gen 32:23-33",
       "psalm": "Ps 17:1b, 2-3, 6-7ab, 8b+15",
@@ -3836,11 +3717,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "14",
       "periodOfDay": "",
-      "date": "11/07/2023",
+      "date": "06/07/2021",
       "weekday": "tuesday"
     }
   ],
-  "12/07/2023": [
+  "07/07/2021": [
     {
       "firstReading": "Gen 41:55-57; 42:5-7a, 17-24a",
       "psalm": "Ps 33:2-3, 10-11, 18-19",
@@ -3852,11 +3733,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "14",
       "periodOfDay": "",
-      "date": "12/07/2023",
+      "date": "07/07/2021",
       "weekday": "wednesday"
     }
   ],
-  "13/07/2023": [
+  "08/07/2021": [
     {
       "firstReading": "Gen 44:18-21, 23b-29; 45:1-5",
       "psalm": "Ps 105:16-17, 18-19, 20-21",
@@ -3868,11 +3749,11 @@
       "weekdayType": "thursday",
       "weekOrder": "14",
       "periodOfDay": "",
-      "date": "13/07/2023",
+      "date": "08/07/2021",
       "weekday": "thursday"
     }
   ],
-  "14/07/2023": [
+  "09/07/2021": [
     {
       "firstReading": "Gen 46:1-7, 28-30",
       "psalm": "Ps 37:3-4, 18-19, 27-28, 39-40",
@@ -3884,11 +3765,11 @@
       "weekdayType": "friday",
       "weekOrder": "14",
       "periodOfDay": "",
-      "date": "14/07/2023",
+      "date": "09/07/2021",
       "weekday": "friday"
     }
   ],
-  "15/07/2023": [
+  "10/07/2021": [
     {
       "firstReading": "Gen 49:29-32; 50:15-26a",
       "psalm": "Ps 105:1-2, 3-4, 6-7",
@@ -3900,30 +3781,30 @@
       "weekdayType": "saturday",
       "weekOrder": "14",
       "periodOfDay": "",
-      "date": "15/07/2023",
+      "date": "10/07/2021",
       "weekday": "saturday"
     }
   ],
-  "16/07/2023": [
+  "11/07/2021": [
     {
-      "firstReading": "Isa 55:10-11",
-      "psalm": "Ps 65:10, 11, 12-13, 14",
-      "secondReading": "Rom 8:18-23",
-      "gospel": [
-        "Matt 13:1-23",
-        "Matt 13:1-9"
+      "firstReading": "Amos 7:12-15",
+      "psalm": "Ps 85:9ab+10, 11-12, 13-14",
+      "secondReading": [
+        "Eph 1:3-14",
+        "Eph 1:3-10"
       ],
-      "yearCycle": "A",
+      "gospel": "Mark 6:7-13",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "15",
       "periodOfDay": "",
-      "date": "16/07/2023",
+      "date": "11/07/2021",
       "weekday": "sunday"
     }
   ],
-  "17/07/2023": [
+  "12/07/2021": [
     {
       "firstReading": "Exod 1:8-14, 22",
       "psalm": "Ps 124:1b-3, 4-6, 7-8",
@@ -3935,11 +3816,11 @@
       "weekdayType": "monday",
       "weekOrder": "15",
       "periodOfDay": "",
-      "date": "17/07/2023",
+      "date": "12/07/2021",
       "weekday": "monday"
     }
   ],
-  "18/07/2023": [
+  "13/07/2021": [
     {
       "firstReading": "Exod 2:1-15a",
       "psalm": "Ps 69:3, 14, 30-31, 33-34",
@@ -3951,11 +3832,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "15",
       "periodOfDay": "",
-      "date": "18/07/2023",
+      "date": "13/07/2021",
       "weekday": "tuesday"
     }
   ],
-  "19/07/2023": [
+  "14/07/2021": [
     {
       "firstReading": "Exod 3:1-6, 9-12",
       "psalm": "Ps 103:1b-2, 3-4, 6-7",
@@ -3967,11 +3848,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "15",
       "periodOfDay": "",
-      "date": "19/07/2023",
+      "date": "14/07/2021",
       "weekday": "wednesday"
     }
   ],
-  "20/07/2023": [
+  "15/07/2021": [
     {
       "firstReading": "Exod 3:13-20",
       "psalm": "Ps 105:1+5, 8-9, 24-25, 26-27",
@@ -3983,11 +3864,11 @@
       "weekdayType": "thursday",
       "weekOrder": "15",
       "periodOfDay": "",
-      "date": "20/07/2023",
+      "date": "15/07/2021",
       "weekday": "thursday"
     }
   ],
-  "21/07/2023": [
+  "16/07/2021": [
     {
       "firstReading": "Exod 11:10--12:14",
       "psalm": "Ps 116:12-13, 15+16bc, 17-18",
@@ -3999,11 +3880,11 @@
       "weekdayType": "friday",
       "weekOrder": "15",
       "periodOfDay": "",
-      "date": "21/07/2023",
+      "date": "16/07/2021",
       "weekday": "friday"
     }
   ],
-  "22/07/2023": [
+  "17/07/2021": [
     {
       "firstReading": "Exod 12:37-42",
       "psalm": "Ps 136:1+23-24, 10-12, 13-15",
@@ -4015,30 +3896,27 @@
       "weekdayType": "saturday",
       "weekOrder": "15",
       "periodOfDay": "",
-      "date": "22/07/2023",
+      "date": "17/07/2021",
       "weekday": "saturday"
     }
   ],
-  "23/07/2023": [
+  "18/07/2021": [
     {
-      "firstReading": "Wis 12:13, 16-19",
-      "psalm": "Ps 86:5-6, 9-10, 15-16",
-      "secondReading": "Rom 8:26-27",
-      "gospel": [
-        "Matt 13:24-43",
-        "Matt 13:24-30"
-      ],
-      "yearCycle": "A",
+      "firstReading": "Jer 23:1-6",
+      "psalm": "Ps 23:1-3a, 3b-4, 5, 6",
+      "secondReading": "Eph 2:13-18",
+      "gospel": "Mark 6:30-34",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "16",
       "periodOfDay": "",
-      "date": "23/07/2023",
+      "date": "18/07/2021",
       "weekday": "sunday"
     }
   ],
-  "24/07/2023": [
+  "19/07/2021": [
     {
       "firstReading": "Exod 14:5-18",
       "psalm": "Exod 15:1bc-2, 3-4, 5-6",
@@ -4050,11 +3928,11 @@
       "weekdayType": "monday",
       "weekOrder": "16",
       "periodOfDay": "",
-      "date": "24/07/2023",
+      "date": "19/07/2021",
       "weekday": "monday"
     }
   ],
-  "25/07/2023": [
+  "20/07/2021": [
     {
       "firstReading": "Exod 14:21--15:1",
       "psalm": "Exod 15:8-9, 10+12, 17",
@@ -4066,11 +3944,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "16",
       "periodOfDay": "",
-      "date": "25/07/2023",
+      "date": "20/07/2021",
       "weekday": "tuesday"
     }
   ],
-  "26/07/2023": [
+  "21/07/2021": [
     {
       "firstReading": "Exod 16:1-5, 9-15",
       "psalm": "Ps 78:18-19, 23-24, 25-26, 27-28",
@@ -4082,11 +3960,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "16",
       "periodOfDay": "",
-      "date": "26/07/2023",
+      "date": "21/07/2021",
       "weekday": "wednesday"
     }
   ],
-  "27/07/2023": [
+  "22/07/2021": [
     {
       "firstReading": "Exod 19:1-2, 9-11, 16-20b",
       "psalm": "Dan 3:52, 53, 54, 55, 56",
@@ -4098,11 +3976,11 @@
       "weekdayType": "thursday",
       "weekOrder": "16",
       "periodOfDay": "",
-      "date": "27/07/2023",
+      "date": "22/07/2021",
       "weekday": "thursday"
     }
   ],
-  "28/07/2023": [
+  "23/07/2021": [
     {
       "firstReading": "Exod 20:1-17",
       "psalm": "Ps 19:8, 9, 10, 11",
@@ -4114,11 +3992,11 @@
       "weekdayType": "friday",
       "weekOrder": "16",
       "periodOfDay": "",
-      "date": "28/07/2023",
+      "date": "23/07/2021",
       "weekday": "friday"
     }
   ],
-  "29/07/2023": [
+  "24/07/2021": [
     {
       "firstReading": "Exod 24:3-8",
       "psalm": "Ps 50:1b-2, 5-6, 14-15",
@@ -4130,30 +4008,27 @@
       "weekdayType": "saturday",
       "weekOrder": "16",
       "periodOfDay": "",
-      "date": "29/07/2023",
+      "date": "24/07/2021",
       "weekday": "saturday"
     }
   ],
-  "30/07/2023": [
+  "25/07/2021": [
     {
-      "firstReading": "1 Kgs 3:5, 7-12",
-      "psalm": "Ps 119:57+72, 76-77, 127-128, 129-130",
-      "secondReading": "Rom 8:28-30",
-      "gospel": [
-        "Matt 13:44-52",
-        "Matt 13:44-46"
-      ],
-      "yearCycle": "A",
+      "firstReading": "2 Kgs 4:42-44",
+      "psalm": "Ps 145:10-11, 15-16, 17-18",
+      "secondReading": "Eph 4:1-6",
+      "gospel": "John 6:1-15",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "17",
       "periodOfDay": "",
-      "date": "30/07/2023",
+      "date": "25/07/2021",
       "weekday": "sunday"
     }
   ],
-  "31/07/2023": [
+  "26/07/2021": [
     {
       "firstReading": "Exod 32:15-24, 30-34",
       "psalm": "Ps 106:19-20, 21-22, 23",
@@ -4165,11 +4040,11 @@
       "weekdayType": "monday",
       "weekOrder": "17",
       "periodOfDay": "",
-      "date": "31/07/2023",
+      "date": "26/07/2021",
       "weekday": "monday"
     }
   ],
-  "01/08/2023": [
+  "27/07/2021": [
     {
       "firstReading": "Exod 33:7-11; 34:5b-9, 28",
       "psalm": "Ps 103:6-7, 8-9, 10-11, 12-13",
@@ -4181,11 +4056,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "17",
       "periodOfDay": "",
-      "date": "01/08/2023",
+      "date": "27/07/2021",
       "weekday": "tuesday"
     }
   ],
-  "02/08/2023": [
+  "28/07/2021": [
     {
       "firstReading": "Exod 34:29-35",
       "psalm": "Ps 99:5, 6, 7, 9",
@@ -4197,11 +4072,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "17",
       "periodOfDay": "",
-      "date": "02/08/2023",
+      "date": "28/07/2021",
       "weekday": "wednesday"
     }
   ],
-  "03/08/2023": [
+  "29/07/2021": [
     {
       "firstReading": "Exod 40:16-21, 34-38",
       "psalm": "Ps 84:3, 4, 5-6a+8a, 11",
@@ -4213,11 +4088,11 @@
       "weekdayType": "thursday",
       "weekOrder": "17",
       "periodOfDay": "",
-      "date": "03/08/2023",
+      "date": "29/07/2021",
       "weekday": "thursday"
     }
   ],
-  "04/08/2023": [
+  "30/07/2021": [
     {
       "firstReading": "Lev 23:1, 4-11, 15-16, 27, 34b-37",
       "psalm": "Ps 81:3-4, 5-6ab, 10-11ab",
@@ -4229,11 +4104,11 @@
       "weekdayType": "friday",
       "weekOrder": "17",
       "periodOfDay": "",
-      "date": "04/08/2023",
+      "date": "30/07/2021",
       "weekday": "friday"
     }
   ],
-  "05/08/2023": [
+  "31/07/2021": [
     {
       "firstReading": "Lev 25:1, 8-17",
       "psalm": "Ps 67:2-3, 5, 7-8",
@@ -4245,27 +4120,27 @@
       "weekdayType": "saturday",
       "weekOrder": "17",
       "periodOfDay": "",
-      "date": "05/08/2023",
+      "date": "31/07/2021",
       "weekday": "saturday"
     }
   ],
-  "06/08/2023": [
+  "01/08/2021": [
     {
-      "firstReading": "Isa 55:1-3",
-      "psalm": "Ps 145:8-9, 15-16, 17-18",
-      "secondReading": "Rom 8:35, 37-39",
-      "gospel": "Matt 14:13-21",
-      "yearCycle": "A",
+      "firstReading": "Exod 16:2-4, 12-15",
+      "psalm": "Ps 78:3-4, 23-24, 25+54",
+      "secondReading": "Eph 4:17, 20-24",
+      "gospel": "John 6:24-35",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "18",
       "periodOfDay": "",
-      "date": "06/08/2023",
+      "date": "01/08/2021",
       "weekday": "sunday"
     }
   ],
-  "07/08/2023": [
+  "02/08/2021": [
     {
       "firstReading": "Num 11:4b-15",
       "psalm": "Ps 81:12-13, 14-15, 16-17",
@@ -4280,11 +4155,11 @@
       "weekdayType": "monday",
       "weekOrder": "18",
       "periodOfDay": "",
-      "date": "07/08/2023",
+      "date": "02/08/2021",
       "weekday": "monday"
     }
   ],
-  "08/08/2023": [
+  "03/08/2021": [
     {
       "firstReading": "Num 12:1-13",
       "psalm": "Ps 51:3-4, 5-6ab, 6cd-7, 12-13",
@@ -4299,11 +4174,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "18",
       "periodOfDay": "",
-      "date": "08/08/2023",
+      "date": "03/08/2021",
       "weekday": "tuesday"
     }
   ],
-  "09/08/2023": [
+  "04/08/2021": [
     {
       "firstReading": "Num 13:1-2, 25--14:1, 26a-29a, 34-35",
       "psalm": "Ps 106:6-7ab, 13-14, 21-22, 23",
@@ -4315,11 +4190,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "18",
       "periodOfDay": "",
-      "date": "09/08/2023",
+      "date": "04/08/2021",
       "weekday": "wednesday"
     }
   ],
-  "10/08/2023": [
+  "05/08/2021": [
     {
       "firstReading": "Num 20:1-13",
       "psalm": "Ps 95:1-2, 6-7, 8-9",
@@ -4331,11 +4206,11 @@
       "weekdayType": "thursday",
       "weekOrder": "18",
       "periodOfDay": "",
-      "date": "10/08/2023",
+      "date": "05/08/2021",
       "weekday": "thursday"
     }
   ],
-  "11/08/2023": [
+  "06/08/2021": [
     {
       "firstReading": "Deut 4:32-40",
       "psalm": "Ps 77:12-13, 14-15, 16+21",
@@ -4347,11 +4222,11 @@
       "weekdayType": "friday",
       "weekOrder": "18",
       "periodOfDay": "",
-      "date": "11/08/2023",
+      "date": "06/08/2021",
       "weekday": "friday"
     }
   ],
-  "12/08/2023": [
+  "07/08/2021": [
     {
       "firstReading": "Deut 6:4-13",
       "psalm": "Ps 18:2-3a, 3bc-4, 47+51",
@@ -4363,27 +4238,27 @@
       "weekdayType": "saturday",
       "weekOrder": "18",
       "periodOfDay": "",
-      "date": "12/08/2023",
+      "date": "07/08/2021",
       "weekday": "saturday"
     }
   ],
-  "13/08/2023": [
+  "08/08/2021": [
     {
-      "firstReading": "1 Kgs 19:9a, 11-13a",
-      "psalm": "Ps 85:9ab+10, 11-12, 13-14",
-      "secondReading": "Rom 9:1-5",
-      "gospel": "Matt 14:22-33",
-      "yearCycle": "A",
+      "firstReading": "1 Kgs 19:4-8",
+      "psalm": "Ps 34:2-3, 4-5, 6-7, 8-9",
+      "secondReading": "Eph 4:30--5:2",
+      "gospel": "John 6:41-51",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "19",
       "periodOfDay": "",
-      "date": "13/08/2023",
+      "date": "08/08/2021",
       "weekday": "sunday"
     }
   ],
-  "14/08/2023": [
+  "09/08/2021": [
     {
       "firstReading": "Deut 10:12-22",
       "psalm": "Ps 147:12-13, 14-15, 19-20",
@@ -4395,11 +4270,11 @@
       "weekdayType": "monday",
       "weekOrder": "19",
       "periodOfDay": "",
-      "date": "14/08/2023",
+      "date": "09/08/2021",
       "weekday": "monday"
     }
   ],
-  "15/08/2023": [
+  "10/08/2021": [
     {
       "firstReading": "Deut 31:1-8",
       "psalm": "Deut 32:3-4ab, 7, 8, 9+12",
@@ -4411,11 +4286,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "19",
       "periodOfDay": "",
-      "date": "15/08/2023",
+      "date": "10/08/2021",
       "weekday": "tuesday"
     }
   ],
-  "16/08/2023": [
+  "11/08/2021": [
     {
       "firstReading": "Deut 34:1-12",
       "psalm": "Ps 66:1-3a, 5+8, 16-17",
@@ -4427,11 +4302,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "19",
       "periodOfDay": "",
-      "date": "16/08/2023",
+      "date": "11/08/2021",
       "weekday": "wednesday"
     }
   ],
-  "17/08/2023": [
+  "12/08/2021": [
     {
       "firstReading": "Josh 3:7-10a, 11, 13-17",
       "psalm": "Ps 114:1-2, 3-4, 5-6",
@@ -4443,11 +4318,11 @@
       "weekdayType": "thursday",
       "weekOrder": "19",
       "periodOfDay": "",
-      "date": "17/08/2023",
+      "date": "12/08/2021",
       "weekday": "thursday"
     }
   ],
-  "18/08/2023": [
+  "13/08/2021": [
     {
       "firstReading": "Josh 24:1-13",
       "psalm": "Ps 136:1-3, 16-18, 21-22+24",
@@ -4459,11 +4334,11 @@
       "weekdayType": "friday",
       "weekOrder": "19",
       "periodOfDay": "",
-      "date": "18/08/2023",
+      "date": "13/08/2021",
       "weekday": "friday"
     }
   ],
-  "19/08/2023": [
+  "14/08/2021": [
     {
       "firstReading": "Josh 24:14-29",
       "psalm": "Ps 16:1-2a+5, 7-8, 11",
@@ -4475,27 +4350,27 @@
       "weekdayType": "saturday",
       "weekOrder": "19",
       "periodOfDay": "",
-      "date": "19/08/2023",
+      "date": "14/08/2021",
       "weekday": "saturday"
     }
   ],
-  "20/08/2023": [
+  "15/08/2021": [
     {
-      "firstReading": "Isa 56:1, 6-7",
-      "psalm": "Ps 67:2-3, 5, 6+8",
-      "secondReading": "Rom 11:13-15, 29-32",
-      "gospel": "Matt 15:21-28",
-      "yearCycle": "A",
+      "firstReading": "Prov 9:1-6",
+      "psalm": "Ps 34:2-3, 4-5, 6-7",
+      "secondReading": "Eph 5:15-20",
+      "gospel": "John 6:51-58",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "20",
       "periodOfDay": "",
-      "date": "20/08/2023",
+      "date": "15/08/2021",
       "weekday": "sunday"
     }
   ],
-  "21/08/2023": [
+  "16/08/2021": [
     {
       "firstReading": "Judg 2:11-19",
       "psalm": "Ps 106:34-35, 36-37, 39-40, 43ab+44",
@@ -4507,11 +4382,11 @@
       "weekdayType": "monday",
       "weekOrder": "20",
       "periodOfDay": "",
-      "date": "21/08/2023",
+      "date": "16/08/2021",
       "weekday": "monday"
     }
   ],
-  "22/08/2023": [
+  "17/08/2021": [
     {
       "firstReading": "Judg 6:11-24a",
       "psalm": "Ps 85:9, 11-12, 13-14",
@@ -4523,11 +4398,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "20",
       "periodOfDay": "",
-      "date": "22/08/2023",
+      "date": "17/08/2021",
       "weekday": "tuesday"
     }
   ],
-  "23/08/2023": [
+  "18/08/2021": [
     {
       "firstReading": "Judg 9:6-15",
       "psalm": "Ps 21:2-3, 4-5, 6-7",
@@ -4539,11 +4414,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "20",
       "periodOfDay": "",
-      "date": "23/08/2023",
+      "date": "18/08/2021",
       "weekday": "wednesday"
     }
   ],
-  "24/08/2023": [
+  "19/08/2021": [
     {
       "firstReading": "Judg 11:29-39a",
       "psalm": "Ps 40:5, 7-8a, 8b-9, 10",
@@ -4555,11 +4430,11 @@
       "weekdayType": "thursday",
       "weekOrder": "20",
       "periodOfDay": "",
-      "date": "24/08/2023",
+      "date": "19/08/2021",
       "weekday": "thursday"
     }
   ],
-  "25/08/2023": [
+  "20/08/2021": [
     {
       "firstReading": "Ruth 1:1, 3-6, 14b-16, 22",
       "psalm": "Ps 146:5-6ab, 6c-7, 8-9a, 9bc-10",
@@ -4571,11 +4446,11 @@
       "weekdayType": "friday",
       "weekOrder": "20",
       "periodOfDay": "",
-      "date": "25/08/2023",
+      "date": "20/08/2021",
       "weekday": "friday"
     }
   ],
-  "26/08/2023": [
+  "21/08/2021": [
     {
       "firstReading": "Ruth 2:1-3, 8-11; 4:13-17",
       "psalm": "Ps 128:1b-2, 3, 4, 5",
@@ -4587,27 +4462,30 @@
       "weekdayType": "saturday",
       "weekOrder": "20",
       "periodOfDay": "",
-      "date": "26/08/2023",
+      "date": "21/08/2021",
       "weekday": "saturday"
     }
   ],
-  "27/08/2023": [
+  "22/08/2021": [
     {
-      "firstReading": "Isa 22:19-23",
-      "psalm": "Ps 138:1-2a, 2b-3, 6+8",
-      "secondReading": "Rom 11:33-36",
-      "gospel": "Matt 16:13-20",
-      "yearCycle": "A",
+      "firstReading": "Josh 24:1-2a, 15-17, 18b",
+      "psalm": "Ps 34:2-3, 16-17, 18-19, 20-21",
+      "secondReading": [
+        "Eph 5:21-32",
+        "Eph 5:2a, 25-32"
+      ],
+      "gospel": "John 6:60-69",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "21",
       "periodOfDay": "",
-      "date": "27/08/2023",
+      "date": "22/08/2021",
       "weekday": "sunday"
     }
   ],
-  "28/08/2023": [
+  "23/08/2021": [
     {
       "firstReading": "1 Thess 1:1-5, 8b-10",
       "psalm": "Ps 149:1b-2, 3-4, 5-6a+9b",
@@ -4619,11 +4497,11 @@
       "weekdayType": "monday",
       "weekOrder": "21",
       "periodOfDay": "",
-      "date": "28/08/2023",
+      "date": "23/08/2021",
       "weekday": "monday"
     }
   ],
-  "29/08/2023": [
+  "24/08/2021": [
     {
       "firstReading": "1 Thess 2:1-8",
       "psalm": "Ps 139:1-3, 4-6",
@@ -4635,11 +4513,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "21",
       "periodOfDay": "",
-      "date": "29/08/2023",
+      "date": "24/08/2021",
       "weekday": "tuesday"
     }
   ],
-  "30/08/2023": [
+  "25/08/2021": [
     {
       "firstReading": "1 Thess 2:9-13",
       "psalm": "Ps 139:7-8, 9-10, 11-12ab",
@@ -4651,11 +4529,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "21",
       "periodOfDay": "",
-      "date": "30/08/2023",
+      "date": "25/08/2021",
       "weekday": "wednesday"
     }
   ],
-  "31/08/2023": [
+  "26/08/2021": [
     {
       "firstReading": "1 Thess 3:7-13",
       "psalm": "Ps 90:3-4, 12-13, 14+17",
@@ -4667,11 +4545,11 @@
       "weekdayType": "thursday",
       "weekOrder": "21",
       "periodOfDay": "",
-      "date": "31/08/2023",
+      "date": "26/08/2021",
       "weekday": "thursday"
     }
   ],
-  "01/09/2023": [
+  "27/08/2021": [
     {
       "firstReading": "1 Thess 4:1-8",
       "psalm": "Ps 97:1+2b, 5-6, 10, 11-12",
@@ -4683,11 +4561,11 @@
       "weekdayType": "friday",
       "weekOrder": "21",
       "periodOfDay": "",
-      "date": "01/09/2023",
+      "date": "27/08/2021",
       "weekday": "friday"
     }
   ],
-  "02/09/2023": [
+  "28/08/2021": [
     {
       "firstReading": "1 Thess 4:9-11",
       "psalm": "Ps 98:1, 7-8, 9",
@@ -4699,27 +4577,27 @@
       "weekdayType": "saturday",
       "weekOrder": "21",
       "periodOfDay": "",
-      "date": "02/09/2023",
+      "date": "28/08/2021",
       "weekday": "saturday"
     }
   ],
-  "03/09/2023": [
+  "29/08/2021": [
     {
-      "firstReading": "Jer 20:7-9",
-      "psalm": "Ps 63:2, 3-4, 5-6, 8-9",
-      "secondReading": "Rom 12:1-2",
-      "gospel": "Matt 16:21-27",
-      "yearCycle": "A",
+      "firstReading": "Deut 4:1-2, 6-8",
+      "psalm": "Ps 15:2-3a, 3b-4a, 4b-5",
+      "secondReading": "Jas 1:17-18, 21b-22, 27",
+      "gospel": "Mark 7:1-8, 14-15, 21-23",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "22",
       "periodOfDay": "",
-      "date": "03/09/2023",
+      "date": "29/08/2021",
       "weekday": "sunday"
     }
   ],
-  "04/09/2023": [
+  "30/08/2021": [
     {
       "firstReading": "1 Thess 4:13-18",
       "psalm": "Ps 96:1+3, 4-5, 11-12, 13",
@@ -4731,11 +4609,11 @@
       "weekdayType": "monday",
       "weekOrder": "22",
       "periodOfDay": "",
-      "date": "04/09/2023",
+      "date": "30/08/2021",
       "weekday": "monday"
     }
   ],
-  "05/09/2023": [
+  "31/08/2021": [
     {
       "firstReading": "1 Thess 5:1-6, 9-11",
       "psalm": "Ps 27:1, 4, 13-14",
@@ -4747,11 +4625,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "22",
       "periodOfDay": "",
-      "date": "05/09/2023",
+      "date": "31/08/2021",
       "weekday": "tuesday"
     }
   ],
-  "06/09/2023": [
+  "01/09/2021": [
     {
       "firstReading": "Col 1:1-8",
       "psalm": "Ps 52:10, 11",
@@ -4763,11 +4641,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "22",
       "periodOfDay": "",
-      "date": "06/09/2023",
+      "date": "01/09/2021",
       "weekday": "wednesday"
     }
   ],
-  "07/09/2023": [
+  "02/09/2021": [
     {
       "firstReading": "Col 1:9-14",
       "psalm": "Ps 98:2-3ab, 3cd-4, 5-6",
@@ -4779,11 +4657,11 @@
       "weekdayType": "thursday",
       "weekOrder": "22",
       "periodOfDay": "",
-      "date": "07/09/2023",
+      "date": "02/09/2021",
       "weekday": "thursday"
     }
   ],
-  "08/09/2023": [
+  "03/09/2021": [
     {
       "firstReading": "Col 1:15-20",
       "psalm": "Ps 100:1b-2, 3, 4, 5",
@@ -4795,11 +4673,11 @@
       "weekdayType": "friday",
       "weekOrder": "22",
       "periodOfDay": "",
-      "date": "08/09/2023",
+      "date": "03/09/2021",
       "weekday": "friday"
     }
   ],
-  "09/09/2023": [
+  "04/09/2021": [
     {
       "firstReading": "Col 1:21-23",
       "psalm": "Ps 54:3-4, 6+8",
@@ -4811,27 +4689,27 @@
       "weekdayType": "saturday",
       "weekOrder": "22",
       "periodOfDay": "",
-      "date": "09/09/2023",
+      "date": "04/09/2021",
       "weekday": "saturday"
     }
   ],
-  "10/09/2023": [
+  "05/09/2021": [
     {
-      "firstReading": "Ezek 33:7-9",
-      "psalm": "Ps 95:1-2, 6-7b, 7c-9",
-      "secondReading": "Rom 13:8-10",
-      "gospel": "Matt 18:15-20",
-      "yearCycle": "A",
+      "firstReading": "Isa 35:4-7a",
+      "psalm": "Ps 146:6c-7, 8-9a, 9b-10",
+      "secondReading": "Jas 2:1-5",
+      "gospel": "Mark 7:31-37",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "23",
       "periodOfDay": "",
-      "date": "10/09/2023",
+      "date": "05/09/2021",
       "weekday": "sunday"
     }
   ],
-  "11/09/2023": [
+  "06/09/2021": [
     {
       "firstReading": "Col 1:24--2:3",
       "psalm": "Ps 62:6-7, 9",
@@ -4843,11 +4721,11 @@
       "weekdayType": "monday",
       "weekOrder": "23",
       "periodOfDay": "",
-      "date": "11/09/2023",
+      "date": "06/09/2021",
       "weekday": "monday"
     }
   ],
-  "12/09/2023": [
+  "07/09/2021": [
     {
       "firstReading": "Col 2:6-15",
       "psalm": "Ps 145:1b-2, 8-9, 10-11",
@@ -4859,11 +4737,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "23",
       "periodOfDay": "",
-      "date": "12/09/2023",
+      "date": "07/09/2021",
       "weekday": "tuesday"
     }
   ],
-  "13/09/2023": [
+  "08/09/2021": [
     {
       "firstReading": "Col 3:1-11",
       "psalm": "Ps 145:2-3, 10-11, 12-13ab",
@@ -4875,11 +4753,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "23",
       "periodOfDay": "",
-      "date": "13/09/2023",
+      "date": "08/09/2021",
       "weekday": "wednesday"
     }
   ],
-  "14/09/2023": [
+  "09/09/2021": [
     {
       "firstReading": "Col 3:12-17",
       "psalm": "Ps 150:1b-2, 3-4, 5-6",
@@ -4891,11 +4769,11 @@
       "weekdayType": "thursday",
       "weekOrder": "23",
       "periodOfDay": "",
-      "date": "14/09/2023",
+      "date": "09/09/2021",
       "weekday": "thursday"
     }
   ],
-  "15/09/2023": [
+  "10/09/2021": [
     {
       "firstReading": "1 Tim 1:1-2, 12-14",
       "psalm": "Ps 16:1b-2a+5, 7-8, 11",
@@ -4907,11 +4785,11 @@
       "weekdayType": "friday",
       "weekOrder": "23",
       "periodOfDay": "",
-      "date": "15/09/2023",
+      "date": "10/09/2021",
       "weekday": "friday"
     }
   ],
-  "16/09/2023": [
+  "11/09/2021": [
     {
       "firstReading": "1 Tim 1:15-17",
       "psalm": "Ps 113:1b-2, 3-4, 5a+6-7",
@@ -4923,27 +4801,27 @@
       "weekdayType": "saturday",
       "weekOrder": "23",
       "periodOfDay": "",
-      "date": "16/09/2023",
+      "date": "11/09/2021",
       "weekday": "saturday"
     }
   ],
-  "17/09/2023": [
+  "12/09/2021": [
     {
-      "firstReading": "Sir 27:30--28:7",
-      "psalm": "Ps 103:1-2, 3-4, 9-10, 11-12",
-      "secondReading": "Rom 14:7-9",
-      "gospel": "Matt 18:21-35",
-      "yearCycle": "A",
+      "firstReading": "Isa 50:4-9a",
+      "psalm": "Ps 116:1-2, 3-4, 5-6, 8-9",
+      "secondReading": "Jas 2:14-18",
+      "gospel": "Mark 8:27-35",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "24",
       "periodOfDay": "",
-      "date": "17/09/2023",
+      "date": "12/09/2021",
       "weekday": "sunday"
     }
   ],
-  "18/09/2023": [
+  "13/09/2021": [
     {
       "firstReading": "1 Tim 2:1-8",
       "psalm": "Ps 28:2, 7, 8-9",
@@ -4955,11 +4833,11 @@
       "weekdayType": "monday",
       "weekOrder": "24",
       "periodOfDay": "",
-      "date": "18/09/2023",
+      "date": "13/09/2021",
       "weekday": "monday"
     }
   ],
-  "19/09/2023": [
+  "14/09/2021": [
     {
       "firstReading": "1 Tim 3:1-13",
       "psalm": "Ps 101:1b-2ab, 2cd-3ab, 5, 6",
@@ -4971,11 +4849,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "24",
       "periodOfDay": "",
-      "date": "19/09/2023",
+      "date": "14/09/2021",
       "weekday": "tuesday"
     }
   ],
-  "20/09/2023": [
+  "15/09/2021": [
     {
       "firstReading": "1 Tim 3:14-16",
       "psalm": "Ps 111:1-2, 3-4, 5-6",
@@ -4987,11 +4865,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "24",
       "periodOfDay": "",
-      "date": "20/09/2023",
+      "date": "15/09/2021",
       "weekday": "wednesday"
     }
   ],
-  "21/09/2023": [
+  "16/09/2021": [
     {
       "firstReading": "1 Tim 4:12-16",
       "psalm": "Ps 111:7-8, 9, 10",
@@ -5003,11 +4881,11 @@
       "weekdayType": "thursday",
       "weekOrder": "24",
       "periodOfDay": "",
-      "date": "21/09/2023",
+      "date": "16/09/2021",
       "weekday": "thursday"
     }
   ],
-  "22/09/2023": [
+  "17/09/2021": [
     {
       "firstReading": "1 Tim 6:2c-12",
       "psalm": "Ps 49:6-7, 8-10, 17-18, 19-20",
@@ -5019,11 +4897,11 @@
       "weekdayType": "friday",
       "weekOrder": "24",
       "periodOfDay": "",
-      "date": "22/09/2023",
+      "date": "17/09/2021",
       "weekday": "friday"
     }
   ],
-  "23/09/2023": [
+  "18/09/2021": [
     {
       "firstReading": "1 Tim 6:13-16",
       "psalm": "Ps 100:1b-2, 3, 4, 5",
@@ -5035,27 +4913,27 @@
       "weekdayType": "saturday",
       "weekOrder": "24",
       "periodOfDay": "",
-      "date": "23/09/2023",
+      "date": "18/09/2021",
       "weekday": "saturday"
     }
   ],
-  "24/09/2023": [
+  "19/09/2021": [
     {
-      "firstReading": "Isa 55:6-9",
-      "psalm": "Ps 145:2-3, 8-9, 17-18",
-      "secondReading": "Phil 1:20c-24, 27a",
-      "gospel": "Matt 20:1-16a",
-      "yearCycle": "A",
+      "firstReading": "Wis 2:12, 17-20",
+      "psalm": "Ps 54:3-4, 5, 6-8",
+      "secondReading": "Jas 3:16--4:3",
+      "gospel": "Mark 9:30-37",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "25",
       "periodOfDay": "",
-      "date": "24/09/2023",
+      "date": "19/09/2021",
       "weekday": "sunday"
     }
   ],
-  "25/09/2023": [
+  "20/09/2021": [
     {
       "firstReading": "Ezra 1:1-6",
       "psalm": "Ps 126:1b-2ab, 2cd-3, 4-5, 6",
@@ -5067,11 +4945,11 @@
       "weekdayType": "monday",
       "weekOrder": "25",
       "periodOfDay": "",
-      "date": "25/09/2023",
+      "date": "20/09/2021",
       "weekday": "monday"
     }
   ],
-  "26/09/2023": [
+  "21/09/2021": [
     {
       "firstReading": "Ezra 6:7-8, 12b, 14-20",
       "psalm": "Ps 122:1-2, 3-4ab, 4cd-5",
@@ -5083,11 +4961,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "25",
       "periodOfDay": "",
-      "date": "26/09/2023",
+      "date": "21/09/2021",
       "weekday": "tuesday"
     }
   ],
-  "27/09/2023": [
+  "22/09/2021": [
     {
       "firstReading": "Ezra 9:5-9",
       "psalm": "Tob 13:2, 3-4a, 6, 7, 10 [Vulg.]",
@@ -5099,11 +4977,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "25",
       "periodOfDay": "",
-      "date": "27/09/2023",
+      "date": "22/09/2021",
       "weekday": "wednesday"
     }
   ],
-  "28/09/2023": [
+  "23/09/2021": [
     {
       "firstReading": "Hag 1:1-8",
       "psalm": "Ps 149:1b-2, 3-4, 5-6a+9b",
@@ -5115,11 +4993,11 @@
       "weekdayType": "thursday",
       "weekOrder": "25",
       "periodOfDay": "",
-      "date": "28/09/2023",
+      "date": "23/09/2021",
       "weekday": "thursday"
     }
   ],
-  "29/09/2023": [
+  "24/09/2021": [
     {
       "firstReading": "Hag 2:1-9",
       "psalm": "Ps 43:1, 2, 3, 4",
@@ -5131,11 +5009,11 @@
       "weekdayType": "friday",
       "weekOrder": "25",
       "periodOfDay": "",
-      "date": "29/09/2023",
+      "date": "24/09/2021",
       "weekday": "friday"
     }
   ],
-  "30/09/2023": [
+  "25/09/2021": [
     {
       "firstReading": "Zech 2:5-9, 14-15a",
       "psalm": "Jer 31:10, 11-12ab, 13",
@@ -5147,30 +5025,27 @@
       "weekdayType": "saturday",
       "weekOrder": "25",
       "periodOfDay": "",
-      "date": "30/09/2023",
+      "date": "25/09/2021",
       "weekday": "saturday"
     }
   ],
-  "01/10/2023": [
+  "26/09/2021": [
     {
-      "firstReading": "Ezek 18:25-28",
-      "psalm": "Ps 25:4-5, 6-7, 8-9",
-      "secondReading": [
-        "Phil 2:1-11",
-        "Phil 2:1-5"
-      ],
-      "gospel": "Matt 21:28-32",
-      "yearCycle": "A",
+      "firstReading": "Num 11:25-29",
+      "psalm": "Ps 19:8, 10, 12-13, 14",
+      "secondReading": "Jas 5:1-6",
+      "gospel": "Mark 9:38-43, 45, 47-48",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "26",
       "periodOfDay": "",
-      "date": "01/10/2023",
+      "date": "26/09/2021",
       "weekday": "sunday"
     }
   ],
-  "02/10/2023": [
+  "27/09/2021": [
     {
       "firstReading": "Zech 8:1-8",
       "psalm": "Ps 102:16-18, 19-21, 29+22-23",
@@ -5182,11 +5057,11 @@
       "weekdayType": "monday",
       "weekOrder": "26",
       "periodOfDay": "",
-      "date": "02/10/2023",
+      "date": "27/09/2021",
       "weekday": "monday"
     }
   ],
-  "03/10/2023": [
+  "28/09/2021": [
     {
       "firstReading": "Zech 8:20-23",
       "psalm": "Ps 87:1b-3, 4-5, 6-7",
@@ -5198,11 +5073,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "26",
       "periodOfDay": "",
-      "date": "03/10/2023",
+      "date": "28/09/2021",
       "weekday": "tuesday"
     }
   ],
-  "04/10/2023": [
+  "29/09/2021": [
     {
       "firstReading": "Neh 2:1-8",
       "psalm": "Ps 137:1-2, 3, 4-5, 6",
@@ -5214,11 +5089,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "26",
       "periodOfDay": "",
-      "date": "04/10/2023",
+      "date": "29/09/2021",
       "weekday": "wednesday"
     }
   ],
-  "05/10/2023": [
+  "30/09/2021": [
     {
       "firstReading": "Neh 8:1-4a, 5-6, 7b-12",
       "psalm": "Ps 19:8, 9, 10, 11",
@@ -5230,11 +5105,11 @@
       "weekdayType": "thursday",
       "weekOrder": "26",
       "periodOfDay": "",
-      "date": "05/10/2023",
+      "date": "30/09/2021",
       "weekday": "thursday"
     }
   ],
-  "06/10/2023": [
+  "01/10/2021": [
     {
       "firstReading": "Bar 1:15-22",
       "psalm": "Ps 79:1b-2, 3-5, 8, 9",
@@ -5246,11 +5121,11 @@
       "weekdayType": "friday",
       "weekOrder": "26",
       "periodOfDay": "",
-      "date": "06/10/2023",
+      "date": "01/10/2021",
       "weekday": "friday"
     }
   ],
-  "07/10/2023": [
+  "02/10/2021": [
     {
       "firstReading": "Bar 4:5-12, 27-29",
       "psalm": "Ps 69:33-35, 36-37",
@@ -5262,27 +5137,30 @@
       "weekdayType": "saturday",
       "weekOrder": "26",
       "periodOfDay": "",
-      "date": "07/10/2023",
+      "date": "02/10/2021",
       "weekday": "saturday"
     }
   ],
-  "08/10/2023": [
+  "03/10/2021": [
     {
-      "firstReading": "Isa 5:1-7",
-      "psalm": "Ps 80:9+12, 13-14, 15-16, 19-20",
-      "secondReading": "Phil 4:6-9",
-      "gospel": "Matt 21:33-43",
-      "yearCycle": "A",
+      "firstReading": "Gen 2:18-24",
+      "psalm": "Ps 128:1-2, 3, 4-5, 6",
+      "secondReading": "Heb 2:9-11",
+      "gospel": [
+        "Mark 10:2-16",
+        "Mark 10:2-12"
+      ],
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "27",
       "periodOfDay": "",
-      "date": "08/10/2023",
+      "date": "03/10/2021",
       "weekday": "sunday"
     }
   ],
-  "09/10/2023": [
+  "04/10/2021": [
     {
       "firstReading": "Jonah 1:1--2:2, 11",
       "psalm": "Jonah 2:3, 4, 5, 8",
@@ -5294,11 +5172,11 @@
       "weekdayType": "monday",
       "weekOrder": "27",
       "periodOfDay": "",
-      "date": "09/10/2023",
+      "date": "04/10/2021",
       "weekday": "monday"
     }
   ],
-  "10/10/2023": [
+  "05/10/2021": [
     {
       "firstReading": "Jonah 3:1-10",
       "psalm": "Ps 130:1b-2, 3-4ab, 7-8",
@@ -5310,11 +5188,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "27",
       "periodOfDay": "",
-      "date": "10/10/2023",
+      "date": "05/10/2021",
       "weekday": "tuesday"
     }
   ],
-  "11/10/2023": [
+  "06/10/2021": [
     {
       "firstReading": "Jonah 4:1-11",
       "psalm": "Ps 86:3-4, 5-6, 9-10",
@@ -5326,11 +5204,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "27",
       "periodOfDay": "",
-      "date": "11/10/2023",
+      "date": "06/10/2021",
       "weekday": "wednesday"
     }
   ],
-  "12/10/2023": [
+  "07/10/2021": [
     {
       "firstReading": "Mal 3:13-20b",
       "psalm": "Ps 1:1-2, 3, 4+6",
@@ -5342,11 +5220,11 @@
       "weekdayType": "thursday",
       "weekOrder": "27",
       "periodOfDay": "",
-      "date": "12/10/2023",
+      "date": "07/10/2021",
       "weekday": "thursday"
     }
   ],
-  "13/10/2023": [
+  "08/10/2021": [
     {
       "firstReading": "Joel 1:13-15; 2:1-2",
       "psalm": "Ps 9:2-3, 6+16, 8-9",
@@ -5358,11 +5236,11 @@
       "weekdayType": "friday",
       "weekOrder": "27",
       "periodOfDay": "",
-      "date": "13/10/2023",
+      "date": "08/10/2021",
       "weekday": "friday"
     }
   ],
-  "14/10/2023": [
+  "09/10/2021": [
     {
       "firstReading": "Joel 4:12-21",
       "psalm": "Ps 97:1-2, 5-6, 11-12",
@@ -5374,30 +5252,30 @@
       "weekdayType": "saturday",
       "weekOrder": "27",
       "periodOfDay": "",
-      "date": "14/10/2023",
+      "date": "09/10/2021",
       "weekday": "saturday"
     }
   ],
-  "15/10/2023": [
+  "10/10/2021": [
     {
-      "firstReading": "Isa 25:6-10a",
-      "psalm": "Ps 23:1-3a, 3b-4, 5, 6",
-      "secondReading": "Phil 4:12-14, 19-20",
+      "firstReading": "Wis 7:7-11",
+      "psalm": "Ps 90:12-13, 14-15, 16-17",
+      "secondReading": "Heb 4:12-13",
       "gospel": [
-        "Matt 22:1-14",
-        "Matt 22:1-10"
+        "Mark 10:17-30",
+        "Mark 10:17-27"
       ],
-      "yearCycle": "A",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "28",
       "periodOfDay": "",
-      "date": "15/10/2023",
+      "date": "10/10/2021",
       "weekday": "sunday"
     }
   ],
-  "16/10/2023": [
+  "11/10/2021": [
     {
       "firstReading": "Rom 1:1-7",
       "psalm": "Ps 98:1bcde, 2-3ab, 3cd-4",
@@ -5409,11 +5287,11 @@
       "weekdayType": "monday",
       "weekOrder": "28",
       "periodOfDay": "",
-      "date": "16/10/2023",
+      "date": "11/10/2021",
       "weekday": "monday"
     }
   ],
-  "17/10/2023": [
+  "12/10/2021": [
     {
       "firstReading": "Rom 1:16-25",
       "psalm": "Ps 19:2-3, 4-5",
@@ -5425,11 +5303,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "28",
       "periodOfDay": "",
-      "date": "17/10/2023",
+      "date": "12/10/2021",
       "weekday": "tuesday"
     }
   ],
-  "18/10/2023": [
+  "13/10/2021": [
     {
       "firstReading": "Rom 2:1-11",
       "psalm": "Ps 62:2-3, 6-7, 9",
@@ -5441,11 +5319,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "28",
       "periodOfDay": "",
-      "date": "18/10/2023",
+      "date": "13/10/2021",
       "weekday": "wednesday"
     }
   ],
-  "19/10/2023": [
+  "14/10/2021": [
     {
       "firstReading": "Rom 3:21-30",
       "psalm": "Ps 130:1b-2, 3-4, 5-6ab",
@@ -5457,11 +5335,11 @@
       "weekdayType": "thursday",
       "weekOrder": "28",
       "periodOfDay": "",
-      "date": "19/10/2023",
+      "date": "14/10/2021",
       "weekday": "thursday"
     }
   ],
-  "20/10/2023": [
+  "15/10/2021": [
     {
       "firstReading": "Rom 4:1-8",
       "psalm": "Ps 32:1b-2, 5, 11",
@@ -5473,11 +5351,11 @@
       "weekdayType": "friday",
       "weekOrder": "28",
       "periodOfDay": "",
-      "date": "20/10/2023",
+      "date": "15/10/2021",
       "weekday": "friday"
     }
   ],
-  "21/10/2023": [
+  "16/10/2021": [
     {
       "firstReading": "Rom 4:13, 16-18",
       "psalm": "Ps 105:6-7, 8-9, 42-43",
@@ -5489,27 +5367,30 @@
       "weekdayType": "saturday",
       "weekOrder": "28",
       "periodOfDay": "",
-      "date": "21/10/2023",
+      "date": "16/10/2021",
       "weekday": "saturday"
     }
   ],
-  "22/10/2023": [
+  "17/10/2021": [
     {
-      "firstReading": "Isa 45:1, 4-6",
-      "psalm": "Ps 96:1+3, 4-5, 7-8, 9-10",
-      "secondReading": "1 Thess 1:1-5b",
-      "gospel": "Matt 22:15-21",
-      "yearCycle": "A",
+      "firstReading": "Isa 53:10-11",
+      "psalm": "Ps 33:4-5, 18-19, 20+22",
+      "secondReading": "Heb 4:14-16",
+      "gospel": [
+        "Mark 10:35-45",
+        "Mark 10:42-45"
+      ],
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "29",
       "periodOfDay": "",
-      "date": "22/10/2023",
+      "date": "17/10/2021",
       "weekday": "sunday"
     }
   ],
-  "23/10/2023": [
+  "18/10/2021": [
     {
       "firstReading": "Rom 4:20-25",
       "psalm": "Luke 1:69-70, 71-72, 73-75",
@@ -5521,11 +5402,11 @@
       "weekdayType": "monday",
       "weekOrder": "29",
       "periodOfDay": "",
-      "date": "23/10/2023",
+      "date": "18/10/2021",
       "weekday": "monday"
     }
   ],
-  "24/10/2023": [
+  "19/10/2021": [
     {
       "firstReading": "Rom 5:12, 15b, 17-19, 20b-21",
       "psalm": "Ps 40:7-8a, 8b-9, 10, 17",
@@ -5537,11 +5418,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "29",
       "periodOfDay": "",
-      "date": "24/10/2023",
+      "date": "19/10/2021",
       "weekday": "tuesday"
     }
   ],
-  "25/10/2023": [
+  "20/10/2021": [
     {
       "firstReading": "Rom 6:12-18",
       "psalm": "Ps 124:1b-3, 4-6, 7-8",
@@ -5553,11 +5434,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "29",
       "periodOfDay": "",
-      "date": "25/10/2023",
+      "date": "20/10/2021",
       "weekday": "wednesday"
     }
   ],
-  "26/10/2023": [
+  "21/10/2021": [
     {
       "firstReading": "Rom 6:19-23",
       "psalm": "Ps 1:1-2, 3, 4+6",
@@ -5569,11 +5450,11 @@
       "weekdayType": "thursday",
       "weekOrder": "29",
       "periodOfDay": "",
-      "date": "26/10/2023",
+      "date": "21/10/2021",
       "weekday": "thursday"
     }
   ],
-  "27/10/2023": [
+  "22/10/2021": [
     {
       "firstReading": "Rom 7:18-25a",
       "psalm": "Ps 119:66, 68, 76, 77, 93, 94",
@@ -5585,11 +5466,11 @@
       "weekdayType": "friday",
       "weekOrder": "29",
       "periodOfDay": "",
-      "date": "27/10/2023",
+      "date": "22/10/2021",
       "weekday": "friday"
     }
   ],
-  "28/10/2023": [
+  "23/10/2021": [
     {
       "firstReading": "Rom 8:1-11",
       "psalm": "Ps 24:1b-2, 3-4ab, 5-6",
@@ -5601,27 +5482,27 @@
       "weekdayType": "saturday",
       "weekOrder": "29",
       "periodOfDay": "",
-      "date": "28/10/2023",
+      "date": "23/10/2021",
       "weekday": "saturday"
     }
   ],
-  "29/10/2023": [
+  "24/10/2021": [
     {
-      "firstReading": "Exod 22:20-26",
-      "psalm": "Ps 18:2-3a, 3b-4, 47+51",
-      "secondReading": "1 Thess 1:5c-10",
-      "gospel": "Matt 22:34-40",
-      "yearCycle": "A",
+      "firstReading": "Jer 31:7-9",
+      "psalm": "Ps 126:1-2a, 2b-3, 4-5, 6",
+      "secondReading": "Heb 5:1-6",
+      "gospel": "Mark 10:46-52",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "30",
       "periodOfDay": "",
-      "date": "29/10/2023",
+      "date": "24/10/2021",
       "weekday": "sunday"
     }
   ],
-  "30/10/2023": [
+  "25/10/2021": [
     {
       "firstReading": "Rom 8:12-17",
       "psalm": "Ps 68:2+4, 6-7ab, 20-21",
@@ -5633,11 +5514,11 @@
       "weekdayType": "monday",
       "weekOrder": "30",
       "periodOfDay": "",
-      "date": "30/10/2023",
+      "date": "25/10/2021",
       "weekday": "monday"
     }
   ],
-  "31/10/2023": [
+  "26/10/2021": [
     {
       "firstReading": "Rom 8:18-25",
       "psalm": "Ps 126:1b-2ab, 2cd-3, 4-5, 6",
@@ -5649,11 +5530,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "30",
       "periodOfDay": "",
-      "date": "31/10/2023",
+      "date": "26/10/2021",
       "weekday": "tuesday"
     }
   ],
-  "01/11/2023": [
+  "27/10/2021": [
     {
       "firstReading": "Rom 8:26-30",
       "psalm": "Ps 13:4-5, 6",
@@ -5665,11 +5546,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "30",
       "periodOfDay": "",
-      "date": "01/11/2023",
+      "date": "27/10/2021",
       "weekday": "wednesday"
     }
   ],
-  "02/11/2023": [
+  "28/10/2021": [
     {
       "firstReading": "Rom 8:31b-39",
       "psalm": "Ps 109:21-22, 26-27, 30-31",
@@ -5681,11 +5562,11 @@
       "weekdayType": "thursday",
       "weekOrder": "30",
       "periodOfDay": "",
-      "date": "02/11/2023",
+      "date": "28/10/2021",
       "weekday": "thursday"
     }
   ],
-  "03/11/2023": [
+  "29/10/2021": [
     {
       "firstReading": "Rom 9:1-5",
       "psalm": "Ps 147:12-13, 14-15, 19-20",
@@ -5697,11 +5578,11 @@
       "weekdayType": "friday",
       "weekOrder": "30",
       "periodOfDay": "",
-      "date": "03/11/2023",
+      "date": "29/10/2021",
       "weekday": "friday"
     }
   ],
-  "04/11/2023": [
+  "30/10/2021": [
     {
       "firstReading": "Rom 11:1-2a, 11-12, 25-29",
       "psalm": "Ps 94:12-13a, 14-15, 17-18",
@@ -5713,27 +5594,27 @@
       "weekdayType": "saturday",
       "weekOrder": "30",
       "periodOfDay": "",
-      "date": "04/11/2023",
+      "date": "30/10/2021",
       "weekday": "saturday"
     }
   ],
-  "05/11/2023": [
+  "31/10/2021": [
     {
-      "firstReading": "Mal 1:14b--2:2b, 8-10",
-      "psalm": "Ps 131:1, 2, 3",
-      "secondReading": "1 Thess 2:7b-9, 13",
-      "gospel": "Matt 23:1-12",
-      "yearCycle": "A",
+      "firstReading": "Deut 6:2-6",
+      "psalm": "Ps 18:2-3a, 3b-4, 47+51",
+      "secondReading": "Heb 7:23-28",
+      "gospel": "Mark 12:28b-34",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "31",
       "periodOfDay": "",
-      "date": "05/11/2023",
+      "date": "31/10/2021",
       "weekday": "sunday"
     }
   ],
-  "06/11/2023": [
+  "01/11/2021": [
     {
       "firstReading": "Rom 11:29-36",
       "psalm": "Ps 69:30-31, 33-34, 36-37",
@@ -5745,11 +5626,11 @@
       "weekdayType": "monday",
       "weekOrder": "31",
       "periodOfDay": "",
-      "date": "06/11/2023",
+      "date": "01/11/2021",
       "weekday": "monday"
     }
   ],
-  "07/11/2023": [
+  "02/11/2021": [
     {
       "firstReading": "Rom 12:5-16ab",
       "psalm": "Ps 131:1bcde, 2, 3",
@@ -5761,11 +5642,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "31",
       "periodOfDay": "",
-      "date": "07/11/2023",
+      "date": "02/11/2021",
       "weekday": "tuesday"
     }
   ],
-  "08/11/2023": [
+  "03/11/2021": [
     {
       "firstReading": "Rom 13:8-10",
       "psalm": "Ps 112:1b-2, 4-5, 9",
@@ -5777,11 +5658,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "31",
       "periodOfDay": "",
-      "date": "08/11/2023",
+      "date": "03/11/2021",
       "weekday": "wednesday"
     }
   ],
-  "09/11/2023": [
+  "04/11/2021": [
     {
       "firstReading": "Rom 14:7-12",
       "psalm": "Ps 27:1bcde, 4, 13-14",
@@ -5793,11 +5674,11 @@
       "weekdayType": "thursday",
       "weekOrder": "31",
       "periodOfDay": "",
-      "date": "09/11/2023",
+      "date": "04/11/2021",
       "weekday": "thursday"
     }
   ],
-  "10/11/2023": [
+  "05/11/2021": [
     {
       "firstReading": "Rom 15:14-21",
       "psalm": "Ps 98:1, 2-3ab, 3cd-4",
@@ -5809,11 +5690,11 @@
       "weekdayType": "friday",
       "weekOrder": "31",
       "periodOfDay": "",
-      "date": "10/11/2023",
+      "date": "05/11/2021",
       "weekday": "friday"
     }
   ],
-  "11/11/2023": [
+  "06/11/2021": [
     {
       "firstReading": "Rom 16:3-9, 16, 22-27",
       "psalm": "Ps 145:2-3, 4-5, 10-11",
@@ -5825,30 +5706,30 @@
       "weekdayType": "saturday",
       "weekOrder": "31",
       "periodOfDay": "",
-      "date": "11/11/2023",
+      "date": "06/11/2021",
       "weekday": "saturday"
     }
   ],
-  "12/11/2023": [
+  "07/11/2021": [
     {
-      "firstReading": "Wis 6:12-16",
-      "psalm": "Ps 63:2, 3-4, 5-6, 7-8",
-      "secondReading": [
-        "1 Thess 4:13-18",
-        "1 Thess 4:13-14"
+      "firstReading": "1 Kgs 17:10-16",
+      "psalm": "Ps 146:6c-7, 8-9a, 9b-10",
+      "secondReading": "Heb 9:24-28",
+      "gospel": [
+        "Mark 12:38-44",
+        "Mark 12:41-44"
       ],
-      "gospel": "Matt 25:1-13",
-      "yearCycle": "A",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "32",
       "periodOfDay": "",
-      "date": "12/11/2023",
+      "date": "07/11/2021",
       "weekday": "sunday"
     }
   ],
-  "13/11/2023": [
+  "08/11/2021": [
     {
       "firstReading": "Wis 1:1-7",
       "psalm": "Ps 139:1b-3, 4-6, 7-8, 9-10",
@@ -5860,11 +5741,11 @@
       "weekdayType": "monday",
       "weekOrder": "32",
       "periodOfDay": "",
-      "date": "13/11/2023",
+      "date": "08/11/2021",
       "weekday": "monday"
     }
   ],
-  "14/11/2023": [
+  "09/11/2021": [
     {
       "firstReading": "Wis 2:23--3:9",
       "psalm": "Ps 34:2-3, 16-17, 18-19",
@@ -5876,11 +5757,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "32",
       "periodOfDay": "",
-      "date": "14/11/2023",
+      "date": "09/11/2021",
       "weekday": "tuesday"
     }
   ],
-  "15/11/2023": [
+  "10/11/2021": [
     {
       "firstReading": "Wis 6:1-11",
       "psalm": "Ps 82:3-4, 6-7",
@@ -5892,11 +5773,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "32",
       "periodOfDay": "",
-      "date": "15/11/2023",
+      "date": "10/11/2021",
       "weekday": "wednesday"
     }
   ],
-  "16/11/2023": [
+  "11/11/2021": [
     {
       "firstReading": "Wis 7:22b--8:1",
       "psalm": "Ps 119:89, 90, 91, 130, 135, 175",
@@ -5908,11 +5789,11 @@
       "weekdayType": "thursday",
       "weekOrder": "32",
       "periodOfDay": "",
-      "date": "16/11/2023",
+      "date": "11/11/2021",
       "weekday": "thursday"
     }
   ],
-  "17/11/2023": [
+  "12/11/2021": [
     {
       "firstReading": "Wis 13:1-9",
       "psalm": "Ps 19:2-3, 4-5ab",
@@ -5924,11 +5805,11 @@
       "weekdayType": "friday",
       "weekOrder": "32",
       "periodOfDay": "",
-      "date": "17/11/2023",
+      "date": "12/11/2021",
       "weekday": "friday"
     }
   ],
-  "18/11/2023": [
+  "13/11/2021": [
     {
       "firstReading": "Wis 18:14-16; 19:6-9",
       "psalm": "Ps 105:2-3, 36-37, 42-43",
@@ -5940,30 +5821,27 @@
       "weekdayType": "saturday",
       "weekOrder": "32",
       "periodOfDay": "",
-      "date": "18/11/2023",
+      "date": "13/11/2021",
       "weekday": "saturday"
     }
   ],
-  "19/11/2023": [
+  "14/11/2021": [
     {
-      "firstReading": "Prov 31:10-13, 19-20, 30-31",
-      "psalm": "Ps 128:1-2, 3, 4-5",
-      "secondReading": "1 Thess 5:1-6",
-      "gospel": [
-        "Matt 25:14-30",
-        "Matt 25:14-15, 19-21"
-      ],
-      "yearCycle": "A",
+      "firstReading": "Dan 12:1-3",
+      "psalm": "Ps 16:5+8, 9-10, 11",
+      "secondReading": "Heb 10:11-14, 18",
+      "gospel": "Mark 13:24-32",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "33",
       "periodOfDay": "",
-      "date": "19/11/2023",
+      "date": "14/11/2021",
       "weekday": "sunday"
     }
   ],
-  "20/11/2023": [
+  "15/11/2021": [
     {
       "firstReading": "1 Macc 1:10-15, 41-43, 54-57, 62-63",
       "psalm": "Ps 119:53, 61, 134, 150, 155, 158",
@@ -5975,11 +5853,11 @@
       "weekdayType": "monday",
       "weekOrder": "33",
       "periodOfDay": "",
-      "date": "20/11/2023",
+      "date": "15/11/2021",
       "weekday": "monday"
     }
   ],
-  "21/11/2023": [
+  "16/11/2021": [
     {
       "firstReading": "2 Macc 6:18-31",
       "psalm": "Ps 3:2-3, 4-5, 6-7",
@@ -5991,11 +5869,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "33",
       "periodOfDay": "",
-      "date": "21/11/2023",
+      "date": "16/11/2021",
       "weekday": "tuesday"
     }
   ],
-  "22/11/2023": [
+  "17/11/2021": [
     {
       "firstReading": "2 Macc 7:1, 20-31",
       "psalm": "Ps 17:1bcd, 5-6, 8b+15",
@@ -6007,11 +5885,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "33",
       "periodOfDay": "",
-      "date": "22/11/2023",
+      "date": "17/11/2021",
       "weekday": "wednesday"
     }
   ],
-  "23/11/2023": [
+  "18/11/2021": [
     {
       "firstReading": "1 Macc 2:15-29",
       "psalm": "Ps 50:1b-2, 5-6, 14-15",
@@ -6023,11 +5901,11 @@
       "weekdayType": "thursday",
       "weekOrder": "33",
       "periodOfDay": "",
-      "date": "23/11/2023",
+      "date": "18/11/2021",
       "weekday": "thursday"
     }
   ],
-  "24/11/2023": [
+  "19/11/2021": [
     {
       "firstReading": "1 Macc 4:36-37, 52-59",
       "psalm": "1 Chr 29:10bcd, 11abc, 11d-12a, 12bcd",
@@ -6039,11 +5917,11 @@
       "weekdayType": "friday",
       "weekOrder": "33",
       "periodOfDay": "",
-      "date": "24/11/2023",
+      "date": "19/11/2021",
       "weekday": "friday"
     }
   ],
-  "25/11/2023": [
+  "20/11/2021": [
     {
       "firstReading": "1 Macc 6:1-13",
       "psalm": "Ps 9:2-3, 4+6, 16+19",
@@ -6055,27 +5933,27 @@
       "weekdayType": "saturday",
       "weekOrder": "33",
       "periodOfDay": "",
-      "date": "25/11/2023",
+      "date": "20/11/2021",
       "weekday": "saturday"
     }
   ],
-  "26/11/2023": [
+  "21/11/2021": [
     {
-      "firstReading": "Ezek 34:11-12, 15-17",
-      "psalm": "Ps 23:1-2a, 2b-3, 5, 6",
-      "secondReading": "1 Cor 15:20-26, 28",
-      "gospel": "Matt 25:31-46",
-      "yearCycle": "A",
+      "firstReading": "Dan 7:13-14",
+      "psalm": "Ps 93:1a, 1b-2, 5",
+      "secondReading": "Rev 1:5-8",
+      "gospel": "John 18:33b-37",
+      "yearCycle": "B",
       "yearNumber": "",
       "season": "ot",
       "weekdayType": "sunday",
       "weekOrder": "34",
       "periodOfDay": "",
-      "date": "26/11/2023",
+      "date": "21/11/2021",
       "weekday": "sunday"
     }
   ],
-  "27/11/2023": [
+  "22/11/2021": [
     {
       "firstReading": "Dan 1:1-6, 8-20",
       "psalm": "Dan 3:52, 53, 54, 55, 56",
@@ -6087,11 +5965,11 @@
       "weekdayType": "monday",
       "weekOrder": "34",
       "periodOfDay": "",
-      "date": "27/11/2023",
+      "date": "22/11/2021",
       "weekday": "monday"
     }
   ],
-  "28/11/2023": [
+  "23/11/2021": [
     {
       "firstReading": "Dan 2:31-45",
       "psalm": "Dan 3:57, 58, 59, 60, 61",
@@ -6103,11 +5981,11 @@
       "weekdayType": "tuesday",
       "weekOrder": "34",
       "periodOfDay": "",
-      "date": "28/11/2023",
+      "date": "23/11/2021",
       "weekday": "tuesday"
     }
   ],
-  "29/11/2023": [
+  "24/11/2021": [
     {
       "firstReading": "Dan 5:1-6, 13-14, 16-17, 23-28",
       "psalm": "Dan 3:62, 63, 64, 65, 66, 67",
@@ -6119,11 +5997,11 @@
       "weekdayType": "wednesday",
       "weekOrder": "34",
       "periodOfDay": "",
-      "date": "29/11/2023",
+      "date": "24/11/2021",
       "weekday": "wednesday"
     }
   ],
-  "30/11/2023": [
+  "25/11/2021": [
     {
       "firstReading": "Dan 6:12-28",
       "psalm": "Dan 3:68, 69, 70, 71, 72, 73, 74",
@@ -6135,11 +6013,11 @@
       "weekdayType": "thursday",
       "weekOrder": "34",
       "periodOfDay": "",
-      "date": "30/11/2023",
+      "date": "25/11/2021",
       "weekday": "thursday"
     }
   ],
-  "01/12/2023": [
+  "26/11/2021": [
     {
       "firstReading": "Dan 7:2-14",
       "psalm": "Dan 3:75, 76, 77, 78, 79, 80, 81",
@@ -6151,11 +6029,11 @@
       "weekdayType": "friday",
       "weekOrder": "34",
       "periodOfDay": "",
-      "date": "01/12/2023",
+      "date": "26/11/2021",
       "weekday": "friday"
     }
   ],
-  "02/12/2023": [
+  "27/11/2021": [
     {
       "firstReading": "Dan 7:15-27",
       "psalm": "Dan 3:82, 83, 84, 85, 86, 87",
@@ -6167,7 +6045,7 @@
       "weekdayType": "saturday",
       "weekOrder": "34",
       "periodOfDay": "",
-      "date": "02/12/2023",
+      "date": "27/11/2021",
       "weekday": "saturday"
     }
   ]
