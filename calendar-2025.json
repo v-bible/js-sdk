@@ -1534,7 +1534,7 @@
   ],
   "02/03/2025": [
     {
-      "firstReading": "Sir 27:5-8",
+      "firstReading": "Sir 27:4-7",
       "psalm": "Ps 92:2-3, 13-14, 15-16",
       "secondReading": "1 Cor 15:54-58",
       "gospel": "Luke 6:39-45",
@@ -2020,7 +2020,7 @@
       "firstReading": "Ezek 47:1-9, 12",
       "psalm": "Ps 46:2-3, 5-6, 8-9",
       "secondReading": "",
-      "gospel": "John 5:1-3a, 5-16",
+      "gospel": "John 5:1-16",
       "yearCycle": "",
       "yearNumber": "",
       "season": "lent",
@@ -2233,7 +2233,7 @@
       "psalm": "Ps 22:8-9, 17-18, 19-20, 23-24",
       "secondReading": "Phil 2:6-11",
       "gospel": [
-        "Luke 22:14 -- 23:56",
+        "Luke 22:14--23:56",
         "Luke 23:1-49"
       ],
       "yearCycle": "C",
@@ -2974,7 +2974,7 @@
       "firstReading": "Acts 16:11-15",
       "psalm": "Ps 149:1b-2, 3-4, 5-6a+9b",
       "secondReading": "",
-      "gospel": "John 15:26-16:4a",
+      "gospel": "John 15:26--16:4a",
       "yearCycle": "",
       "yearNumber": "",
       "season": "easter",
@@ -3182,7 +3182,7 @@
       "firstReading": [
         "Gen 11:1-9",
         "Exod 19:3-8a, 16-20b",
-        "Exod 19:3-8a, 16-20b",
+        "Ezek 37:1-14",
         "Joel 3:1-5"
       ],
       "psalm": "Ps 104:1-2, 24+35, 27-28, 29b-30",

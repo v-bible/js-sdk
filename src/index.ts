@@ -199,7 +199,11 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
     calendar = [
       ...calendar,
       christmasWeekdayData
-        .filter((d) => d.weekdayType === format(day, 'dd/MM'))
+        .filter(
+          (d) =>
+            d.weekdayType === format(day, 'dd/MM') &&
+            (d.weekOrder === 'preEpiphany' || d.weekOrder === 'christmas'),
+        )
         .map((d) => {
           return {
             ...d,
@@ -412,6 +416,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
     if (isSunday(day)) {
       weekOrder += 1;
 
+      // NOTE: Have to put here so the weekOrder is still counting
       if (isEqual(day, baptismOfTheLord)) {
         return;
       }
@@ -428,6 +433,10 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
         }),
       ];
 
+      return;
+    }
+
+    if (isEqual(day, baptismOfTheLord)) {
       return;
     }
 
@@ -896,8 +905,6 @@ const generateCalendar = (year: number, options?: Options) => {
 
   return calendar;
 };
-
-generateCalendar(2024);
 
 export {
   generateAdvent,
