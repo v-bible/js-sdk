@@ -67,9 +67,9 @@ export type CalendarEntry = {
 };
 
 export type Options = {
-  isEpiphanyOn6thJan: boolean;
-  isAscensionOfTheLordOn40th: boolean;
-  destPath: string;
+  isEpiphanyOn6thJan?: boolean;
+  isAscensionOfTheLordOn40th?: boolean;
+  destPath?: string;
 };
 
 const YEAR_CYCLE_MAP: Record<string, string> = {
