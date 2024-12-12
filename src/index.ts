@@ -20,16 +20,16 @@ import {
   subWeeks,
 } from 'date-fns';
 import { groupBy } from 'es-toolkit';
-import adventSundayData from '@/static/calendar/sunday/1_advent.json';
-import christmasSundayData from '@/static/calendar/sunday/2_christmas.json';
-import lentSundayData from '@/static/calendar/sunday/3_lent.json';
-import triduumSundayData from '@/static/calendar/sunday/4_triduum.json';
-import OTSundayData from '@/static/calendar/sunday/5_ot.json';
-import adventWeekdayData from '@/static/calendar/weekdays/1_advent.json';
-import christmasWeekdayData from '@/static/calendar/weekdays/2_christmas.json';
-import lentWeekdayData from '@/static/calendar/weekdays/3_lent.json';
-import easterWeekdayData from '@/static/calendar/weekdays/4_easter.json';
-import OTWeekdayData from '@/static/calendar/weekdays/5_ot.json';
+import adventSundayData from '@/static/liturgical/sunday/1_advent.json';
+import christmasSundayData from '@/static/liturgical/sunday/2_christmas.json';
+import lentSundayData from '@/static/liturgical/sunday/3_lent.json';
+import triduumSundayData from '@/static/liturgical/sunday/4_triduum.json';
+import OTSundayData from '@/static/liturgical/sunday/5_ot.json';
+import adventWeekdayData from '@/static/liturgical/weekdays/1_advent.json';
+import christmasWeekdayData from '@/static/liturgical/weekdays/2_christmas.json';
+import lentWeekdayData from '@/static/liturgical/weekdays/3_lent.json';
+import easterWeekdayData from '@/static/liturgical/weekdays/4_easter.json';
+import OTWeekdayData from '@/static/liturgical/weekdays/5_ot.json';
 
 // Ref: https://stackoverflow.com/a/1284335/12512981
 const easterDate = (y: number) => {
