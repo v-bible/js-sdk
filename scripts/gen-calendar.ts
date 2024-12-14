@@ -1,4 +1,4 @@
-import { mkdir } from 'node:fs';
+import { mkdir, writeFileSync } from 'node:fs';
 import { generateCalendar } from '@/src/utils/gen-calendar';
 
 mkdir('./dist', { recursive: true }, (err) => {
@@ -8,7 +8,7 @@ mkdir('./dist', { recursive: true }, (err) => {
 });
 
 for (let i = 2020; i < 2026; i += 1) {
-  generateCalendar(i, {
-    destPath: `./dist/calendar-${i}.json`,
-  });
+  const data = generateCalendar(i);
+
+  writeFileSync(`./dist/calendar-${i}.json`, JSON.stringify(data, null, 2));
 }

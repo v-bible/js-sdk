@@ -1,4 +1,3 @@
-import { writeFileSync } from 'fs';
 import {
   addDays,
   compareAsc,
@@ -19,7 +18,6 @@ import {
   subDays,
   subWeeks,
 } from 'date-fns';
-import { groupBy } from 'es-toolkit';
 import adventSundayData from '@/static/liturgical/sunday/1_advent.json';
 import christmasSundayData from '@/static/liturgical/sunday/2_christmas.json';
 import lentSundayData from '@/static/liturgical/sunday/3_lent.json';
@@ -69,7 +67,6 @@ export type CalendarEntry = {
 export type Options = {
   isEpiphanyOn6thJan?: boolean;
   isAscensionOfTheLordOn40th?: boolean;
-  destPath?: string;
 };
 
 const YEAR_CYCLE_MAP: Record<string, string> = {
@@ -215,35 +212,21 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
 
   // NOTE: If Christmas Day is on a Sunday, then the Feast of the Holy Family
   // celebrated on Dec 30th, else it is celebrated on the Sunday after Christmas
-  if (isSunday(christmasDay)) {
-    calendar = [
-      ...calendar,
-      christmasSundayData
-        .filter(
-          (d) => d.weekOrder === 'theHolyFamily' && d.yearCycle === yearCycle,
-        )
-        .map((d) => {
-          return {
-            ...d,
-            date: format(new Date(year - 1, 12 - 1, 30), 'dd/MM/yyyy'),
-          };
-        }),
-    ];
-  } else {
-    calendar = [
-      ...calendar,
-      christmasSundayData
-        .filter(
-          (d) => d.weekOrder === 'theHolyFamily' && d.yearCycle === yearCycle,
-        )
-        .map((d) => {
-          return {
-            ...d,
-            date: format(nextSunday(christmasDay), 'dd/MM/yyyy'),
-          };
-        }),
-    ];
-  }
+  calendar = [
+    ...calendar,
+    christmasSundayData
+      .filter(
+        (d) => d.weekOrder === 'theHolyFamily' && d.yearCycle === yearCycle,
+      )
+      .map((d) => {
+        return {
+          ...d,
+          date: isSunday(christmasDay)
+            ? format(new Date(year - 1, 12 - 1, 30), 'dd/MM/yyyy')
+            : format(nextSunday(christmasDay), 'dd/MM/yyyy'),
+        };
+      }),
+  ];
 
   // NOTE: The Solemnity of Mary, Mother of God is always on Jan 1st
   calendar = [
@@ -851,11 +834,8 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
 };
 
 const generateCalendar = (year: number, options?: Options) => {
-  const {
-    isEpiphanyOn6thJan = false,
-    isAscensionOfTheLordOn40th = false,
-    destPath = `./calendar-${year}.json`,
-  } = options || {};
+  const { isEpiphanyOn6thJan = false, isAscensionOfTheLordOn40th = false } =
+    options || {};
 
   let calendar: Array<
     CalendarEntry & {
@@ -863,16 +843,6 @@ const generateCalendar = (year: number, options?: Options) => {
       date?: string;
     }
   > = [];
-
-  let groupedCalendar: Record<
-    string,
-    Array<
-      CalendarEntry & {
-        weekday?: string;
-        date?: string;
-      }
-    >
-  > = {};
 
   calendar = [
     ...generateAdvent(year),
@@ -898,10 +868,6 @@ const generateCalendar = (year: number, options?: Options) => {
         parse(b.date!, 'dd/MM/yyyy', new Date()),
       ),
     );
-
-  groupedCalendar = groupBy(calendar, (d) => d.date!);
-
-  writeFileSync(destPath, JSON.stringify(groupedCalendar, null, 2));
 
   return calendar;
 };
