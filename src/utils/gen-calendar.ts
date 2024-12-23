@@ -94,6 +94,10 @@ export type CalendarEntryData = CalendarEntry & {
 export type Options = {
   isEpiphanyOn6thJan?: boolean;
   isAscensionOfTheLordOn40th?: boolean;
+  additionalCalendar?: (
+    year: number,
+    options?: Partial<Options>,
+  ) => CalendarEntryData[];
 };
 
 const YEAR_CYCLE_MAP: Record<string, string> = {
@@ -1017,10 +1021,13 @@ const generatePostPentecostSolemnity = (year: number) => {
 };
 
 const generateCalendar = (year: number, options?: Options) => {
-  const { isEpiphanyOn6thJan = false, isAscensionOfTheLordOn40th = false } =
-    options || {};
+  const {
+    isEpiphanyOn6thJan = false,
+    isAscensionOfTheLordOn40th = false,
+    additionalCalendar,
+  } = options || {};
 
-  const calendar = [
+  const calendar: CalendarEntryData[] = [
     ...generateAdvent(year),
     ...generateChristmas(year, isEpiphanyOn6thJan),
     ...generateOT(year, isEpiphanyOn6thJan),
@@ -1029,6 +1036,7 @@ const generateCalendar = (year: number, options?: Options) => {
     ...generateCelebration(year),
     ...generateAnnunciationOfTheLord(year),
     ...generatePostPentecostSolemnity(year),
+    additionalCalendar ? additionalCalendar(year, options) : [],
   ]
     .flat()
     .toSorted((a, b) =>
