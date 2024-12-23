@@ -21,6 +21,7 @@ import {
   subWeeks,
 } from 'date-fns';
 import saintData from '@/static/liturgical/celebrations/1_saint.json';
+import movableCelebration from '@/static/liturgical/celebrations/2_movable_celebrations.json';
 import adventSundayData from '@/static/liturgical/sunday/1_advent.json';
 import christmasSundayData from '@/static/liturgical/sunday/2_christmas.json';
 import lentSundayData from '@/static/liturgical/sunday/3_lent.json';
@@ -915,6 +916,44 @@ const generateCelebration = (year: number) => {
   return calendar;
 };
 
+const generateAnnunciationOfTheLord = (year: number) => {
+  const easterDay = easterDate(year);
+  const ashWednesday = subDays(subWeeks(easterDay, 6), 4);
+
+  let annunciationOfTheLord = new Date(year, 3 - 1, 25);
+
+  // NOTE: If the Annunciation of the Lord is on Holy Week or Easter Week, then
+  // it is transferred to the 2nd Monday after Easter
+  if (
+    isSunday(annunciationOfTheLord) &&
+    isWithinInterval(annunciationOfTheLord, {
+      start: ashWednesday,
+      end: previousSunday(previousSunday(easterDay)),
+    })
+  ) {
+    annunciationOfTheLord = new Date(year, 3 - 1, 26);
+  } else if (
+    isWithinInterval(annunciationOfTheLord, {
+      start: previousSunday(easterDay),
+      end: nextSunday(easterDay),
+    })
+  ) {
+    annunciationOfTheLord = nextMonday(nextSunday(easterDay));
+  }
+
+  return [
+    movableCelebration
+      .filter((d) => d.weekdayType === 'annunciationOfTheLord')
+      .map((d) => {
+        return {
+          ...d,
+          weekday: format(annunciationOfTheLord, 'EEEE').toLowerCase(),
+          date: format(annunciationOfTheLord, 'dd/MM/yyyy'),
+        };
+      }),
+  ] as CalendarEntryData[][];
+};
+
 const generateCalendar = (year: number, options?: Options) => {
   const { isEpiphanyOn6thJan = false, isAscensionOfTheLordOn40th = false } =
     options || {};
@@ -926,6 +965,7 @@ const generateCalendar = (year: number, options?: Options) => {
     ...generateLent(year),
     ...generateEaster(year, isAscensionOfTheLordOn40th),
     ...generateCelebration(year),
+    ...generateAnnunciationOfTheLord(year),
   ]
     .flat()
     .toSorted((a, b) =>
