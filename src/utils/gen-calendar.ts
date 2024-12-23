@@ -9,6 +9,7 @@ import {
   isSunday,
   isValid,
   isWithinInterval,
+  nextFriday,
   nextMonday,
   nextSaturday,
   nextSunday,
@@ -954,6 +955,67 @@ const generateAnnunciationOfTheLord = (year: number) => {
   ] as CalendarEntryData[][];
 };
 
+const generatePostPentecostSolemnity = (year: number) => {
+  const yearCycle = YEAR_CYCLE_MAP[year % 3];
+
+  const easterDay = easterDate(year);
+
+  const pentecost = addDays(easterDay, 49);
+
+  let calendar: CalendarEntryData[][] = [];
+
+  const trinitySunday = nextSunday(pentecost);
+  calendar = [
+    ...calendar,
+    movableCelebration
+      .filter(
+        (d) => d.weekdayType === 'trinitySunday' && d.yearCycle === yearCycle,
+      )
+      .map((d) => {
+        return {
+          ...d,
+          weekday: format(trinitySunday, 'EEEE').toLowerCase(),
+          date: format(trinitySunday, 'dd/MM/yyyy'),
+        };
+      }),
+  ];
+
+  const bodyAndBloodOfChrist = nextSunday(trinitySunday);
+  calendar = [
+    ...calendar,
+    movableCelebration
+      .filter(
+        (d) =>
+          d.weekdayType === 'bodyAndBloodOfChrist' && d.yearCycle === yearCycle,
+      )
+      .map((d) => {
+        return {
+          ...d,
+          weekday: format(bodyAndBloodOfChrist, 'EEEE').toLowerCase(),
+          date: format(bodyAndBloodOfChrist, 'dd/MM/yyyy'),
+        };
+      }),
+  ];
+
+  const sacredHeart = nextFriday(bodyAndBloodOfChrist);
+  calendar = [
+    ...calendar,
+    movableCelebration
+      .filter(
+        (d) => d.weekdayType === 'sacredHeart' && d.yearCycle === yearCycle,
+      )
+      .map((d) => {
+        return {
+          ...d,
+          weekday: format(sacredHeart, 'EEEE').toLowerCase(),
+          date: format(sacredHeart, 'dd/MM/yyyy'),
+        };
+      }),
+  ];
+
+  return calendar;
+};
+
 const generateCalendar = (year: number, options?: Options) => {
   const { isEpiphanyOn6thJan = false, isAscensionOfTheLordOn40th = false } =
     options || {};
@@ -966,6 +1028,7 @@ const generateCalendar = (year: number, options?: Options) => {
     ...generateEaster(year, isAscensionOfTheLordOn40th),
     ...generateCelebration(year),
     ...generateAnnunciationOfTheLord(year),
+    ...generatePostPentecostSolemnity(year),
   ]
     .flat()
     .toSorted((a, b) =>
