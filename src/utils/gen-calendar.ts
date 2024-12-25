@@ -7,7 +7,9 @@ import {
   isBefore,
   isEqual,
   isSunday,
+  isValid,
   isWithinInterval,
+  nextFriday,
   nextMonday,
   nextSaturday,
   nextSunday,
@@ -15,9 +17,12 @@ import {
   previousSunday,
   previousThursday,
   previousWednesday,
+  setYear,
   subDays,
   subWeeks,
 } from 'date-fns';
+import saintData from '@/static/liturgical/celebrations/1_saint.json';
+import movableCelebration from '@/static/liturgical/celebrations/2_movable_celebrations.json';
 import adventSundayData from '@/static/liturgical/sunday/1_advent.json';
 import christmasSundayData from '@/static/liturgical/sunday/2_christmas.json';
 import lentSundayData from '@/static/liturgical/sunday/3_lent.json';
@@ -51,6 +56,22 @@ const easterDate = (y: number) => {
   return new Date(y, m - 1, d);
 };
 
+export type ExtraCalendarEntry = {
+  secondPsalm: string | string[];
+  thirdReading: string | string[];
+  thirdPsalm: string | string[];
+  fourthReading: string | string[];
+  fourthPsalm: string | string[];
+  fifthReading: string | string[];
+  fifthPsalm: string | string[];
+  sixthReading: string | string[];
+  sixthPsalm: string | string[];
+  seventhReading: string | string[];
+  seventhPsalm: string | string[];
+  eighthReading: string | string[];
+  eighthPsalm: string | string[];
+};
+
 export type CalendarEntry = {
   firstReading: string | string[];
   psalm: string | string[];
@@ -62,11 +83,21 @@ export type CalendarEntry = {
   weekdayType: string;
   weekOrder: string;
   periodOfDay: string;
+  description: string;
+} & Partial<ExtraCalendarEntry>;
+
+export type CalendarEntryData = CalendarEntry & {
+  weekday: string;
+  date: string;
 };
 
 export type Options = {
   isEpiphanyOn6thJan?: boolean;
   isAscensionOfTheLordOn40th?: boolean;
+  additionalCalendar?: (
+    year: number,
+    options?: Partial<Options>,
+  ) => CalendarEntryData[];
 };
 
 const YEAR_CYCLE_MAP: Record<string, string> = {
@@ -102,7 +133,7 @@ const generateAdvent = (year: number) => {
   // Ref: https://catholic-resources.org/Lectionary/Overview-Advent.htm
   const advent1 = subWeeks(advent4, 3);
 
-  let calendar: CalendarEntry[][] = [];
+  let calendar: CalendarEntryData[][] = [];
 
   let weekOrder = 0;
 
@@ -122,6 +153,7 @@ const generateAdvent = (year: number) => {
           .map((d) => {
             return {
               ...d,
+              weekday: format(day, 'EEEE').toLowerCase(),
               date: format(day, 'dd/MM/yyyy'),
             };
           }),
@@ -155,6 +187,7 @@ const generateAdvent = (year: number) => {
       adventWeekday.map((d) => {
         return {
           ...d,
+          weekday: format(day, 'EEEE').toLowerCase(),
           date: format(day, 'dd/MM/yyyy'),
         };
       }),
@@ -175,7 +208,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
 
   const epiphany = isEpiphanyOn6thJan ? defaultEpiphany : alternativeEpiphany;
 
-  let calendar: CalendarEntry[][] = [];
+  let calendar: CalendarEntryData[][] = [];
 
   calendar = [
     ...calendar,
@@ -184,6 +217,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(christmasDay, 'EEEE').toLowerCase(),
           date: format(christmasDay, 'dd/MM/yyyy'),
         };
       }),
@@ -204,6 +238,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
         .map((d) => {
           return {
             ...d,
+            weekday: format(day, 'EEEE').toLowerCase(),
             date: format(day, 'dd/MM/yyyy'),
           };
         }),
@@ -219,11 +254,13 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
         (d) => d.weekOrder === 'theHolyFamily' && d.yearCycle === yearCycle,
       )
       .map((d) => {
+        const newDate = isSunday(christmasDay)
+          ? new Date(year - 1, 12 - 1, 30)
+          : nextSunday(christmasDay);
         return {
           ...d,
-          date: isSunday(christmasDay)
-            ? format(new Date(year - 1, 12 - 1, 30), 'dd/MM/yyyy')
-            : format(nextSunday(christmasDay), 'dd/MM/yyyy'),
+          weekday: format(new Date(newDate), 'EEEE').toLowerCase(),
+          date: format(newDate, 'dd/MM/yyyy'),
         };
       }),
   ];
@@ -236,6 +273,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(new Date(year, 1 - 1, 1), 'EEEE').toLowerCase(),
           date: format(new Date(year, 1 - 1, 1), 'dd/MM/yyyy'),
         };
       }),
@@ -254,6 +292,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
           .map((d) => {
             return {
               ...d,
+              weekday: format(secondSundayAfterChristmas, 'EEEE').toLowerCase(),
               date: format(secondSundayAfterChristmas, 'dd/MM/yyyy'),
             };
           }),
@@ -269,6 +308,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(epiphany, 'EEEE').toLowerCase(),
           date: format(epiphany, 'dd/MM/yyyy'),
         };
       }),
@@ -307,6 +347,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
             .map((d) => {
               return {
                 ...d,
+                weekday: format(day, 'EEEE').toLowerCase(),
                 date: format(day, 'dd/MM/yyyy'),
               };
             }),
@@ -327,6 +368,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
             .map((d) => {
               return {
                 ...d,
+                weekday: format(day, 'EEEE').toLowerCase(),
                 date: format(day, 'dd/MM/yyyy'),
               };
             }),
@@ -344,6 +386,7 @@ const generateChristmas = (year: number, isEpiphanyOn6thJan: boolean) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(baptismOfTheLord, 'EEEE').toLowerCase(),
           date: format(baptismOfTheLord, 'dd/MM/yyyy'),
         };
       }),
@@ -386,7 +429,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
 
   const advent1 = subWeeks(advent4, 3);
 
-  let calendar: CalendarEntry[][] = [];
+  let calendar: CalendarEntryData[][] = [];
 
   // NOTE: IF the Baptism of the Lord is on Monday then count as the first week
   let weekOrder = isSunday(baptismOfTheLord) ? 0 : 1;
@@ -411,6 +454,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
         ).map((d) => {
           return {
             ...d,
+            weekday: format(day, 'EEEE').toLowerCase(),
             date: format(day, 'dd/MM/yyyy'),
           };
         }),
@@ -435,6 +479,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
       weekday.map((d) => {
         return {
           ...d,
+          weekday: format(day, 'EEEE').toLowerCase(),
           date: format(day, 'dd/MM/yyyy'),
         };
       }),
@@ -471,6 +516,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
         ).map((d) => {
           return {
             ...d,
+            weekday: format(day, 'EEEE').toLowerCase(),
             date: format(day, 'dd/MM/yyyy'),
           };
         }),
@@ -491,6 +537,7 @@ const generateOT = (year: number, isEpiphanyOn6thJan: boolean) => {
       weekday.map((d) => {
         return {
           ...d,
+          weekday: format(day, 'EEEE').toLowerCase(),
           date: format(day, 'dd/MM/yyyy'),
         };
       }),
@@ -508,7 +555,7 @@ const generateLent = (year: number) => {
 
   const chrismMass = previousThursday(easterDay);
 
-  let calendar: CalendarEntry[][] = [];
+  let calendar: CalendarEntryData[][] = [];
 
   calendar = [
     ...calendar,
@@ -517,6 +564,7 @@ const generateLent = (year: number) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(ashWednesday, 'EEEE').toLowerCase(),
           date: format(ashWednesday, 'dd/MM/yyyy'),
         };
       }),
@@ -529,6 +577,7 @@ const generateLent = (year: number) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(chrismMass, 'EEEE').toLowerCase(),
           date: format(chrismMass, 'dd/MM/yyyy'),
         };
       }),
@@ -550,6 +599,7 @@ const generateLent = (year: number) => {
         .map((d) => {
           return {
             ...d,
+            weekday: format(day, 'EEEE').toLowerCase(),
             date: format(day, 'dd/MM/yyyy'),
           };
         }),
@@ -576,6 +626,7 @@ const generateLent = (year: number) => {
             .map((d) => {
               return {
                 ...d,
+                weekday: format(day, 'EEEE').toLowerCase(),
                 date: format(day, 'dd/MM/yyyy'),
               };
             }),
@@ -590,6 +641,7 @@ const generateLent = (year: number) => {
             .map((d) => {
               return {
                 ...d,
+                weekday: format(day, 'EEEE').toLowerCase(),
                 date: format(day, 'dd/MM/yyyy'),
               };
             }),
@@ -610,6 +662,7 @@ const generateLent = (year: number) => {
         .map((d) => {
           return {
             ...d,
+            weekday: format(day, 'EEEE').toLowerCase(),
             date: format(day, 'dd/MM/yyyy'),
           };
         }),
@@ -632,6 +685,7 @@ const generateLent = (year: number) => {
         .map((d) => {
           return {
             ...d,
+            weekday: format(day, 'EEEE').toLowerCase(),
             date: format(day, 'dd/MM/yyyy'),
           };
         }),
@@ -654,7 +708,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
 
   const ascensionOfTheLord = addDays(easterDay, 39);
 
-  let calendar: CalendarEntry[][] = [];
+  let calendar: CalendarEntryData[][] = [];
 
   calendar = [
     ...calendar,
@@ -663,6 +717,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(holyThursday, 'EEEE').toLowerCase(),
           date: format(holyThursday, 'dd/MM/yyyy'),
         };
       }),
@@ -675,6 +730,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(goodFriday, 'EEEE').toLowerCase(),
           date: format(goodFriday, 'dd/MM/yyyy'),
         };
       }),
@@ -692,6 +748,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(easterVirgil, 'EEEE').toLowerCase(),
           date: format(easterVirgil, 'dd/MM/yyyy'),
         };
       }),
@@ -704,6 +761,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
       .map((d) => {
         return {
           ...d,
+          weekday: format(easterDay, 'EEEE').toLowerCase(),
           date: format(easterDay, 'dd/MM/yyyy'),
         };
       }),
@@ -725,6 +783,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
         .map((d) => {
           return {
             ...d,
+            weekday: format(day, 'EEEE').toLowerCase(),
             date: format(day, 'dd/MM/yyyy'),
           };
         }),
@@ -755,6 +814,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
             .map((d) => {
               return {
                 ...d,
+                weekday: format(day, 'EEEE').toLowerCase(),
                 date: format(day, 'dd/MM/yyyy'),
               };
             }),
@@ -773,6 +833,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
             .map((d) => {
               return {
                 ...d,
+                weekday: format(day, 'EEEE').toLowerCase(),
                 date: format(day, 'dd/MM/yyyy'),
               };
             }),
@@ -787,6 +848,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
             .map((d) => {
               return {
                 ...d,
+                weekday: format(day, 'EEEE').toLowerCase(),
                 date: format(day, 'dd/MM/yyyy'),
               };
             }),
@@ -807,6 +869,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
         .map((d) => {
           return {
             ...d,
+            weekday: format(day, 'EEEE').toLowerCase(),
             date: format(day, 'dd/MM/yyyy'),
           };
         }),
@@ -824,6 +887,7 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
         .map((d) => {
           return {
             ...d,
+            weekday: format(ascensionOfTheLord, 'EEEE').toLowerCase(),
             date: format(ascensionOfTheLord, 'dd/MM/yyyy'),
           };
         }),
@@ -833,35 +897,148 @@ const generateEaster = (year: number, isAscensionOfTheLordOn40th: boolean) => {
   return calendar;
 };
 
-const generateCalendar = (year: number, options?: Options) => {
-  const { isEpiphanyOn6thJan = false, isAscensionOfTheLordOn40th = false } =
-    options || {};
-
-  let calendar: Array<
-    CalendarEntry & {
-      weekday?: string;
-      date?: string;
-    }
-  > = [];
+const generateCelebration = (year: number) => {
+  let calendar: CalendarEntryData[][] = [];
 
   calendar = [
+    ...calendar,
+    [...saintData, ...movableCelebration].flatMap((d) => {
+      const parsedDate = parse(d.weekdayType, 'dd/MM', new Date());
+      if (!isValid(parsedDate)) {
+        return [];
+      }
+
+      return [
+        {
+          ...d,
+          weekday: format(setYear(parsedDate, year), 'EEEE').toLowerCase(),
+          date: format(setYear(parsedDate, year), 'dd/MM/yyyy'),
+        },
+      ];
+    }),
+  ];
+
+  return calendar;
+};
+
+const generateAnnunciationOfTheLord = (year: number) => {
+  const easterDay = easterDate(year);
+  const ashWednesday = subDays(subWeeks(easterDay, 6), 4);
+
+  let annunciationOfTheLord = new Date(year, 3 - 1, 25);
+
+  // NOTE: If the Annunciation of the Lord is on Holy Week or Easter Week, then
+  // it is transferred to the 2nd Monday after Easter
+  if (
+    isSunday(annunciationOfTheLord) &&
+    isWithinInterval(annunciationOfTheLord, {
+      start: ashWednesday,
+      end: previousSunday(previousSunday(easterDay)),
+    })
+  ) {
+    annunciationOfTheLord = new Date(year, 3 - 1, 26);
+  } else if (
+    isWithinInterval(annunciationOfTheLord, {
+      start: previousSunday(easterDay),
+      end: nextSunday(easterDay),
+    })
+  ) {
+    annunciationOfTheLord = nextMonday(nextSunday(easterDay));
+  }
+
+  return [
+    movableCelebration
+      .filter((d) => d.weekdayType === 'annunciationOfTheLord')
+      .map((d) => {
+        return {
+          ...d,
+          weekday: format(annunciationOfTheLord, 'EEEE').toLowerCase(),
+          date: format(annunciationOfTheLord, 'dd/MM/yyyy'),
+        };
+      }),
+  ] as CalendarEntryData[][];
+};
+
+const generatePostPentecostSolemnity = (year: number) => {
+  const yearCycle = YEAR_CYCLE_MAP[year % 3];
+
+  const easterDay = easterDate(year);
+
+  const pentecost = addDays(easterDay, 49);
+
+  let calendar: CalendarEntryData[][] = [];
+
+  const trinitySunday = nextSunday(pentecost);
+  calendar = [
+    ...calendar,
+    movableCelebration
+      .filter(
+        (d) => d.weekdayType === 'trinitySunday' && d.yearCycle === yearCycle,
+      )
+      .map((d) => {
+        return {
+          ...d,
+          weekday: format(trinitySunday, 'EEEE').toLowerCase(),
+          date: format(trinitySunday, 'dd/MM/yyyy'),
+        };
+      }),
+  ];
+
+  const bodyAndBloodOfChrist = nextSunday(trinitySunday);
+  calendar = [
+    ...calendar,
+    movableCelebration
+      .filter(
+        (d) =>
+          d.weekdayType === 'bodyAndBloodOfChrist' && d.yearCycle === yearCycle,
+      )
+      .map((d) => {
+        return {
+          ...d,
+          weekday: format(bodyAndBloodOfChrist, 'EEEE').toLowerCase(),
+          date: format(bodyAndBloodOfChrist, 'dd/MM/yyyy'),
+        };
+      }),
+  ];
+
+  const sacredHeart = nextFriday(bodyAndBloodOfChrist);
+  calendar = [
+    ...calendar,
+    movableCelebration
+      .filter(
+        (d) => d.weekdayType === 'sacredHeart' && d.yearCycle === yearCycle,
+      )
+      .map((d) => {
+        return {
+          ...d,
+          weekday: format(sacredHeart, 'EEEE').toLowerCase(),
+          date: format(sacredHeart, 'dd/MM/yyyy'),
+        };
+      }),
+  ];
+
+  return calendar;
+};
+
+const generateCalendar = (year: number, options?: Options) => {
+  const {
+    isEpiphanyOn6thJan = false,
+    isAscensionOfTheLordOn40th = false,
+    additionalCalendar,
+  } = options || {};
+
+  const calendar: CalendarEntryData[] = [
     ...generateAdvent(year),
     ...generateChristmas(year, isEpiphanyOn6thJan),
     ...generateOT(year, isEpiphanyOn6thJan),
     ...generateLent(year),
     ...generateEaster(year, isAscensionOfTheLordOn40th),
-  ].flat();
-
-  calendar = calendar
-    .map((item) => {
-      return {
-        ...item,
-        weekday: format(
-          parse(item.date!, 'dd/MM/yyyy', new Date()),
-          'EEEE',
-        ).toLowerCase(),
-      };
-    })
+    ...generateCelebration(year),
+    ...generateAnnunciationOfTheLord(year),
+    ...generatePostPentecostSolemnity(year),
+    additionalCalendar ? additionalCalendar(year, options) : [],
+  ]
+    .flat()
     .toSorted((a, b) =>
       compareAsc(
         parse(a.date!, 'dd/MM/yyyy', new Date()),
