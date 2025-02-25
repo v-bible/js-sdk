@@ -7,8 +7,11 @@ mkdir('./dist', { recursive: true }, (err) => {
   }
 });
 
-for (let i = 2020; i < 2026; i += 1) {
-  const data = generateCalendar(i);
+(async () => {
+  for (let i = 2020; i < 2026; i += 1) {
+    // eslint-disable-next-line no-await-in-loop
+    const data = await generateCalendar(i);
 
-  writeFileSync(`./dist/calendar-${i}.json`, JSON.stringify(data, null, 2));
-}
+    writeFileSync(`./dist/calendar-${i}.json`, JSON.stringify(data, null, 2));
+  }
+})();
