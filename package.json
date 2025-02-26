@@ -1,7 +1,13 @@
 {
-  "name": "liturgical-calendar-generator",
+  "name": "@v-bible/js-sdk",
+  "version": "0.0.0",
+  "author": "v-bible",
+  "description": "JavaScript SDK for v-bible",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v-bible/js-sdk.git"
+  },
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
     "prepare": "husky"
   },

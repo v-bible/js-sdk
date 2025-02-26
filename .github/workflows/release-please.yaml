@@ -1,0 +1,49 @@
+name: release-please
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  npm_publish:
+    runs-on: 'ubuntu-latest'
+
+    # NOTE: We have to give write contents and packages permissions to the token
+    permissions:
+      contents: write
+      packages: write
+      pull-requests: write
+
+    steps:
+      # NOTE: You have to turn on "Allow Github Actions to create and approve
+      # pull requests" in the org settings
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          # cache: "pnpm"
+          node-version: 'latest'
+          registry-url: 'https://npm.pkg.github.com/'
+          scope: '@v-bible'
+        # NOTE: Move env to higher step
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Install Dependencies
+        run: pnpm install
+
+        # NOTE: Release npm package
+      - name: Publish
+        run: pnpm publish
