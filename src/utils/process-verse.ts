@@ -7,6 +7,8 @@ import type {
 } from '@v-bible/types';
 import showdown from 'showdown';
 
+const MAX_HEADING = 6;
+
 type MapNote = {
   chapterId: string;
   position: number;
@@ -152,12 +154,8 @@ const processVerseMd = (
         refMdLabel,
       );
 
-      // NOTE: Only first heading is h1
-      if (revIdx === 0) {
-        verse.content = `\n# ${newHeadingContent}\n${verse.content}`;
-      } else {
-        verse.content = `\n## ${newHeadingContent}\n${verse.content}`;
-      }
+      // NOTE: Heading level starts from 1
+      verse.content = `\n${'#'.repeat(arr[revIdx]!.level % MAX_HEADING)} ${newHeadingContent}\n${verse.content}`;
     });
   });
 
@@ -271,12 +269,8 @@ const processVerseHtml = (
         refMdLabel,
       );
 
-      // NOTE: Only first heading is h1
-      if (revIdx === 0) {
-        verse.content = `\n<h1>${newHeadingContent}\n${verse.content}</h1>`;
-      } else {
-        verse.content = `\n<h2>${newHeadingContent}\n${verse.content}</h2>`;
-      }
+      // NOTE: Heading level starts from 1
+      verse.content = `\n<h${arr[revIdx]!.level % MAX_HEADING}>${newHeadingContent}\n${verse.content}</h${arr[revIdx]!.level % MAX_HEADING}>`;
     });
   });
 
