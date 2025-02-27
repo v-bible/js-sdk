@@ -6,7 +6,7 @@ on:
 
 jobs:
   npm_publish:
-    runs-on: 'ubuntu-latest'
+    runs-on: ubuntu-latest
 
     # NOTE: We have to give write contents and packages permissions to the token
     permissions:
@@ -33,22 +33,41 @@ jobs:
           run_install: false
         if: ${{ steps.release.outputs.release_created }}
 
-      - uses: actions/setup-node@v4
+      # 🔹 Setup for GitHub Packages
+      - name: Setup Node.js for GitHub Packages
+        uses: actions/setup-node@v4
         with:
-          # cache: "pnpm"
           node-version: 'latest'
           registry-url: 'https://npm.pkg.github.com/'
-          scope: '@v-bible'
-        # NOTE: Move env to higher step
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: ${{ steps.release.outputs.release_created }}
 
+      # 🔹 Install Dependencies
       - name: Install Dependencies
         run: pnpm install
         if: ${{ steps.release.outputs.release_created }}
 
-        # NOTE: Release npm package
-      - name: Publish
-        run: pnpm publish
+      # 🔹 Publish to GitHub Packages
+      - name: Publish to GitHub Packages
+        run: pnpm publish --registry=https://npm.pkg.github.com/
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ steps.release.outputs.release_created }}
+
+      # 🔹 Setup for npm Registry
+      - name: Setup Node.js for npm
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+          registry-url: 'https://registry.npmjs.org/'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{ steps.release.outputs.release_created }}
+
+      # 🔹 Publish to npm
+      - name: Publish to npm
+        run: pnpm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.release.outputs.release_created }}
