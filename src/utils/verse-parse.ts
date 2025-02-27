@@ -300,4 +300,24 @@ const parseBiblicalReference = (
   return parsedList;
 };
 
-export { parseBiblicalReference };
+export {
+  errFailedToParseVerseNum,
+  errFailedToNormalizeVerseQuery,
+  errMissingBookCode,
+  INVALID_STRING_FORMAT_ERROR,
+  reVerse,
+  reVerseQuery,
+  reChapRangeEu,
+  reNormalizedVerseQuery,
+  reNormalizedQueryEu,
+  reNormalizedQueryUs,
+  reMultipleChapUs,
+  reBookCode,
+  parseStringToOrder,
+  parseVerseNum,
+  normalizeVerseQuery,
+  normalizeChapRange,
+  normalizeQueryEu,
+  normalizeQueryUs,
+  parseBiblicalReference,
+};
