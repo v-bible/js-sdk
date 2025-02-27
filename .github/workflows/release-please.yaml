@@ -24,12 +24,14 @@ jobs:
           release-type: node
 
       - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10
           run_install: false
+        if: ${{ steps.release.outputs.release_created }}
 
       - uses: actions/setup-node@v4
         with:
@@ -40,10 +42,13 @@ jobs:
         # NOTE: Move env to higher step
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Install Dependencies
         run: pnpm install
+        if: ${{ steps.release.outputs.release_created }}
 
         # NOTE: Release npm package
       - name: Publish
         run: pnpm publish
+        if: ${{ steps.release.outputs.release_created }}
