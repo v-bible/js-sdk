@@ -7,6 +7,8 @@ import type {
 } from '@v-bible/types';
 import showdown from 'showdown';
 
+const MAX_HEADING = 6;
+
 type MapNote = {
   chapterId: string;
   position: number;
@@ -36,7 +38,7 @@ const processFootnoteAndRef = (
   mappedNote = [
     ...mappedNote,
     ...refs.flatMap((r) => {
-      if (r.position) {
+      if (r.position !== undefined) {
         return [
           {
             chapterId: r.chapterId,
@@ -118,16 +120,11 @@ const processVerseMd = (
     }
 
     if (verse.isPoetry) {
-      verse.content = `\n> ${verse.content} \n>`;
+      verse.content = `\n> ${verse.content}\n>`;
     }
 
     // NOTE: Add the Psalm title to the first verse
-    if (
-      verse.order === 0 &&
-      verse.parNumber === 0 &&
-      verse.parIndex === 0 &&
-      psalms.length !== 0
-    ) {
+    if (verse.order === 0 && verse.parNumber === 0 && verse.parIndex === 0) {
       psalms.forEach((psalm) => {
         if (psalm.chapterId === verse.chapterId) {
           verse.content = `*${psalm.title}*\n${verse.content}`;
@@ -152,12 +149,8 @@ const processVerseMd = (
         refMdLabel,
       );
 
-      // NOTE: Only first heading is h1
-      if (revIdx === 0) {
-        verse.content = `\n# ${newHeadingContent}\n${verse.content}`;
-      } else {
-        verse.content = `\n## ${newHeadingContent}\n${verse.content}`;
-      }
+      // NOTE: Heading level starts from 1
+      verse.content = `\n${'#'.repeat(arr[revIdx]!.level % MAX_HEADING)} ${newHeadingContent}\n${verse.content}`;
     });
   });
 
@@ -190,16 +183,16 @@ const processVerseMd = (
   });
 
   refs.forEach((ref) => {
-    if (ref.position) {
+    if (ref.position !== undefined) {
       mdString += `[^${ref.order + 1}@-${ref.chapterId}]: ${ref.content}\n`;
     }
   });
 
   // NOTE: Clean up the blockquote redundant characters
-  mdString = mdString.replaceAll(/>\n+>/, '>\n>');
+  mdString = mdString.replaceAll(/>\n+>/gm, '>\n>');
   mdString = mdString.replaceAll('>\n\n', '\n');
   // NOTE: Clean up the redundant newlines
-  mdString = mdString.replaceAll(/\n{3,}/, '\n\n');
+  mdString = mdString.replaceAll(/\n{3,}/gm, '\n\n');
   mdString = mdString.trim();
 
   return mdString;
@@ -224,7 +217,7 @@ const processVerseHtml = (
     const verseRefs = refs.filter((r) => r.verseId === verse.id);
 
     verse.content = processFootnoteAndRef(
-      verse.content,
+      mdToHtml(verse.content).replaceAll(/<p>|<\/p>\n?/gm, ''),
       verseFootnotes,
       verseRefs,
       fnHtmlLabel,
@@ -241,15 +234,10 @@ const processVerseHtml = (
     }
 
     // NOTE: Add the Psalm title to the first verse
-    if (
-      verse.order === 0 &&
-      verse.parNumber === 0 &&
-      verse.parIndex === 0 &&
-      psalms.length !== 0
-    ) {
+    if (verse.order === 0 && verse.parNumber === 0 && verse.parIndex === 0) {
       psalms.forEach((psalm) => {
         if (psalm.chapterId === verse.chapterId) {
-          verse.content = `<i>${psalm.title}</i>\n${verse.content}`;
+          verse.content = `<i>${mdToHtml(psalm.title).replaceAll(/<p>|<\/p>\n?/gm, '')}</i>\n${verse.content}`;
         }
       });
     }
@@ -264,19 +252,15 @@ const processVerseHtml = (
       const headingRefs = refs.filter((r) => r.headingId === arr[revIdx]!.id);
 
       const newHeadingContent = processFootnoteAndRef(
-        arr[revIdx]!.content,
+        mdToHtml(arr[revIdx]!.content).replaceAll(/<p>|<\/p>\n?/gm, ''),
         headingFootnotes,
         headingRefs,
         fnMdLabel,
         refMdLabel,
       );
 
-      // NOTE: Only first heading is h1
-      if (revIdx === 0) {
-        verse.content = `\n<h1>${newHeadingContent}\n${verse.content}</h1>`;
-      } else {
-        verse.content = `\n<h2>${newHeadingContent}\n${verse.content}</h2>`;
-      }
+      // NOTE: Heading level starts from 1
+      verse.content = `\n<h${arr[revIdx]!.level % MAX_HEADING}>${newHeadingContent}</h${arr[revIdx]!.level % MAX_HEADING}>\n${verse.content}`;
     });
   });
 
@@ -305,20 +289,20 @@ const processVerseHtml = (
   htmlString += '<hr>\n\n<ol>';
 
   footnotes.forEach((footnote) => {
-    htmlString += `<li id="fn-${footnote.order + 1}-${footnote.chapterId}"><p>${footnote.content} [<a href="#fnref-${footnote.order + 1}-${footnote.chapterId}">${footnote.order + 1}</a>]</p></li>`;
+    htmlString += `<li id="fn-${footnote.order + 1}-${footnote.chapterId}"><p>${mdToHtml(footnote.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${footnote.order + 1}-${footnote.chapterId}">${footnote.order + 1}</a>]</p></li>\n`;
   });
 
   refs.forEach((ref) => {
-    if (ref.position) {
-      htmlString += `<li id="fn-${ref.order + 1}@-${ref.chapterId}"><p>${ref.content} [<a href="#fnref-${ref.order + 1}@-${ref.chapterId}">${ref.order + 1}@</a>]</p></li>`;
+    if (ref.position !== undefined) {
+      htmlString += `<li id="fn-${ref.order + 1}@-${ref.chapterId}"><p>${mdToHtml(ref.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${ref.order + 1}@-${ref.chapterId}">${ref.order + 1}@</a>]</p></li>\n`;
     }
   });
 
   htmlString += '</ol>';
 
+  // NOTE: Clean up the redundant newlines
+  htmlString = htmlString.replaceAll(/\n{3,}/gm, '\n\n');
   htmlString = htmlString.trim();
-
-  htmlString = mdToHtml(htmlString);
 
   return htmlString;
 };
