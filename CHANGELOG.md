@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/v-bible/js-sdk/compare/v1.0.1...v1.0.2) (2025-02-28)
+
+
+### Bug Fixes
+
+* **utils:** update heading level ([1fab18e](https://github.com/v-bible/js-sdk/commit/1fab18ed7eb2eeda256ff69e2e83ca439432fe7b))
+* **utils:** update process verse ([3a371b5](https://github.com/v-bible/js-sdk/commit/3a371b5410be33d2a6c74149b87e0e38c7c955d6))
+
 ## [1.0.1](https://github.com/v-bible/js-sdk/compare/v1.0.0...v1.0.1) (2025-02-27)
 
 
