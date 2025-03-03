@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/v-bible/js-sdk/compare/v1.0.2...v1.0.3) (2025-03-03)
+
+
+### Documentation
+
+* update documents ([2fc9e83](https://github.com/v-bible/js-sdk/commit/2fc9e835db064b1ad30438cb4b41141c5ebe535b))
+
 ## [1.0.2](https://github.com/v-bible/js-sdk/compare/v1.0.1...v1.0.2) (2025-02-28)
 
 
