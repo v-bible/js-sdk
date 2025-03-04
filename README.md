@@ -23,7 +23,7 @@
   <a href="https://github.com/v-bible/js-sdk/issues/">
     <img src="https://img.shields.io/github/issues/v-bible/js-sdk" alt="open issues" />
   </a>
-  <a href="https://github.com/v-bible/js-sdk/blob/main/LICENSE">
+  <a href="https://github.com/v-bible/js-sdk/blob/main/LICENSE.md">
     <img src="https://img.shields.io/github/license/v-bible/js-sdk.svg" alt="license" />
   </a>
 </p>
