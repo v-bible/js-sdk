@@ -8,7 +8,24 @@
     "url": "git+https://github.com/v-bible/js-sdk.git"
   },
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
   "scripts": {
+    "lint": "tsc",
+    "build": "tsup",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "prepublish": "pnpm run build && pnpm run check-exports && pnpm run lint",
     "prepare": "husky"
   },
   "dependencies": {
@@ -17,6 +34,7 @@
     "showdown": "2.1.0"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "0.17.4",
     "@babel/core": "7.26.0",
     "@commitlint/cli": "19.6.0",
     "@commitlint/config-conventional": "19.6.0",
@@ -24,7 +42,7 @@
     "@types/showdown": "2.0.6",
     "@typescript-eslint/eslint-plugin": "8.17.0",
     "@typescript-eslint/parser": "8.17.0",
-    "@v-bible/types": "0.5.2",
+    "@v-bible/types": "0.5.6",
     "eslint": "8.57.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "9.1.0",
@@ -34,6 +52,7 @@
     "husky": "9.1.7",
     "lint-staged": "15.2.10",
     "prettier": "3.4.2",
-    "typescript": "5.7.2"
+    "tsup": "8.4.0",
+    "typescript": "5.8.2"
   }
 }
