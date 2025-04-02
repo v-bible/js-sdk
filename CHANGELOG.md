@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.4](https://github.com/v-bible/js-sdk/compare/v1.0.3...v1.0.4) (2025-04-02)
+
+
+### Bug Fixes
+
+* rename src to lib ([e1a5881](https://github.com/v-bible/js-sdk/commit/e1a58812e390fddeba5bb696dffd104c60c8078e))
+* update publish ci/cd ([2d8bd1e](https://github.com/v-bible/js-sdk/commit/2d8bd1eed1a489d41b980c1bb62ec387b0142512))
+* update publish ci/cd ([817f41c](https://github.com/v-bible/js-sdk/commit/817f41c7d2997eb4d14c9f7acfe9bdc35d01cf4e))
+
 ## [1.0.3](https://github.com/v-bible/js-sdk/compare/v1.0.2...v1.0.3) (2025-03-03)
 
 
