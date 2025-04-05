@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.5](https://github.com/v-bible/js-sdk/compare/v1.0.4...v1.0.5) (2025-04-05)
+
+
+### Bug Fixes
+
+* **lib:** update gen calendar ([f12c649](https://github.com/v-bible/js-sdk/commit/f12c64938d83d935d2bb6972cc9843ecfb152f58))
+* **lib:** update gen calendar ([412ec5f](https://github.com/v-bible/js-sdk/commit/412ec5f18d9a54f4efa0bb9cfd26db09edf9942e))
+* **scripts:** incorrect imports ([abc064a](https://github.com/v-bible/js-sdk/commit/abc064aef1b77c423dbfca0fd748dad17e6e3dee))
+
 ## [1.0.4](https://github.com/v-bible/js-sdk/compare/v1.0.3...v1.0.4) (2025-04-02)
 
 
