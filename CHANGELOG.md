@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/v-bible/js-sdk/compare/v1.0.5...v1.0.6) (2025-04-26)
+
+
+### Miscellaneous Chores
+
+* bump deps ([72b6dcc](https://github.com/v-bible/js-sdk/commit/72b6dcc7a16bd05d424664c1da83f226eb1a11f2))
+
 ## [1.0.5](https://github.com/v-bible/js-sdk/compare/v1.0.4...v1.0.5) (2025-04-05)
 
 
