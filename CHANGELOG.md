@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.7](https://github.com/v-bible/js-sdk/compare/v1.0.6...v1.0.7) (2025-04-28)
+
+
+### Bug Fixes
+
+* remove deprecated funcs ([b08aa72](https://github.com/v-bible/js-sdk/commit/b08aa72698a5d5bc9f4df7273539362b739a3bdf))
+* remove deprecated funcs ([bc9841e](https://github.com/v-bible/js-sdk/commit/bc9841e4748619d17869795813f94e60056e5850))
+
 ## [1.0.6](https://github.com/v-bible/js-sdk/compare/v1.0.5...v1.0.6) (2025-04-26)
 
 
