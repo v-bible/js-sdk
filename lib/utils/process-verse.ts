@@ -55,7 +55,9 @@ const processFootnoteAndRef = (
 
   // NOTE: Sort the footnotes and refs in descending order so when we add
   // footnote content, the position of the next footnote will not be affected
-  mappedNote = mappedNote.toSorted((a, b) => b.position - a.position);
+  mappedNote.sort((a, b) => {
+    return b.position - a.position;
+  });
 
   mappedNote.forEach((note) => {
     let newRefLabel = fnLabel(note.order + 1, note.chapterId);
@@ -101,13 +103,15 @@ const processVerseMd = (
   refs: BookReference[],
   psalms: PsalmMetadata[],
 ): string => {
-  verses.forEach((verse) => {
+  const newVerses = verses.map((verse) => {
     const verseFootnotes = footnotes.filter((fn) => fn.verseId === verse.id);
     const verseHeadings = headings.filter((h) => h.verseId === verse.id);
     const verseRefs = refs.filter((r) => r.verseId === verse.id);
 
-    verse.content = processFootnoteAndRef(
-      verse.content,
+    let newContent = verse.content;
+
+    newContent = processFootnoteAndRef(
+      newContent,
       verseFootnotes,
       verseRefs,
       fnMdLabel,
@@ -116,18 +120,18 @@ const processVerseMd = (
 
     // NOTE: Add verse number only to the first verse
     if (verse.order === 0) {
-      verse.content = `<sup><b>${verse.number}</b></sup> ${verse.content}`;
+      newContent = `<sup><b>${verse.number}</b></sup> ${newContent}`;
     }
 
     if (verse.isPoetry) {
-      verse.content = `\n> ${verse.content}\n>`;
+      newContent = `\n> ${newContent}\n>`;
     }
 
     // NOTE: Add the Psalm title to the first verse
     if (verse.order === 0 && verse.parNumber === 0 && verse.parIndex === 0) {
       psalms.forEach((psalm) => {
         if (psalm.chapterId === verse.chapterId) {
-          verse.content = `*${psalm.title}*\n${verse.content}`;
+          newContent = `*${psalm.title}*\n${newContent}`;
         }
       });
     }
@@ -150,8 +154,13 @@ const processVerseMd = (
       );
 
       // NOTE: Heading level starts from 1
-      verse.content = `\n${'#'.repeat(arr[revIdx]!.level % MAX_HEADING)} ${newHeadingContent}\n${verse.content}`;
+      newContent = `\n${'#'.repeat(arr[revIdx]!.level % MAX_HEADING)} ${newHeadingContent}\n${newContent}`;
     });
+
+    return {
+      ...verse,
+      content: newContent,
+    };
   });
 
   let mdString = '';
@@ -159,7 +168,7 @@ const processVerseMd = (
   // NOTE: Store to add newlines between chapters
   let currentChapterId = '';
 
-  verses.forEach((verse) => {
+  newVerses.forEach((verse) => {
     // NOTE: Add line break between chapters
     if (currentChapterId !== '' && currentChapterId !== verse.chapterId) {
       mdString += '\n\n---\n\n';
@@ -211,13 +220,15 @@ const processVerseHtml = (
   refs: BookReference[],
   psalms: PsalmMetadata[],
 ): string => {
-  verses.forEach((verse) => {
+  const newVerses = verses.map((verse) => {
     const verseFootnotes = footnotes.filter((fn) => fn.verseId === verse.id);
     const verseHeadings = headings.filter((h) => h.verseId === verse.id);
     const verseRefs = refs.filter((r) => r.verseId === verse.id);
 
-    verse.content = processFootnoteAndRef(
-      mdToHtml(verse.content).replaceAll(/<p>|<\/p>\n?/gm, ''),
+    let newContent = verse.content;
+
+    newContent = processFootnoteAndRef(
+      mdToHtml(newContent).replaceAll(/<p>|<\/p>\n?/gm, ''),
       verseFootnotes,
       verseRefs,
       fnHtmlLabel,
@@ -226,18 +237,18 @@ const processVerseHtml = (
 
     // NOTE: Add verse number only to the first verse
     if (verse.order === 0) {
-      verse.content = `<sup><b>${verse.number}</b></sup> ${verse.content}`;
+      newContent = `<sup><b>${verse.number}</b></sup> ${newContent}`;
     }
 
     if (verse.isPoetry) {
-      verse.content = `\n<blockquote>${verse.content}</blockquote>\n`;
+      newContent = `\n<blockquote>${newContent}</blockquote>\n`;
     }
 
     // NOTE: Add the Psalm title to the first verse
     if (verse.order === 0 && verse.parNumber === 0 && verse.parIndex === 0) {
       psalms.forEach((psalm) => {
         if (psalm.chapterId === verse.chapterId) {
-          verse.content = `<i>${mdToHtml(psalm.title).replaceAll(/<p>|<\/p>\n?/gm, '')}</i>\n${verse.content}`;
+          newContent = `<i>${mdToHtml(psalm.title).replaceAll(/<p>|<\/p>\n?/gm, '')}</i>\n${newContent}`;
         }
       });
     }
@@ -255,13 +266,18 @@ const processVerseHtml = (
         mdToHtml(arr[revIdx]!.content).replaceAll(/<p>|<\/p>\n?/gm, ''),
         headingFootnotes,
         headingRefs,
-        fnMdLabel,
-        refMdLabel,
+        fnHtmlLabel,
+        refHtmlLabel,
       );
 
       // NOTE: Heading level starts from 1
-      verse.content = `\n<h${arr[revIdx]!.level % MAX_HEADING}>${newHeadingContent}</h${arr[revIdx]!.level % MAX_HEADING}>\n${verse.content}`;
+      newContent = `\n<h${arr[revIdx]!.level % MAX_HEADING}>${newHeadingContent}</h${arr[revIdx]!.level % MAX_HEADING}>\n${newContent}`;
     });
+
+    return {
+      ...verse,
+      content: newContent,
+    };
   });
 
   let htmlString = '';
@@ -269,7 +285,7 @@ const processVerseHtml = (
   // NOTE: Store to add newlines between chapters
   let currentChapterId = '';
 
-  verses.forEach((verse) => {
+  newVerses.forEach((verse) => {
     // NOTE: Add line break between chapters
     if (currentChapterId !== '' && currentChapterId !== verse.chapterId) {
       htmlString += '\n\n<hr>\n\n';
