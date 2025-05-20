@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.8](https://github.com/v-bible/js-sdk/compare/v1.0.7...v1.0.8) (2025-05-20)
+
+
+### Bug Fixes
+
+* **lib:** incorrect verse handling ([3e90964](https://github.com/v-bible/js-sdk/commit/3e90964adce5dcbca785a59b24624c6d2d3da9bd))
+* **lib:** incorrect verse handling ([b79acae](https://github.com/v-bible/js-sdk/commit/b79acae47630ac22f78456fffc3cdcc46b82e5f2))
+
 ## [1.0.7](https://github.com/v-bible/js-sdk/compare/v1.0.6...v1.0.7) (2025-04-28)
 
 
