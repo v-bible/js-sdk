@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.9](https://github.com/v-bible/js-sdk/compare/v1.0.8...v1.0.9) (2025-06-13)
+
+
+### Bug Fixes
+
+* **utils:** duplicate fns & refs ([6b01c03](https://github.com/v-bible/js-sdk/commit/6b01c03a2f7c7d2e27f99e4404d745f2d24793b8))
+* **utils:** update process format ([292997f](https://github.com/v-bible/js-sdk/commit/292997f04e421b94d3aa5f2b3e6ab3bf2d82eeaf))
+* **utils:** update process format ([6b01c03](https://github.com/v-bible/js-sdk/commit/6b01c03a2f7c7d2e27f99e4404d745f2d24793b8))
+
 ## [1.0.8](https://github.com/v-bible/js-sdk/compare/v1.0.7...v1.0.8) (2025-05-20)
 
 
