@@ -30,11 +30,11 @@
   },
   "dependencies": {
     "date-fns": "4.1.0",
-    "es-toolkit": "1.29.0",
+    "es-toolkit": "1.39.3",
     "showdown": "2.1.0"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "0.17.4",
+    "@arethetypeswrong/cli": "0.18.2",
     "@babel/core": "7.26.0",
     "@commitlint/cli": "19.6.0",
     "@commitlint/config-conventional": "19.6.0",
@@ -51,8 +51,8 @@
     "eslint-plugin-prettier": "5.2.1",
     "husky": "9.1.7",
     "lint-staged": "15.2.10",
-    "prettier": "3.4.2",
-    "tsup": "8.4.0",
-    "typescript": "5.8.2"
+    "prettier": "3.5.3",
+    "tsup": "8.5.0",
+    "typescript": "5.8.3"
   }
 }

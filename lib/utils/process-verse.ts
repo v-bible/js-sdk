@@ -5,6 +5,7 @@ import type {
   BookVerse,
   PsalmMetadata,
 } from '@v-bible/types';
+import { uniq } from 'es-toolkit';
 import showdown from 'showdown';
 
 const MAX_HEADING = 6;
@@ -187,15 +188,24 @@ const processVerseMd = (
 
   mdString += '\n\n';
 
+  let fnSection = '';
+
   footnotes.forEach((footnote) => {
-    mdString += `[^${footnote.order + 1}-${footnote.chapterId}]: ${footnote.content}\n`;
+    fnSection += `[^${footnote.order + 1}-${footnote.chapterId}]: ${footnote.content}\n\n`;
   });
 
   refs.forEach((ref) => {
     if (ref.position !== undefined) {
-      mdString += `[^${ref.order + 1}@-${ref.chapterId}]: ${ref.content}\n`;
+      fnSection += `[^${ref.order + 1}@-${ref.chapterId}]: ${ref.content}\n\n`;
     }
   });
+
+  const fnLines = fnSection.split('\n\n');
+
+  // NOTE: Remove duplicate footnotes and references
+  const uniqueFnLines = uniq(fnLines);
+
+  mdString += uniqueFnLines.join('\n\n');
 
   // NOTE: Clean up the blockquote redundant characters
   mdString = mdString.replaceAll(/>\n+>/gm, '>\n>');
@@ -304,15 +314,24 @@ const processVerseHtml = (
 
   htmlString += '<hr>\n\n<ol>';
 
+  let fnSection = '';
+
   footnotes.forEach((footnote) => {
-    htmlString += `<li id="fn-${footnote.order + 1}-${footnote.chapterId}"><p>${mdToHtml(footnote.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${footnote.order + 1}-${footnote.chapterId}">${footnote.order + 1}</a>]</p></li>\n`;
+    fnSection += `<li id="fn-${footnote.order + 1}-${footnote.chapterId}"><p>${mdToHtml(footnote.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${footnote.order + 1}-${footnote.chapterId}">${footnote.order + 1}</a>]</p></li>\n\n`;
   });
 
   refs.forEach((ref) => {
     if (ref.position !== undefined) {
-      htmlString += `<li id="fn-${ref.order + 1}@-${ref.chapterId}"><p>${mdToHtml(ref.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${ref.order + 1}@-${ref.chapterId}">${ref.order + 1}@</a>]</p></li>\n`;
+      fnSection += `<li id="fn-${ref.order + 1}@-${ref.chapterId}"><p>${mdToHtml(ref.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${ref.order + 1}@-${ref.chapterId}">${ref.order + 1}@</a>]</p></li>\n\n`;
     }
   });
+
+  const fnLines = fnSection.split('\n\n');
+
+  // NOTE: Remove duplicate footnotes and references
+  const uniqueFnLines = uniq(fnLines);
+
+  htmlString += uniqueFnLines.join('\n\n');
 
   htmlString += '</ol>';
 
