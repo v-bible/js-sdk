@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.10](https://github.com/v-bible/js-sdk/compare/v1.0.9...v1.0.10) (2025-08-05)
+
+
+### Bug Fixes
+
+* **utils:** add tests ([0543c25](https://github.com/v-bible/js-sdk/commit/0543c25b3023a13e9d384a2ca6d1864b8c38d44a))
+* **utils:** update new db structure ([27fd5bc](https://github.com/v-bible/js-sdk/commit/27fd5bc481c7d07739d64443f77d13f099aed414))
+* **utils:** update new db structure ([6fcd833](https://github.com/v-bible/js-sdk/commit/6fcd833e0f90c921e8342bc8b02f8b635dd9f711))
+
 ## [1.0.9](https://github.com/v-bible/js-sdk/compare/v1.0.8...v1.0.9) (2025-06-13)
 
 
