@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.11](https://github.com/v-bible/js-sdk/compare/v1.0.10...v1.0.11) (2025-08-05)
+
+
+### Miscellaneous Chores
+
+* release 1.0.11 ([ca5f32e](https://github.com/v-bible/js-sdk/commit/ca5f32e422481b4d44dd0b442c874cd082592324))
+
 ## [1.0.10](https://github.com/v-bible/js-sdk/compare/v1.0.9...v1.0.10) (2025-08-05)
 
 
