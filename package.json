@@ -24,6 +24,8 @@
   "scripts": {
     "lint": "tsc",
     "build": "tsup",
+    "test": "vitest",
+    "test:run": "vitest run",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "prepublish": "pnpm run build && pnpm run check-exports && pnpm run lint",
     "prepare": "husky"
@@ -43,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "8.17.0",
     "@typescript-eslint/parser": "8.17.0",
     "@v-bible/types": "0.6.0",
+    "@vitest/ui": "3.2.4",
     "eslint": "8.57.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "9.1.0",
@@ -53,6 +56,7 @@
     "lint-staged": "16.1.2",
     "prettier": "3.5.3",
     "tsup": "8.5.0",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "vitest": "3.2.4"
   }
 }
