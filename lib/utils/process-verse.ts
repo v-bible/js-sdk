@@ -1,71 +1,27 @@
-import type {
-  BookFootnote,
-  BookHeading,
-  BookReference,
-  BookVerse,
-  PsalmMetadata,
-} from '@v-bible/types';
+import type { Footnote, Heading, PsalmMetadata, Verse } from '@v-bible/types';
 import { uniq } from 'es-toolkit';
 import showdown from 'showdown';
 
 const MAX_HEADING = 6;
 
-type MapNote = {
-  chapterId: string;
-  position: number;
-  order: number;
-  type: 'footnote' | 'reference';
-};
-
 const processFootnoteAndRef = (
   str: string,
-  footnotes: BookFootnote[],
-  refs: BookReference[],
+  footnotes: Footnote[],
   fnLabel: (order: number, chapterId: string) => string,
   refLabel: (order: number, chapterId: string) => string,
 ): string => {
-  let mappedNote: MapNote[] = [];
-
-  mappedNote = [
-    ...mappedNote,
-    ...footnotes.map((f) => ({
-      chapterId: f.chapterId,
-      position: f.position,
-      order: f.order,
-      type: 'footnote' as const,
-    })),
-  ];
-
-  mappedNote = [
-    ...mappedNote,
-    ...refs.flatMap((r) => {
-      if (r.position !== undefined) {
-        return [
-          {
-            chapterId: r.chapterId,
-            position: r.position,
-            order: r.order,
-            type: 'reference' as const,
-          },
-        ];
-      }
-
-      return [];
-    }),
-  ];
-
   // NOTE: Sort the footnotes and refs in descending order so when we add
   // footnote content, the position of the next footnote will not be affected
-  mappedNote.sort((a, b) => {
+  footnotes.sort((a, b) => {
     return b.position - a.position;
   });
 
-  mappedNote.forEach((note) => {
-    let newRefLabel = fnLabel(note.order + 1, note.chapterId);
+  footnotes.forEach((note) => {
+    let newRefLabel = fnLabel(note.sortOrder + 1, note.chapterId);
 
     if (note.type === 'reference') {
       // NOTE: Must match with corresponding footnote label
-      newRefLabel = refLabel(note.order + 1, note.chapterId);
+      newRefLabel = refLabel(note.sortOrder + 1, note.chapterId);
     }
 
     if (note.position > str.length) {
@@ -98,29 +54,27 @@ const refHtmlLabel = (order: number, chapterId: string): string => {
 };
 
 const processVerseMd = (
-  verses: BookVerse[],
-  footnotes: BookFootnote[],
-  headings: BookHeading[],
-  refs: BookReference[],
+  verses: Verse[],
+  footnotes: Footnote[],
+  headings: Heading[],
   psalms: PsalmMetadata[],
 ): string => {
   const newVerses = verses.map((verse) => {
     const verseFootnotes = footnotes.filter((fn) => fn.verseId === verse.id);
     const verseHeadings = headings.filter((h) => h.verseId === verse.id);
-    const verseRefs = refs.filter((r) => r.verseId === verse.id);
 
-    let newContent = verse.content;
+    let newContent = verse.text;
 
     newContent = processFootnoteAndRef(
       newContent,
       verseFootnotes,
-      verseRefs,
       fnMdLabel,
       refMdLabel,
     );
 
-    // NOTE: Add verse number only to the first verse
-    if (verse.order === 0) {
+    // NOTE: Add verse number label only to the first verse or the first
+    // verse in the paragraph
+    if (verse.subVerseIndex === 0 || verse.paragraphIndex === 0) {
       newContent = `<sup><b>${verse.number}</b></sup> ${newContent}`;
     }
 
@@ -129,7 +83,7 @@ const processVerseMd = (
     }
 
     // NOTE: Add the Psalm title to the first verse
-    if (verse.order === 0 && verse.parNumber === 0 && verse.parIndex === 0) {
+    if (verse.subVerseIndex === 0 && verse.paragraphNumber === 0) {
       psalms.forEach((psalm) => {
         if (psalm.chapterId === verse.chapterId) {
           newContent = `*${psalm.title}*\n${newContent}`;
@@ -144,12 +98,9 @@ const processVerseMd = (
         (fn) => fn.headingId === arr[revIdx]!.id,
       );
 
-      const headingRefs = refs.filter((r) => r.headingId === arr[revIdx]!.id);
-
       const newHeadingContent = processFootnoteAndRef(
-        arr[revIdx]!.content,
+        arr[revIdx]!.text,
         headingFootnotes,
-        headingRefs,
         fnMdLabel,
         refMdLabel,
       );
@@ -160,7 +111,7 @@ const processVerseMd = (
 
     return {
       ...verse,
-      content: newContent,
+      text: newContent,
     };
   });
 
@@ -177,26 +128,28 @@ const processVerseMd = (
 
     currentChapterId = verse.chapterId;
 
-    if (verse.parNumber > currPar) {
-      mdString += `\n\n${verse.content}`;
+    if (verse.paragraphNumber > currPar) {
+      mdString += `\n\n${verse.text}`;
     } else {
-      mdString += ` ${verse.content}`;
+      mdString += ` ${verse.text}`;
     }
 
-    currPar = verse.parNumber;
+    currPar = verse.paragraphNumber;
   });
 
   mdString += '\n\n';
 
   let fnSection = '';
 
-  footnotes.forEach((footnote) => {
-    fnSection += `[^${footnote.order + 1}-${footnote.chapterId}]: ${footnote.content}\n\n`;
-  });
+  footnotes.sort(
+    (a, b) => a.type.localeCompare(b.type) || a.sortOrder - b.sortOrder,
+  );
 
-  refs.forEach((ref) => {
-    if (ref.position !== undefined) {
-      fnSection += `[^${ref.order + 1}@-${ref.chapterId}]: ${ref.content}\n\n`;
+  footnotes.forEach((footnote) => {
+    if (footnote.type === 'footnote') {
+      fnSection += `[^${footnote.sortOrder + 1}-${footnote.chapterId}]: ${footnote.text}\n\n`;
+    } else {
+      fnSection += `[^${footnote.sortOrder + 1}@-${footnote.chapterId}]: ${footnote.text}\n\n`;
     }
   });
 
@@ -224,29 +177,27 @@ const mdToHtml = (md: string) => {
 };
 
 const processVerseHtml = (
-  verses: BookVerse[],
-  footnotes: BookFootnote[],
-  headings: BookHeading[],
-  refs: BookReference[],
+  verses: Verse[],
+  footnotes: Footnote[],
+  headings: Heading[],
   psalms: PsalmMetadata[],
 ): string => {
   const newVerses = verses.map((verse) => {
     const verseFootnotes = footnotes.filter((fn) => fn.verseId === verse.id);
     const verseHeadings = headings.filter((h) => h.verseId === verse.id);
-    const verseRefs = refs.filter((r) => r.verseId === verse.id);
 
-    let newContent = verse.content;
+    let newContent = verse.text;
 
     newContent = processFootnoteAndRef(
       mdToHtml(newContent).replaceAll(/<p>|<\/p>\n?/gm, ''),
       verseFootnotes,
-      verseRefs,
       fnHtmlLabel,
       refHtmlLabel,
     );
 
-    // NOTE: Add verse number only to the first verse
-    if (verse.order === 0) {
+    // NOTE: Add verse number label only to the first verse or the first
+    // verse in the paragraph
+    if (verse.subVerseIndex === 0 || verse.paragraphIndex === 0) {
       newContent = `<sup><b>${verse.number}</b></sup> ${newContent}`;
     }
 
@@ -255,7 +206,7 @@ const processVerseHtml = (
     }
 
     // NOTE: Add the Psalm title to the first verse
-    if (verse.order === 0 && verse.parNumber === 0 && verse.parIndex === 0) {
+    if (verse.subVerseIndex === 0 && verse.paragraphNumber === 0) {
       psalms.forEach((psalm) => {
         if (psalm.chapterId === verse.chapterId) {
           newContent = `<i>${mdToHtml(psalm.title).replaceAll(/<p>|<\/p>\n?/gm, '')}</i>\n${newContent}`;
@@ -270,12 +221,9 @@ const processVerseHtml = (
         (fn) => fn.headingId === arr[revIdx]!.id,
       );
 
-      const headingRefs = refs.filter((r) => r.headingId === arr[revIdx]!.id);
-
       const newHeadingContent = processFootnoteAndRef(
-        mdToHtml(arr[revIdx]!.content).replaceAll(/<p>|<\/p>\n?/gm, ''),
+        mdToHtml(arr[revIdx]!.text).replaceAll(/<p>|<\/p>\n?/gm, ''),
         headingFootnotes,
-        headingRefs,
         fnHtmlLabel,
         refHtmlLabel,
       );
@@ -286,7 +234,7 @@ const processVerseHtml = (
 
     return {
       ...verse,
-      content: newContent,
+      text: newContent,
     };
   });
 
@@ -303,26 +251,28 @@ const processVerseHtml = (
 
     currentChapterId = verse.chapterId;
 
-    if (verse.parNumber > currPar) {
-      htmlString += `\n\n${verse.content}`;
+    if (verse.paragraphNumber > currPar) {
+      htmlString += `\n\n${verse.text}`;
     } else {
-      htmlString += ` ${verse.content}`;
+      htmlString += ` ${verse.text}`;
     }
 
-    currPar = verse.parNumber;
+    currPar = verse.paragraphNumber;
   });
 
   htmlString += '<hr>\n\n<ol>';
 
   let fnSection = '';
 
-  footnotes.forEach((footnote) => {
-    fnSection += `<li id="fn-${footnote.order + 1}-${footnote.chapterId}"><p>${mdToHtml(footnote.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${footnote.order + 1}-${footnote.chapterId}">${footnote.order + 1}</a>]</p></li>\n\n`;
-  });
+  footnotes.sort(
+    (a, b) => a.type.localeCompare(b.type) || a.sortOrder - b.sortOrder,
+  );
 
-  refs.forEach((ref) => {
-    if (ref.position !== undefined) {
-      fnSection += `<li id="fn-${ref.order + 1}@-${ref.chapterId}"><p>${mdToHtml(ref.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${ref.order + 1}@-${ref.chapterId}">${ref.order + 1}@</a>]</p></li>\n\n`;
+  footnotes.forEach((footnote) => {
+    if (footnote.type === 'footnote') {
+      fnSection += `<li id="fn-${footnote.sortOrder + 1}-${footnote.chapterId}"><p>${mdToHtml(footnote.text).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${footnote.sortOrder + 1}-${footnote.chapterId}">${footnote.sortOrder + 1}</a>]</p></li>\n\n`;
+    } else {
+      fnSection += `<li id="fn-${footnote.sortOrder + 1}@-${footnote.chapterId}"><p>${mdToHtml(footnote.text).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a hfootnote="#fnfootnote-${footnote.sortOrder + 1}@-${footnote.chapterId}">${footnote.sortOrder + 1}@</a>]</p></li>\n\n`;
     }
   });
 
