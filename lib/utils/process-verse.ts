@@ -82,11 +82,13 @@ const processVerseMd = (
       newContent = `\n> ${newContent}\n>`;
     }
 
+    psalms = psalms.reverse();
+
     // NOTE: Add the Psalm title to the first verse
     if (verse.subVerseIndex === 0 && verse.paragraphNumber === 0) {
       psalms.forEach((psalm) => {
         if (psalm.chapterId === verse.chapterId) {
-          newContent = `*${psalm.title}*\n${newContent}`;
+          newContent = `*${psalm.text}*\n${newContent}`;
         }
       });
     }
@@ -205,11 +207,13 @@ const processVerseHtml = (
       newContent = `\n<blockquote>${newContent}</blockquote>\n`;
     }
 
+    psalms = psalms.reverse();
+
     // NOTE: Add the Psalm title to the first verse
     if (verse.subVerseIndex === 0 && verse.paragraphNumber === 0) {
       psalms.forEach((psalm) => {
         if (psalm.chapterId === verse.chapterId) {
-          newContent = `<i>${mdToHtml(psalm.title).replaceAll(/<p>|<\/p>\n?/gm, '')}</i>\n${newContent}`;
+          newContent = `<i>${mdToHtml(psalm.text).replaceAll(/<p>|<\/p>\n?/gm, '')}</i>\n${newContent}`;
         }
       });
     }
