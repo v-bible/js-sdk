@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.12](https://github.com/v-bible/js-sdk/compare/v1.0.11...v1.0.12) (2025-08-13)
+
+
+### Bug Fixes
+
+* **utils:** update process verse ([a40dca0](https://github.com/v-bible/js-sdk/commit/a40dca0ae136ecebb922d163980fe1659c0edb7f))
+* **utils:** update process verse ([d587d87](https://github.com/v-bible/js-sdk/commit/d587d87bcb41cf42c938d3b58f7b83d7c83ffdc1))
+
 ## [1.0.11](https://github.com/v-bible/js-sdk/compare/v1.0.10...v1.0.11) (2025-08-05)
 
 
