@@ -1,8 +1,18 @@
-import type { Footnote, Heading, PsalmMetadata, Verse } from '@v-bible/types';
+import type {
+  Footnote,
+  Heading,
+  PsalmMetadata,
+  Verse,
+  WordsOfJesus,
+} from '@v-bible/types';
 import { uniq } from 'es-toolkit';
 import showdown from 'showdown';
 
 const MAX_HEADING = 6;
+
+const WOJ_OPENING = '<b>';
+
+const WOJ_CLOSING = '</b>';
 
 const processFootnoteAndRef = (
   str: string,
@@ -58,16 +68,71 @@ const processVerseMd = (
   footnotes: Footnote[],
   headings: Heading[],
   psalms: PsalmMetadata[],
+  woj: WordsOfJesus[],
 ): string => {
+  // NOTE: Order is Woj -> Footnote labels -> Verse number -> Poetry ->
+  // Psalms -> Headings -> Heading Footnotes -> Chapter separator ->
+  // Footnote text
   const newVerses = verses.map((verse) => {
     const verseFootnotes = footnotes.filter((fn) => fn.verseId === verse.id);
     const verseHeadings = headings.filter((h) => h.verseId === verse.id);
+    const verseWoj = woj.filter((w) => w.verseId === verse.id);
+
+    // NOTE: Because words of jesus effect the footnote & ref position, so
+    // we have to update the position of footnotes and references, by adding
+    // wojOpening and wojClosing length if woj text start or text end
+    // smaller than the footnote or reference position
+    const updateFnPosition = verseFootnotes.map((fn) => {
+      let offsetLength = 0;
+
+      verseWoj.forEach((wojItem) => {
+        if (wojItem.textStart < fn.position) {
+          offsetLength += WOJ_OPENING.length;
+        }
+
+        if (wojItem.textEnd < fn.position) {
+          offsetLength += WOJ_CLOSING.length;
+        }
+      });
+
+      return {
+        ...fn,
+        position: fn.position + offsetLength,
+      };
+    });
 
     let newContent = verse.text;
 
+    // NOTE: Wrap text with woj opening and closing if the verse has words
+    // of Jesus
+    if (verseWoj.length > 0) {
+      const newString = newContent;
+
+      verseWoj.reverse().forEach((wojItem) => {
+        if (wojItem.textStart < 0 || wojItem.textEnd < 0) {
+          return;
+        }
+
+        if (wojItem.textEnd < newString.length) {
+          newContent =
+            newString.slice(0, wojItem.textStart) +
+            WOJ_OPENING +
+            wojItem.quotationText +
+            WOJ_CLOSING +
+            newString.slice(wojItem.textEnd, newString.length);
+        } else {
+          newContent =
+            newString.slice(0, wojItem.textStart) +
+            WOJ_OPENING +
+            wojItem.quotationText +
+            WOJ_CLOSING;
+        }
+      });
+    }
+
     newContent = processFootnoteAndRef(
       newContent,
-      verseFootnotes,
+      updateFnPosition,
       fnMdLabel,
       refMdLabel,
     );
@@ -162,9 +227,11 @@ const processVerseMd = (
 
   mdString += uniqueFnLines.join('\n\n');
 
-  // NOTE: Clean up the blockquote redundant characters
-  mdString = mdString.replaceAll(/>\n+>/gm, '>\n>');
-  mdString = mdString.replaceAll('>\n\n', '\n');
+  // NOTE: Clean up the blockquote redundant characters. Note to cleanup the
+  // blockquote characters, we need to replace the `>` characters at the
+  // beginning of the line
+  mdString = mdString.replaceAll(/^>\n+>/gm, '>\n>');
+  mdString = mdString.replaceAll(/^>\n\n/gm, '\n');
   // NOTE: Clean up the redundant newlines
   mdString = mdString.replaceAll(/\n{3,}/gm, '\n\n');
   mdString = mdString.trim();
@@ -183,16 +250,68 @@ const processVerseHtml = (
   footnotes: Footnote[],
   headings: Heading[],
   psalms: PsalmMetadata[],
+  woj: WordsOfJesus[],
 ): string => {
   const newVerses = verses.map((verse) => {
     const verseFootnotes = footnotes.filter((fn) => fn.verseId === verse.id);
     const verseHeadings = headings.filter((h) => h.verseId === verse.id);
+    const verseWoj = woj.filter((w) => w.verseId === verse.id);
+
+    // NOTE: Because words of jesus effect the footnote & ref position, so
+    // we have to update the position of footnotes and references, by adding
+    // wojOpening and wojClosing length if woj text start or text end
+    // smaller than the footnote or reference position
+    const updateFnPosition = verseFootnotes.map((fn) => {
+      let offsetLength = 0;
+
+      verseWoj.forEach((wojItem) => {
+        if (wojItem.textStart < fn.position) {
+          offsetLength += WOJ_OPENING.length;
+        }
+
+        if (wojItem.textEnd < fn.position) {
+          offsetLength += WOJ_CLOSING.length;
+        }
+      });
+
+      return {
+        ...fn,
+        position: fn.position + offsetLength,
+      };
+    });
 
     let newContent = verse.text;
 
+    // NOTE: Wrap text with woj opening and closing if the verse has words
+    // of Jesus
+    if (verseWoj.length > 0) {
+      const newString = newContent;
+
+      verseWoj.reverse().forEach((wojItem) => {
+        if (wojItem.textStart < 0 || wojItem.textEnd < 0) {
+          return;
+        }
+
+        if (wojItem.textEnd < newString.length) {
+          newContent =
+            newString.slice(0, wojItem.textStart) +
+            WOJ_OPENING +
+            wojItem.quotationText +
+            WOJ_CLOSING +
+            newString.slice(wojItem.textEnd, newString.length);
+        } else {
+          newContent =
+            newString.slice(0, wojItem.textStart) +
+            WOJ_OPENING +
+            wojItem.quotationText +
+            WOJ_CLOSING;
+        }
+      });
+    }
+
     newContent = processFootnoteAndRef(
       mdToHtml(newContent).replaceAll(/<p>|<\/p>\n?/gm, ''),
-      verseFootnotes,
+      updateFnPosition,
       fnHtmlLabel,
       refHtmlLabel,
     );
