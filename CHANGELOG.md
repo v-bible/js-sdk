@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.13](https://github.com/v-bible/js-sdk/compare/v1.0.12...v1.0.13) (2025-08-16)
+
+
+### Bug Fixes
+
+* support woj ([69712f7](https://github.com/v-bible/js-sdk/commit/69712f721e8e301509856158adce2624fc37c31b))
+* support woj ([21727b8](https://github.com/v-bible/js-sdk/commit/21727b8fa95b4d524d71da2ae87002bb8c4db935))
+
 ## [1.0.12](https://github.com/v-bible/js-sdk/compare/v1.0.11...v1.0.12) (2025-08-13)
 
 
