@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.14](https://github.com/v-bible/js-sdk/compare/v1.0.13...v1.0.14) (2025-08-19)
+
+
+### Bug Fixes
+
+* **utils:** incorrect woj handling ([18226db](https://github.com/v-bible/js-sdk/commit/18226db2b0a7675e9f3ae82c7661f27a49c0d5e5))
+* **utils:** incorrect woj handling ([6062872](https://github.com/v-bible/js-sdk/commit/606287206d70f7b92bb215b9de78a25fd3e695cc))
+
 ## [1.0.13](https://github.com/v-bible/js-sdk/compare/v1.0.12...v1.0.13) (2025-08-16)
 
 
