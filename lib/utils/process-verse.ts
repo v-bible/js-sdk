@@ -90,7 +90,9 @@ const processVerseMd = (
           offsetLength += WOJ_OPENING.length;
         }
 
-        if (wojItem.textEnd < fn.position) {
+        // NOTE: We want footnotes or refs behind the closing tag of
+        // words of Jesus
+        if (wojItem.textEnd <= fn.position) {
           offsetLength += WOJ_CLOSING.length;
         }
       });
@@ -106,9 +108,9 @@ const processVerseMd = (
     // NOTE: Wrap text with woj opening and closing if the verse has words
     // of Jesus
     if (verseWoj.length > 0) {
-      const newString = newContent;
-
       verseWoj.reverse().forEach((wojItem) => {
+        const newString = newContent;
+
         if (wojItem.textStart < 0 || wojItem.textEnd < 0) {
           return;
         }
@@ -269,7 +271,9 @@ const processVerseHtml = (
           offsetLength += WOJ_OPENING.length;
         }
 
-        if (wojItem.textEnd < fn.position) {
+        // NOTE: We want footnotes or refs behind the closing tag of
+        // words of Jesus
+        if (wojItem.textEnd <= fn.position) {
           offsetLength += WOJ_CLOSING.length;
         }
       });
@@ -285,9 +289,9 @@ const processVerseHtml = (
     // NOTE: Wrap text with woj opening and closing if the verse has words
     // of Jesus
     if (verseWoj.length > 0) {
-      const newString = newContent;
-
       verseWoj.reverse().forEach((wojItem) => {
+        const newString = newContent;
+
         if (wojItem.textStart < 0 || wojItem.textEnd < 0) {
           return;
         }
