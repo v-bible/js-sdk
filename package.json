@@ -32,19 +32,20 @@
   },
   "dependencies": {
     "date-fns": "4.1.0",
-    "es-toolkit": "1.39.3",
+    "es-toolkit": "1.39.10",
     "showdown": "2.1.0"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",
-    "@babel/core": "7.26.0",
-    "@commitlint/cli": "19.6.0",
-    "@commitlint/config-conventional": "19.6.0",
-    "@types/node": "22.10.1",
+    "@babel/core": "7.26.10",
+    "@bufbuild/protobuf": "2.7.0",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@types/node": "22.18.0",
     "@types/showdown": "2.0.6",
     "@typescript-eslint/eslint-plugin": "8.17.0",
     "@typescript-eslint/parser": "8.17.0",
-    "@v-bible/types": "0.6.2",
+    "@v-bible/types": "0.6.4",
     "@vitest/ui": "3.2.4",
     "eslint": "8.57.1",
     "eslint-config-airbnb-base": "15.0.0",
@@ -53,10 +54,10 @@
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-prettier": "5.2.1",
     "husky": "9.1.7",
-    "lint-staged": "16.1.2",
-    "prettier": "3.5.3",
+    "lint-staged": "16.1.6",
+    "prettier": "3.6.2",
     "tsup": "8.5.0",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "vitest": "3.2.4"
   }
 }
