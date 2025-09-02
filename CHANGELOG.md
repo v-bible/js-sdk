@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.15](https://github.com/v-bible/js-sdk/compare/v1.0.14...v1.0.15) (2025-09-02)
+
+
+### Bug Fixes
+
+* **utils:** migrate to new db ([74e26e8](https://github.com/v-bible/js-sdk/commit/74e26e8a4858d1c54230e9aef6ad13e57c1335c7))
+* **utils:** migrate to new db ([1d2f6f8](https://github.com/v-bible/js-sdk/commit/1d2f6f820cb1a31f76260f307c38f30f39c4ab89))
+
 ## [1.0.14](https://github.com/v-bible/js-sdk/compare/v1.0.13...v1.0.14) (2025-08-19)
 
 
