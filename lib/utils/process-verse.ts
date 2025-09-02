@@ -1,143 +1,118 @@
-import type {
-  Footnote,
-  Heading,
-  PsalmMetadata,
-  Verse,
-  WordsOfJesus,
+import {
+  type Heading,
+  type Mark,
+  MarkKind,
+  MarkTargetType,
+  type PsalmMetadata,
+  type Verse,
 } from '@v-bible/types';
 import { uniq } from 'es-toolkit';
 import showdown from 'showdown';
+import { resolveMarks } from '@/lib/utils/resolve-marks';
 
 const MAX_HEADING = 6;
 
-const WOJ_OPENING = '<b>';
-
-const WOJ_CLOSING = '</b>';
-
-const processFootnoteAndRef = (
+const injectMarkLabel = (
   str: string,
-  footnotes: Footnote[],
-  fnLabel: (order: number, chapterId: string) => string,
-  refLabel: (order: number, chapterId: string) => string,
+  marks: Mark[],
+  labelMap: Record<MarkKind, (mark: Mark, chapterId: string) => string>,
 ): string => {
-  // NOTE: Sort the footnotes and refs in descending order so when we add
-  // footnote content, the position of the next footnote will not be affected
-  footnotes.sort((a, b) => {
-    return b.position - a.position;
-  });
+  const resolvedMarks = resolveMarks(marks, undefined).reverse();
 
-  footnotes.forEach((note) => {
-    let newRefLabel = fnLabel(note.sortOrder + 1, note.chapterId);
+  resolvedMarks.forEach((mark) => {
+    const labelFunc = labelMap[mark.kind];
 
-    if (note.type === 'reference') {
-      // NOTE: Must match with corresponding footnote label
-      newRefLabel = refLabel(note.sortOrder + 1, note.chapterId);
-    }
+    if (labelFunc !== undefined) {
+      const newMarkLabel = labelFunc(mark, mark.chapterId);
 
-    if (note.position > str.length) {
-      str += newRefLabel;
-    } else {
-      str =
-        str.slice(0, note.position) +
-        newRefLabel +
-        str.slice(note.position, str.length);
+      if (mark.startOffset > str.length) {
+        str += newMarkLabel;
+      } else {
+        str =
+          str.slice(0, mark.startOffset) +
+          newMarkLabel +
+          str.slice(mark.endOffset, str.length);
+      }
     }
   });
 
   return str;
 };
 
-const fnMdLabel = (order: number, chapterId: string): string => {
-  return `[^${order}-${chapterId}]`;
+const unspecifiedMdLabel = (): string => {
+  return '';
 };
 
-const refMdLabel = (order: number, chapterId: string): string => {
-  return `[^${order}@-${chapterId}]`;
+const fnMdLabel = (mark: Mark, chapterId: string): string => {
+  return `[^${mark.sortOrder + 1}-${chapterId}]`;
 };
 
-const fnHtmlLabel = (order: number, chapterId: string): string => {
-  return `<sup><a href="#fn-${order}-${chapterId}" id="fnref-${order}-${chapterId}">${order}</a></sup>`;
+const refMdLabel = (mark: Mark, chapterId: string): string => {
+  return `[^${mark.sortOrder + 1}@-${chapterId}]`;
 };
 
-const refHtmlLabel = (order: number, chapterId: string): string => {
-  return `<sup><a href="#fn-${order}@-${chapterId}" id="fnref-${order}@-${chapterId}">${order}@</a></sup>`;
+const wojMdLabel = (mark: Mark): string => {
+  return `<b>${mark.content}</b>`;
+};
+
+const unspecifiedHtmlLabel = (): string => {
+  return '';
+};
+
+const fnHtmlLabel = (mark: Mark, chapterId: string): string => {
+  return `<sup><a href="#fn-${mark.sortOrder + 1}-${chapterId}" id="fnref-${mark.sortOrder + 1}-${chapterId}">${mark.sortOrder + 1}</a></sup>`;
+};
+
+const refHtmlLabel = (mark: Mark, chapterId: string): string => {
+  return `<sup><a href="#fn-${mark.sortOrder + 1}@-${chapterId}" id="fnref-${mark.sortOrder + 1}@-${chapterId}">${mark.sortOrder + 1}@</a></sup>`;
+};
+
+const wojHtmlLabel = (mark: Mark): string => {
+  return `<b>${mark.content}</b>`;
 };
 
 const processVerseMd = (
   verses: Verse[],
-  footnotes: Footnote[],
+  marks: Mark[],
   headings: Heading[],
   psalms: PsalmMetadata[],
-  woj: WordsOfJesus[],
 ): string => {
   // NOTE: Order is Woj -> Footnote labels -> Verse number -> Poetry ->
   // Psalms -> Headings -> Heading Footnotes -> Chapter separator ->
   // Footnote text
   const newVerses = verses.map((verse) => {
-    const verseFootnotes = footnotes.filter((fn) => fn.verseId === verse.id);
+    const verseFootnotes = marks.filter(
+      (fn) =>
+        fn.kind === MarkKind.FOOTNOTE &&
+        fn.targetType === MarkTargetType.VERSE &&
+        fn.targetId === verse.id,
+    );
+    const verseReferences = marks.filter(
+      (fn) =>
+        fn.kind === MarkKind.REFERENCE &&
+        fn.targetType === MarkTargetType.VERSE &&
+        fn.targetId === verse.id,
+    );
     const verseHeadings = headings.filter((h) => h.verseId === verse.id);
-    const verseWoj = woj.filter((w) => w.verseId === verse.id);
-
-    // NOTE: Because words of jesus effect the footnote & ref position, so
-    // we have to update the position of footnotes and references, by adding
-    // wojOpening and wojClosing length if woj text start or text end
-    // smaller than the footnote or reference position
-    const updateFnPosition = verseFootnotes.map((fn) => {
-      let offsetLength = 0;
-
-      verseWoj.forEach((wojItem) => {
-        if (wojItem.textStart < fn.position) {
-          offsetLength += WOJ_OPENING.length;
-        }
-
-        // NOTE: We want footnotes or refs behind the closing tag of
-        // words of Jesus
-        if (wojItem.textEnd <= fn.position) {
-          offsetLength += WOJ_CLOSING.length;
-        }
-      });
-
-      return {
-        ...fn,
-        position: fn.position + offsetLength,
-      };
-    });
+    const verseWoj = marks.filter(
+      (w) =>
+        w.kind === MarkKind.WORDS_OF_JESUS &&
+        w.targetType === MarkTargetType.VERSE &&
+        w.targetId === verse.id,
+    );
 
     let newContent = verse.text;
 
-    // NOTE: Wrap text with woj opening and closing if the verse has words
-    // of Jesus
-    if (verseWoj.length > 0) {
-      verseWoj.reverse().forEach((wojItem) => {
-        const newString = newContent;
+    const verseMarks = [...verseFootnotes, ...verseReferences, ...verseWoj];
 
-        if (wojItem.textStart < 0 || wojItem.textEnd < 0) {
-          return;
-        }
+    const labelMap = {
+      [MarkKind.UNSPECIFIED]: unspecifiedMdLabel,
+      [MarkKind.FOOTNOTE]: fnMdLabel,
+      [MarkKind.REFERENCE]: refMdLabel,
+      [MarkKind.WORDS_OF_JESUS]: wojMdLabel,
+    };
 
-        if (wojItem.textEnd < newString.length) {
-          newContent =
-            newString.slice(0, wojItem.textStart) +
-            WOJ_OPENING +
-            wojItem.quotationText +
-            WOJ_CLOSING +
-            newString.slice(wojItem.textEnd, newString.length);
-        } else {
-          newContent =
-            newString.slice(0, wojItem.textStart) +
-            WOJ_OPENING +
-            wojItem.quotationText +
-            WOJ_CLOSING;
-        }
-      });
-    }
-
-    newContent = processFootnoteAndRef(
-      newContent,
-      updateFnPosition,
-      fnMdLabel,
-      refMdLabel,
-    );
+    newContent = injectMarkLabel(newContent, verseMarks, labelMap);
 
     // NOTE: Add verse number label only to the first verse or the first
     // verse in the paragraph
@@ -163,15 +138,25 @@ const processVerseMd = (
     verseHeadings.forEach((vHeading, idx, arr) => {
       const revIdx = verseHeadings.length - idx - 1;
 
-      const headingFootnotes = footnotes.filter(
-        (fn) => fn.headingId === arr[revIdx]!.id,
+      const headingFootnotes = marks.filter(
+        (fn) =>
+          fn.kind === MarkKind.FOOTNOTE &&
+          fn.targetType === MarkTargetType.HEADING &&
+          fn.targetId === arr[revIdx]!.id,
+      );
+      const headingReferences = marks.filter(
+        (fn) =>
+          fn.kind === MarkKind.REFERENCE &&
+          fn.targetType === MarkTargetType.HEADING &&
+          fn.targetId === arr[revIdx]!.id,
       );
 
-      const newHeadingContent = processFootnoteAndRef(
+      const headingMarks = [...headingFootnotes, ...headingReferences];
+
+      const newHeadingContent = injectMarkLabel(
         arr[revIdx]!.text,
-        headingFootnotes,
-        fnMdLabel,
-        refMdLabel,
+        headingMarks,
+        labelMap,
       );
 
       // NOTE: Heading level starts from 1
@@ -210,15 +195,13 @@ const processVerseMd = (
 
   let fnSection = '';
 
-  footnotes.sort(
-    (a, b) => a.type.localeCompare(b.type) || a.sortOrder - b.sortOrder,
-  );
+  marks.sort((a, b) => a.kind - b.kind || a.sortOrder - b.sortOrder);
 
-  footnotes.forEach((footnote) => {
-    if (footnote.type === 'footnote') {
-      fnSection += `[^${footnote.sortOrder + 1}-${footnote.chapterId}]: ${footnote.text}\n\n`;
-    } else {
-      fnSection += `[^${footnote.sortOrder + 1}@-${footnote.chapterId}]: ${footnote.text}\n\n`;
+  marks.forEach((footnote) => {
+    if (footnote.kind === MarkKind.FOOTNOTE) {
+      fnSection += `[^${footnote.sortOrder + 1}-${footnote.chapterId}]: ${footnote.content}\n\n`;
+    } else if (footnote.kind === MarkKind.REFERENCE) {
+      fnSection += `[^${footnote.sortOrder + 1}@-${footnote.chapterId}]: ${footnote.content}\n\n`;
     }
   });
 
@@ -249,75 +232,46 @@ const mdToHtml = (md: string) => {
 
 const processVerseHtml = (
   verses: Verse[],
-  footnotes: Footnote[],
+  marks: Mark[],
   headings: Heading[],
   psalms: PsalmMetadata[],
-  woj: WordsOfJesus[],
 ): string => {
   const newVerses = verses.map((verse) => {
-    const verseFootnotes = footnotes.filter((fn) => fn.verseId === verse.id);
+    const verseFootnotes = marks.filter(
+      (fn) =>
+        fn.kind === MarkKind.FOOTNOTE &&
+        fn.targetType === MarkTargetType.VERSE &&
+        fn.targetId === verse.id,
+    );
+    const verseReferences = marks.filter(
+      (fn) =>
+        fn.kind === MarkKind.REFERENCE &&
+        fn.targetType === MarkTargetType.VERSE &&
+        fn.targetId === verse.id,
+    );
     const verseHeadings = headings.filter((h) => h.verseId === verse.id);
-    const verseWoj = woj.filter((w) => w.verseId === verse.id);
-
-    // NOTE: Because words of jesus effect the footnote & ref position, so
-    // we have to update the position of footnotes and references, by adding
-    // wojOpening and wojClosing length if woj text start or text end
-    // smaller than the footnote or reference position
-    const updateFnPosition = verseFootnotes.map((fn) => {
-      let offsetLength = 0;
-
-      verseWoj.forEach((wojItem) => {
-        if (wojItem.textStart < fn.position) {
-          offsetLength += WOJ_OPENING.length;
-        }
-
-        // NOTE: We want footnotes or refs behind the closing tag of
-        // words of Jesus
-        if (wojItem.textEnd <= fn.position) {
-          offsetLength += WOJ_CLOSING.length;
-        }
-      });
-
-      return {
-        ...fn,
-        position: fn.position + offsetLength,
-      };
-    });
+    const verseWoj = marks.filter(
+      (w) =>
+        w.kind === MarkKind.WORDS_OF_JESUS &&
+        w.targetType === MarkTargetType.VERSE &&
+        w.targetId === verse.id,
+    );
 
     let newContent = verse.text;
 
-    // NOTE: Wrap text with woj opening and closing if the verse has words
-    // of Jesus
-    if (verseWoj.length > 0) {
-      verseWoj.reverse().forEach((wojItem) => {
-        const newString = newContent;
+    const verseMarks = [...verseFootnotes, ...verseReferences, ...verseWoj];
 
-        if (wojItem.textStart < 0 || wojItem.textEnd < 0) {
-          return;
-        }
+    const labelMap = {
+      [MarkKind.UNSPECIFIED]: unspecifiedHtmlLabel,
+      [MarkKind.FOOTNOTE]: fnHtmlLabel,
+      [MarkKind.REFERENCE]: refHtmlLabel,
+      [MarkKind.WORDS_OF_JESUS]: wojHtmlLabel,
+    };
 
-        if (wojItem.textEnd < newString.length) {
-          newContent =
-            newString.slice(0, wojItem.textStart) +
-            WOJ_OPENING +
-            wojItem.quotationText +
-            WOJ_CLOSING +
-            newString.slice(wojItem.textEnd, newString.length);
-        } else {
-          newContent =
-            newString.slice(0, wojItem.textStart) +
-            WOJ_OPENING +
-            wojItem.quotationText +
-            WOJ_CLOSING;
-        }
-      });
-    }
-
-    newContent = processFootnoteAndRef(
+    newContent = injectMarkLabel(
       mdToHtml(newContent).replaceAll(/<p>|<\/p>\n?/gm, ''),
-      updateFnPosition,
-      fnHtmlLabel,
-      refHtmlLabel,
+      verseMarks,
+      labelMap,
     );
 
     // NOTE: Add verse number label only to the first verse or the first
@@ -344,15 +298,25 @@ const processVerseHtml = (
     verseHeadings.forEach((vHeading, idx, arr) => {
       const revIdx = verseHeadings.length - idx - 1;
 
-      const headingFootnotes = footnotes.filter(
-        (fn) => fn.headingId === arr[revIdx]!.id,
+      const headingFootnotes = marks.filter(
+        (fn) =>
+          fn.kind === MarkKind.FOOTNOTE &&
+          fn.targetType === MarkTargetType.HEADING &&
+          fn.targetId === arr[revIdx]!.id,
+      );
+      const headingReferences = marks.filter(
+        (fn) =>
+          fn.kind === MarkKind.REFERENCE &&
+          fn.targetType === MarkTargetType.HEADING &&
+          fn.targetId === arr[revIdx]!.id,
       );
 
-      const newHeadingContent = processFootnoteAndRef(
+      const headingMarks = [...headingFootnotes, ...headingReferences];
+
+      const newHeadingContent = injectMarkLabel(
         mdToHtml(arr[revIdx]!.text).replaceAll(/<p>|<\/p>\n?/gm, ''),
-        headingFootnotes,
-        fnHtmlLabel,
-        refHtmlLabel,
+        headingMarks,
+        labelMap,
       );
 
       // NOTE: Heading level starts from 1
@@ -391,15 +355,13 @@ const processVerseHtml = (
 
   let fnSection = '';
 
-  footnotes.sort(
-    (a, b) => a.type.localeCompare(b.type) || a.sortOrder - b.sortOrder,
-  );
+  marks.sort((a, b) => a.kind - b.kind || a.sortOrder - b.sortOrder);
 
-  footnotes.forEach((footnote) => {
-    if (footnote.type === 'footnote') {
-      fnSection += `<li id="fn-${footnote.sortOrder + 1}-${footnote.chapterId}"><p>${mdToHtml(footnote.text).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${footnote.sortOrder + 1}-${footnote.chapterId}">${footnote.sortOrder + 1}</a>]</p></li>\n\n`;
-    } else {
-      fnSection += `<li id="fn-${footnote.sortOrder + 1}@-${footnote.chapterId}"><p>${mdToHtml(footnote.text).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a hfootnote="#fnfootnote-${footnote.sortOrder + 1}@-${footnote.chapterId}">${footnote.sortOrder + 1}@</a>]</p></li>\n\n`;
+  marks.forEach((footnote) => {
+    if (footnote.kind === MarkKind.FOOTNOTE) {
+      fnSection += `<li id="fn-${footnote.sortOrder + 1}-${footnote.chapterId}"><p>${mdToHtml(footnote.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a href="#fnref-${footnote.sortOrder + 1}-${footnote.chapterId}">${footnote.sortOrder + 1}</a>]</p></li>\n\n`;
+    } else if (footnote.kind === MarkKind.REFERENCE) {
+      fnSection += `<li id="fn-${footnote.sortOrder + 1}@-${footnote.chapterId}"><p>${mdToHtml(footnote.content).replaceAll(/<p>|<\/p>\n?/gm, '')} [<a hfootnote="#fnfootnote-${footnote.sortOrder + 1}@-${footnote.chapterId}">${footnote.sortOrder + 1}@</a>]</p></li>\n\n`;
     }
   });
 
@@ -419,4 +381,4 @@ const processVerseHtml = (
   return htmlString;
 };
 
-export { processVerseMd, processVerseHtml };
+export { injectMarkLabel, processVerseMd, processVerseHtml };
