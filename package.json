@@ -24,8 +24,7 @@
   "scripts": {
     "lint": "tsc",
     "build": "tsup",
-    "test": "vitest",
-    "test:run": "vitest run",
+    "test": "vitest run",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "prepublish": "pnpm run build && pnpm run check-exports && pnpm run lint",
     "prepare": "husky"

@@ -6,7 +6,7 @@ import {
   MarkTargetType,
 } from '@v-bible/types';
 import { describe, expect, it } from 'vitest';
-import { resolveMarks } from './resolve-marks';
+import { resolveMarks } from '@/lib/utils/resolve-marks';
 
 type ResolveMarksOptions = {
   overlapKeepRight?: boolean;
