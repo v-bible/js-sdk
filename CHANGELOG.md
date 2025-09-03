@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.16](https://github.com/v-bible/js-sdk/compare/v1.0.15...v1.0.16) (2025-09-03)
+
+
+### Bug Fixes
+
+* **utils:** incorrect mark processing ([229e924](https://github.com/v-bible/js-sdk/commit/229e9241d4817849a918941502531e81e634c946))
+* **utils:** incorrect mark processing ([ebe4466](https://github.com/v-bible/js-sdk/commit/ebe4466e880874a748b4eacd7366204ea25f2e68))
+
 ## [1.0.15](https://github.com/v-bible/js-sdk/compare/v1.0.14...v1.0.15) (2025-09-02)
 
 
