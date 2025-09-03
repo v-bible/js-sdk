@@ -7,7 +7,7 @@ import {
   parseBiblicalReference,
   parseStringToOrder,
   parseVerseNum,
-} from './verse-parse';
+} from '@/lib/utils/verse-parse';
 
 // Helper for error expectation
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

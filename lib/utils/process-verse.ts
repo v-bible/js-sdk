@@ -25,14 +25,16 @@ const injectMarkLabel = (
     if (labelFunc !== undefined) {
       const newMarkLabel = labelFunc(mark, mark.chapterId);
 
-      if (mark.startOffset > str.length) {
-        str += newMarkLabel;
-      } else {
-        str =
-          str.slice(0, mark.startOffset) +
-          newMarkLabel +
-          str.slice(mark.endOffset, str.length);
-      }
+      const startOffset =
+        mark.startOffset > str.length ? str.length : mark.startOffset;
+
+      const endOffset =
+        mark.endOffset > str.length ? str.length : mark.endOffset;
+
+      str =
+        str.slice(0, startOffset) +
+        newMarkLabel +
+        str.slice(endOffset, str.length);
     }
   });
 
